@@ -9,8 +9,12 @@
 		margin-bottom: 80px;
 	}
 	@media (max-width: 1023px){
+		margin-top: 64px;
+		margin-bottom: 59px;
+	}
+	@media (max-width: 767px){
 		margin-top: 47px;
-		margin-bottom: 65px;
+		margin-bottom: 80px;
 	}
 	@media (max-width: 479px){
 		margin-top: 30px;
@@ -66,6 +70,9 @@
 			@media (max-width: 1023px){
 				font-size: 14px!important;
 					line-height: 17px!important;
+			}
+			@media (max-width: 767px){
+				margin-top: 25px!important;
 			}
 			@media (max-width: 479px){
 				font-size: 10px!important;
@@ -128,7 +135,7 @@
 					@media (max-width: 1439px){
 						display: block;
 					}
-					@media (max-width: 1024px){
+					@media (max-width: 1023px){
 						display: none;
 					}
 				}
@@ -137,6 +144,8 @@
 			
 					@media (max-width: 1023px) {
 						display: block;
+						border-radius: 50%;
+						box-shadow: 0px 0px 16px #F4F6F8;
 					}
 					@media (max-width: 767px){
 						width: 400px;
@@ -207,7 +216,9 @@
 				}
 		}
 
-			&__text {}
+			&__text {
+				padding: 0 4px;
+			}
 }
 
 .right-diagram {
@@ -247,7 +258,9 @@
 				top: 80%;
 			}
 		}
-			&__text {}
+			&__text {
+				padding: 0 4px;
+			}
 }
 
 
@@ -263,19 +276,27 @@
 	justify-content: center;
 	align-items: center;
 	row-gap: 22px;
+	column-gap: 15px;
 	margin-top: 20px;
 	@media (max-width: 767px){
-		flex-wrap: wrap;
+		display: grid;
+		margin-top: 28px;
+		height: 610px;
+		column-gap: 0px;
+		row-gap: 0px;
+	}
+	@media (max-width: 479px){
+		height: 404px;
+		margin-top: 16px;
 	}
 }
 
 .diagram__item-mobile {
 	display: flex;
 	justify-content: center;
-	flex: 0 1 33.333%;
-	padding: 0 7.5px;
+	flex: 0 1 auto;
 	@media (max-width: 767px){
-		flex: 1 1 100%;
+		justify-content: flex-start;
 	}
 	span {
 		font-family: 'Inter';
@@ -287,22 +308,33 @@
 		&:first-child{
 			font-size: 20px;
 			line-height: 24px;
+			@media (max-width: 479px){
+				font-size: 13px;
+				line-height: 16px;
+			}
 		}
 		&:last-child{
 			font-weight: 400;
 			letter-spacing: -0.03em;
 			font-size: 16px;
 			line-height: 19px;
+			@media (max-width: 479px){
+				font-size: 10px;
+				line-height: 12px;
+			}
 		}
 	}
 }
 
 .diagram__column-mobile {
 	border-radius: 10px;
-	padding: 1px 1px;
-	width: 100%;
+	padding: 2px 3px;
+	width: 200px;
 	@media (max-width: 767px){
 		width: 200px;
+	}
+	@media (max-width: 479px){
+		width: 133px;
 	}
 }
 
@@ -321,6 +353,10 @@
 		&:first-child{
 			font-size: 16px!important;
 			line-height: 19px!important;
+			@media (max-width: 479px){
+				font-size: 10px!important;
+				line-height: 12px!important;
+			}
 		}
 	}
 }
