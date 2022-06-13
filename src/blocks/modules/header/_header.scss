@@ -1,4 +1,7 @@
 .header {
+	@media (max-width: 767px){
+		
+	}
     &__top {
         display: flex;
         justify-content: space-between;
@@ -15,6 +18,10 @@
     }
 
     &__logo {
+		@media (max-width: 1919px){
+			position: relative;
+			left: 4px;
+		}
         @media (max-width: 440px) {
             width: 96px;
         }
@@ -94,11 +101,13 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
-	 padding-bottom: 20px;
-		border-top: 1px solid #F4F6F8;
-		@media (max-width: 440px){
-			
-		}
+    padding-bottom: 20px;
+    border-top: 1px solid #f4f6f8;
+
+    @media (max-width: 440px){
+
+    }
+
     &__container {
         display: flex;
         align-items: center;
@@ -131,7 +140,7 @@
         }
 
         &-signin {
-            margin-left: 20px;
+            margin-left: 16px;
             color: #000;
             background: #f4f6f8;
             border-radius: 8px;
@@ -161,11 +170,8 @@
         @media (max-width: 440px) {
             width: 80px;
             height: 26px;
-            font-size: 20px;
+            font-size: 10px;
 
-            span {
-                transform: scale(0.5);
-            }
         }
     }
 }
@@ -236,41 +242,48 @@
 
     &__list {
         display: flex;
-			&-points {
-				display: none;
-				@media (max-width: 700px){
-					display: none!important;
-				}
-			}
+		z-index: 99;
+        &-points {
+            display: none;
+
+            @media (max-width: 700px) {
+                display: none !important;
+            }
+        }
+
         @media (max-width: 992px) {
             position: relative;
 
             &-points {
                 content: "";
-					 cursor: pointer;
+                display: inline-block;
                 position: absolute;
-					 display: inline-block;
+					 z-index: 99!important;
                 top: 50%;
                 right: -12px;
                 width: 34px;
                 height: 8px;
                 transform: translate(100%, -50%);
+                cursor: pointer;
                 background: url("../img/svg/points.svg") center / 100% no-repeat;
             }
-				&-mob {
-					top: calc(100% + 0px);
-					opacity: 0;
-					  pointer-events: none;
-					  transition: all 0.5s ease 0s;
-					&:hover{
-						opacity: 1;
-					}
-				}
-				&-points:hover+&-mob {
-					top: calc(100% + 20px);
-					opacity: 1;
-					  pointer-events: auto;
-				}
+
+            &-mob {
+                top: calc(100% + 0px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.5s ease 0s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &-points:hover + &-mob {
+                top: calc(100% + 20px);
+                opacity: 1;
+                pointer-events: auto;
+            }
         }
 
         @media (max-width: 700px) {
@@ -287,14 +300,14 @@
             opacity: 0;
             background: #f4f6f8;
             border-radius: 10px;
-				pointer-events: none;
+            pointer-events: none;
         }
     }
 
     &__list.active {
-		 right: 0;
+        right: 0;
         opacity: 1;
-		  pointer-events: auto;
+        pointer-events: auto;
     }
 
     &__item {
@@ -333,6 +346,7 @@
     &__list-mob {
         display: none;
         position: absolute;
+		  z-index: 99;
         right: -12px;
         width: 118px;
         height: 91px;
