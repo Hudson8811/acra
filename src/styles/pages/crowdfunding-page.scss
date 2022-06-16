@@ -1,0 +1,89 @@
+.hero-crowdfunding-page {
+	&__row {
+		h1 {
+			width: 500px;
+			max-width: 100%;
+			margin-top: 76px;
+			display: block;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 48px;
+			line-height: 58px;
+			color: #FFFFFF;
+			@media (max-width: 1439px){
+				margin-top: 48px;
+			}
+			@media (max-width: 1023px){
+				margin-top: 0;
+				text-align: center;
+				margin: 0 auto;
+			}
+			@media (max-width: 767px){
+			}
+			span {
+				background: linear-gradient(90deg, #EB00FF 0%, #00DBC8 25.8%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+		}
+	}
+	p {
+		margin-top: 48px;
+		@media (max-width: 1023px){
+			margin-top: 36px;
+		}
+		@media (max-width: 767px){
+			text-align: left;
+			margin-top: 24px;
+		}
+		@media (max-width: 479px){
+			margin-top: 14px;
+		}
+		&:nth-child(2){
+			margin-top: 108px;
+			font-weight: 600;
+			@media (max-width: 1439px){
+				margin-top: 95px;
+			}
+			@media (max-width: 1023px){
+				margin-top: 117px;
+			}
+			@media (max-width: 767px){
+				margin-top: 111px;
+			}
+			@media (max-width: 479px){
+				margin-top: 68px;
+			}
+		}
+	}
+		&__img {
+			margin-top: 14px;
+			margin-right: 135px;
+			@media (max-width: 1439px){
+				width: 315px;
+				height: 232px;
+				margin-right: 49px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			@media (max-width: 1023px){
+				margin-top: 50px;
+				margin-right: 0;
+			}
+			@media (max-width: 767px){
+				margin-top: 44px;
+			}
+			@media (max-width: 479px){
+				width: 210px;
+				height: 154px;
+				margin-top: 22px;
+			}
+		}
+}
+
+

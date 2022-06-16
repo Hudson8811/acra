@@ -1,0 +1,138 @@
+.faq {
+	@media (max-width: 479px){
+		h1 {
+			font-size: 28px!important;
+			line-height: 34px!important;
+		}
+	}
+	&__item {
+		border-bottom: 1px solid #F4F6F8;
+	}
+	&__subtitle {
+		cursor: pointer;
+		padding: 16px 12px 20px;
+		position: relative;
+		@media (max-width: 1439px){
+			padding: 16px 9px 24px;
+		}
+		@media (max-width: 767px){
+			padding: 9px 40px 12px 4px;
+		}
+		@media (max-width: 479px){
+			padding: 6px 26px 7px 3px;
+		}
+		span{
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			width: 26px;
+			height: 26px;
+			background: #FFFFFF;
+			border-radius: 50%;
+			transform: translate(0, -50%);
+			background: url('../img/svg/arrow-pages.svg') 0 0 / 100% 100% no-repeat;
+			transition: all 0.5s ease 0s;
+			@media (max-width: 1439px){
+				right: 9px;
+			}
+			@media (max-width: 767px){
+				right: 5px;
+				width: 25px;
+				height: 25px;
+			}
+			@media (max-width: 479px){
+				right: 3px;
+				width: 17px;
+				height: 17px;
+			}
+		}
+	}
+	&__subtitle.active {
+		span {
+			transform: translate(0, -50%) rotate(-180deg);
+		}
+	}
+	&__text {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		display: flex;
+		align-items: center;
+		color: #B6BCB9;
+		padding: 4px 86px 80px 30px;
+		display: none;
+	
+		@media (max-width: 1439px) {
+			padding: 24px 40px 79px 24px;
+		}
+	
+		@media (max-width: 767px){
+			font-size: 18px;
+			line-height: 22px;
+			padding: 5px 33px 24px 11px;
+		}
+
+		@media (max-width: 479px){
+			font-size: 12px;
+			line-height: 15px;
+			padding: 4px 33px 24px 11px;
+		}
+
+		&-first {
+			display: block;
+		}
+	}
+}
+
+.top-items-faq {
+	margin-top: 32px;
+	border-top: 1px solid #F4F6F8;
+	@media (max-width: 767px){
+		margin-top: 18px;
+	}
+	@media (max-width: 479px){
+		margin-top: 12px;
+	}
+	&-wrapper {
+		margin-top: 50px;
+		@media (max-width: 767px){
+			margin-top: 30px;
+		}
+		@media (max-width: 479px){
+			margin-top: 7px;
+		}
+	}
+	@media (max-width: 1439px){
+		margin-top: 50px;
+	}
+	&__item {
+		border-bottom: 1px solid #F4F6F8;
+	}
+}
+
+.bottom-items-faq {
+	margin-top: 32px;
+	margin-bottom: 80px;
+	border-top: 1px solid #F4F6F8;
+	@media (max-width: 767px){
+		margin-top: 18px;
+	}
+	@media (max-width: 479px){
+		margin-top: 14px;
+	}
+	&-wrapper {
+		margin-top: 65px;
+		@media (max-width: 767px){
+			margin-top: 30px;
+		}
+		@media (max-width: 479px){
+			margin-top: 69px;
+		}
+	}
+	@media (max-width: 1439px){
+		margin-bottom: 100px;
+	}
+}

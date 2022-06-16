@@ -91,6 +91,53 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/import/pages.js":
+/*!********************************!*\
+  !*** ./src/js/import/pages.js ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+/* FAQ */
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.faq__subtitle').click(function (event) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('active').next().slideToggle(300);
+  });
+});
+/* Contacts */
+
+/* btns */
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".form__btn-email").click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-email').addClass("active");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-tel').removeClass("active");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__tel').slideUp(500);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__email').slideDown(500);
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".form__btn-tel").click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-tel').addClass("active");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-email').removeClass("active");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__email').slideUp(500);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__tel').slideDown(500);
+});
+var inputs = document.querySelectorAll('.input-question-file');
+Array.prototype.forEach.call(inputs, function (input) {
+  var label = input.nextElementSibling,
+      labelVal = label.querySelector('.input__file-button-text').innerText;
+  input.addEventListener('change', function (e) {
+    var countFiles = '';
+    if (this.files && this.files.length >= 1) countFiles = this.files.length;
+    if (countFiles) label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;else label.querySelector('.input__file-button-text').innerText = labelVal;
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -99,9 +146,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
-/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_import_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _import_pages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/pages */ "./src/js/import/pages.js");
+/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
+/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
+/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_import_components__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 

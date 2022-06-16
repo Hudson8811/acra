@@ -1,0 +1,42 @@
+extends ../layouts/default
+
+block variables
+	- const title = "FAQ";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.crowdfunding-page 
+				.crowdfunding-page__hero.hero-crowdfunding-page
+					.hero-crowdfunding-page__container.container
+						.hero-crowdfunding-page__row.general-row 
+							h1 
+								|Краудфандинг на основе токенов 
+								span AKRA 
+								|— помощь в развитии стартапов
+							.hero-crowdfunding-page__img 
+								img(src="img/pages/crowdfunding-page/1.png", alt="alt")
+						p Малому и среднему бизнесу, начинающим предпринимателям часто не хватает денег для развития проектов. Многие люди и организации готовы поддержать хорошую идею и вложить средства в её реализацию. Краудфандинг является одним из способов привлечения инвестиций. Термин возник от английских слов crowd — «толпа» и funding — «финансирование» и дословно означает «народное финансирование».
+						p Краудфандинг даёт возможность бизнесу получать необходимые денежные средства за счёт инвесторов, заинтересованных в проекте. Благодаря такой финансовой поддержке было запущено и реализовано множество стартапов.
+						p Итак, краудфандинг — это механизм сбора денежных средств от неопределенного круга третьих лиц для финансирования как коммерческих, так и некоммерческих проектов. В качестве денежных средств, или средств платежа, может выступать криптовалюта, в нашем случае — токены AKRA.
+				
+				.crowdfunding-page__model.model-crowdfunding-page 
+					.crowdfunding-page__container.container 
+						.model-crowdfunding-page__items-top 
+							.model-crowdfunding-page__row-top 
+								.model-crowdfunding-page__item-top 
+									.model-crowdfunding-page__column-top 
+										.model-crowdfunding-page__title-top 
+										.model-crowdfunding-page__text-top 
+						.model-crowdfunding-page__items-bottom 
+							.model-crowdfunding-page__item
+
+
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
