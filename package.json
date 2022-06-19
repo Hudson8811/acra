@@ -75,6 +75,7 @@
     },
     "dependencies": {
         "jquery": "^3.6.0",
+        "pinlogin": "^1.0.1",
         "webpack": "^5.70.0",
         "webpack-stream": "^7.0.0"
     },

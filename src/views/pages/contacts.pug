@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block variables
-	- const title = "FAQ";
+	- const title = "AKRA";
 
 block content
 	.wrapper
@@ -26,7 +26,7 @@ block content
 								span info@akra.co.in
 					form.contacts__form.form(action="#" method="method")
 						.form__container
-							.form__title Будем рады ответить на выши вопросы!
+							.form__title.contacts__form--title Будем рады ответить на выши вопросы!
 							.form__name
 								label Ваше Имя
 								.form__input.form__input-name 
@@ -37,7 +37,7 @@ block content
 								.form__btn.form__btn-tel 
 									|Телефон
 							.form__email
-								label Ваше E-mail
+								label Ваш E-mail
 								.form__input.form__input-email
 									input(type="text", placeholder="Введите ваш e-mail").input
 							.form__tel

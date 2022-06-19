@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.success-change__popap--wrapper.general-popap-wrapper
+				.success-change__popap.general-popap
+					.success-change__popap--container.general-popap__container
+						span.general-popap__close
+						.success-change__popap--icon.general-popap__icon 
+							img(src="img/pages/Checked.svg", alt="alt")
+						.success-change__popap--title.general-popap__title Вы успешно сменили пароль
+						.success-change__popap--text.general-popap__text Письмо с новым паролем отправлено на указанный E-mail 
+						button.success-change__popap--btn.general-popap__btn Войти
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

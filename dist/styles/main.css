@@ -2550,318 +2550,12 @@ p {
   margin-bottom: 80px;
 }
 
-.form {
-  width: 483px;
-  background: #897DF7;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
-  padding: 32px 0;
-}
-
-.form label {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  color: #F4F6F8;
-}
-
-.form__container {
-  width: 363px;
-  max-width: 100%;
+.contacts__form--title {
   margin: 0 auto;
-}
-
-.form__title {
-  width: 296px;
-  margin: 0 auto;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-  text-align: center;
-  color: #F4F6F8;
-}
-
-.form__name {
-  margin-top: 32px;
-}
-
-.form__btns {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 30px;
-}
-
-.form__btn {
-  cursor: pointer;
-  width: 118px;
-  height: 48px;
-  border: 2px solid #5B4ECB;
-  border-radius: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #5B4ECB;
-  transition: all 0.3s ease 0s;
-}
-
-.form__btn:hover {
-  opacity: 0.7;
-}
-
-.form__btn.active {
-  background: #5B4ECB;
-  border-radius: 24px;
-  color: #F4F6F8;
-}
-
-.form__input .input {
-  width: 100%;
-  height: 48px;
-  background: #FFFFFF;
-  box-shadow: inset 0px 4px 5px #B5A2E2;
-  border-radius: 30px;
-  padding-left: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #121D33;
-}
-
-.form__input .input::placeholder {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #B6BCB9;
-}
-
-.form__input-name {
-  margin-top: 10px;
-}
-
-.form__input-email {
-  margin-top: 10px;
-}
-
-.form__input-tel {
-  position: relative;
-}
-
-.form__input-tel::before {
-  content: "+7";
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translate(0, -50%);
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #274360;
-}
-
-.form__input-tel .input {
-  padding-left: 35px;
-}
-
-.form__input-question {
-  height: 98px;
-  margin-top: 10px;
-  background: #FFFFFF;
-  box-shadow: inset 0px 4px 5px #B5A2E2;
-  border-radius: 20px;
-  padding: 12px 24px;
-}
-
-.form__input-question-text {
-  background-color: transparent;
-}
-
-.form__input-question-text input {
-  width: 100%;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #121D33;
-}
-
-.form__input-question-text input::placeholder {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #B6BCB9;
-}
-
-.form__input-question-file {
-  margin-top: 30px;
-  position: relative;
-  background-color: transparent;
-}
-
-.form__input-question-file input[type=file] {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.form__input-question-file .question-file {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-}
-
-.form__input-question-file .question-file span {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #B6BCB9;
-}
-
-.form__email {
-  margin-top: 32px;
-}
-
-.form__tel {
-  display: none;
-  margin-top: 32px;
-}
-
-.form__body-tel {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-}
-
-.form__select-country-tel {
-  cursor: pointer;
-  width: 64px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 10px;
-  background: #FFFFFF;
-  box-shadow: inset 0px 4px 5px #B5A2E2;
-  border-radius: 30px;
-}
-
-.form__question {
-  margin-top: 40px;
-}
-
-.form__captcha {
-  margin-top: 40px;
-  padding-right: 11px;
-  width: 100%;
-  height: 115px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.form__captcha-bottom {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 20px;
-  color: #062240;
-}
-
-.form__button {
-  width: 100%;
-  height: 48px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-  background: #08A652;
-  border-radius: 24px;
-  margin-top: 32px;
-}
-
-.checkbox {
-  position: absolute;
-  top: 50%;
-  left: 24px;
-  transform: translate(0, -50%);
-}
-
-.checkbox__input {
-  display: none;
-}
-
-.checkbox__input:checked + .checkbox__label::after {
-  opacity: 1;
-}
-
-.checkbox__label {
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.checkbox__label span {
-  color: #274360;
-  font-weight: 400;
-}
-
-.checkbox__label::before {
-  content: "";
-  align-self: flex-start;
-  flex: 0 0 24px;
-  height: 24px;
-  background: #897DF6;
-  box-shadow: inset 0px 2px 5px #3A309A;
-  border-radius: 4px;
-  margin: 0px 10px 0px 0px;
-}
-
-.checkbox__label::after {
-  transition: all 0.3s ease 0s;
-  content: "";
-  opacity: 0;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url("../img/pages/contacts/arrow-green.svg") 0 0/100% 100% no-repeat;
-  border-radius: 4px;
+  width: 296px !important;
+  font-size: 32px !important;
+  line-height: 32px !important;
 }
 
 .bridges-page p {
@@ -2895,6 +2589,18 @@ p {
 
 .hero-bridges-page__img {
   margin-right: 75px;
+  position: relative;
+}
+
+.hero-bridges-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -60px;
+  left: -144px;
+  width: 670px;
+  height: 399px;
+  background: url("../img/pages/bridges-page/back1.svg") 0 0/100% 100% no-repeat;
 }
 
 .hero-bridges-page__img img {
@@ -2929,6 +2635,18 @@ p {
 .whatis-bridges-page__img1 {
   margin-top: 40px;
   margin-left: 196px;
+  position: relative;
+}
+
+.whatis-bridges-page__img1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  left: -204px;
+  width: 600px;
+  height: 360px;
+  background: url("../img/pages/bridges-page/back2.svg") 0 0/100% 100% no-repeat;
 }
 
 .whatis-bridges-page__items {
@@ -2993,6 +2711,18 @@ p {
 .whatis-bridges-page__img2 {
   margin-top: 30px;
   margin-right: 198px;
+  position: relative;
+}
+
+.whatis-bridges-page__img2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: -204px;
+  width: 639px;
+  height: 375px;
+  background: url("../img/pages/bridges-page/back3.svg") 0 0/100% 100% no-repeat;
 }
 
 .whatis-bridges-page__img2 img {
@@ -3138,6 +2868,18 @@ p {
 .type-bridges-page__img {
   margin-top: 5px;
   margin-left: 202px;
+  position: relative;
+}
+
+.type-bridges-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -78px;
+  left: -105px;
+  width: 443px;
+  height: 444px;
+  background: url("../img/pages/bridges-page/back4.svg") 0 0/100% 100% no-repeat;
 }
 
 .type-bridges-page__items {
@@ -3225,8 +2967,21 @@ p {
 }
 
 .work-bridges-page__img {
+  position: relative;
   margin-top: 45px;
   margin-right: 270px;
+  position: relative;
+}
+
+.work-bridges-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -89px;
+  left: -82px;
+  width: 370px;
+  height: 388px;
+  background: url("../img/pages/bridges-page/back5.svg") 0 0/100% 100% no-repeat;
 }
 
 .work-bridges-page__items {
@@ -3300,6 +3055,18 @@ p {
 .hero-wallet__img {
   margin-top: 158px;
   margin-right: 94px;
+  position: relative;
+}
+
+.hero-wallet__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -117px;
+  left: -105px;
+  width: 443px;
+  height: 444px;
+  background: url("../img/pages/wallet/back1.svg") 0 0/100% 100% no-repeat;
 }
 
 /* wallet-whatis */
@@ -3329,6 +3096,18 @@ p {
 .wallet-whatis__img {
   margin-top: 82px;
   margin-left: 100px;
+  position: relative;
+}
+
+.wallet-whatis__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -51px;
+  width: 382px;
+  height: 393px;
+  background: url("../img/pages/wallet/back2.svg") 0 0/100% 100% no-repeat;
 }
 
 .wallet-whatis__items {
@@ -3549,6 +3328,18 @@ p {
 .wallet-function__img {
   margin-top: 53px;
   margin-right: 102px;
+  position: relative;
+}
+
+.wallet-function__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -68px;
+  left: -71px;
+  width: 400px;
+  height: 400px;
+  background: url("../img/pages/wallet/back3.svg") 0 0/100% 100% no-repeat;
 }
 
 .wallet-function__items {
@@ -3648,6 +3439,18 @@ p {
 .wallet-work__img {
   margin-top: 48px;
   margin-left: 102px;
+  position: relative;
+}
+
+.wallet-work__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -68px;
+  left: -110px;
+  width: 400px;
+  height: 400px;
+  background: url("../img/pages/wallet/back4.svg") 0 0/100% 100% no-repeat;
 }
 
 .wallet-work__items {
@@ -3703,6 +3506,8 @@ p {
   color: #F4F6F8;
 }
 
+/* hero-crowdfunding-page */
+
 .hero-crowdfunding-page__row h1 {
   width: 500px;
   max-width: 100%;
@@ -3736,6 +3541,2280 @@ p {
 .hero-crowdfunding-page__img {
   margin-top: 14px;
   margin-right: 135px;
+  position: relative;
+}
+
+.hero-crowdfunding-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -46px;
+  left: -58px;
+  width: 494px;
+  height: 449px;
+  background: url("../img/pages/crowdfunding-page/back1.svg") 0 0/100% 100% no-repeat;
+}
+
+/* model-crowdfunding-page */
+
+.model-crowdfunding-page__container p {
+  margin-top: 48px;
+  text-align: left;
+}
+
+.model-crowdfunding-page__container ul {
+  margin-top: 25px;
+}
+
+.model-crowdfunding-page__container ul li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #F4F6F8;
+  padding-left: 38px;
+  position: relative;
+}
+
+.model-crowdfunding-page__container ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  transform: translate(0, -50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.model-crowdfunding-page__items-top {
+  margin-top: 48px;
+}
+
+.model-crowdfunding-page__row-top {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.model-crowdfunding-page__item-top {
+  padding: 0 15px;
+}
+
+.model-crowdfunding-page__item-top:not(:last-child) .model-crowdfunding-page__title-top {
+  position: relative;
+}
+
+.model-crowdfunding-page__item-top:not(:last-child) .model-crowdfunding-page__title-top::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background: url("../img/pages/crowdfunding-page/arrows.svg") 0 0/100% 100% no-repeat;
+  width: 30px;
+  height: 40px;
+  transform: translate(100%, -50%);
+}
+
+.model-crowdfunding-page__item-top:last-child {
+  position: relative;
+}
+
+.model-crowdfunding-page__item-top:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  width: 5px;
+  height: 45px;
+  background-color: #ffffff;
+  transform: translate(-50%, 0);
+}
+
+.model-crowdfunding-page__column-top {
+  width: 370px;
+}
+
+.model-crowdfunding-page__column-top .color1 {
+  background: #FFB3E7;
+}
+
+.model-crowdfunding-page__column-top .color2 {
+  background: #00DBC8;
+}
+
+.model-crowdfunding-page__column-top .color3 {
+  background: #B1A8FF;
+}
+
+.model-crowdfunding-page__title-top {
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 0px 10px #F4F6F8;
+  border-radius: 30px 30px 0px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.model-crowdfunding-page__text-top {
+  width: 100%;
+  height: 280px;
+  border: 5px solid #F4F6F8;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 10px;
+}
+
+.model-crowdfunding-page__text-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 0px 10px #F4F6F8);
+}
+
+.model-crowdfunding-page__items-bottom {
+  margin-top: 80px;
+  position: relative;
+}
+
+.model-crowdfunding-page__items-bottom::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 97.5px;
+  width: calc(100% - 195px);
+  height: 5px;
+  background-color: #ffffff;
+  transform: translate(0, 50%);
+}
+
+.model-crowdfunding-page__row-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.model-crowdfunding-page__item-bottom {
+  width: 200px;
+  height: 200px;
+  background: #4D84EE;
+  border: 5px solid #F4F6F8;
+  box-shadow: 0px 0px 10px rgba(244, 246, 248, 0.25);
+  border-radius: 25px;
+  position: relative;
+}
+
+.model-crowdfunding-page__item-bottom::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 5px;
+  height: 40px;
+  background-color: #ffffff;
+  transform: translate(-50%, 0);
+}
+
+.model-crowdfunding-page__text-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+/* work-crowdfunding-page */
+
+.work-crowdfunding-page {
+  margin-top: 60px;
+}
+
+.work-crowdfunding-page__body--left h2 {
+  width: 358px;
+  max-width: 100%;
+  margin-top: 75px;
+}
+
+.work-crowdfunding-page__body--left p {
+  width: 375px;
+  margin-top: 32px;
+}
+
+.work-crowdfunding-page__body--text-mobile {
+  display: none;
+}
+
+.work-crowdfunding-page__img {
+  margin-top: 64px;
+  margin-right: 229px;
+  position: relative;
+}
+
+.work-crowdfunding-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -63px;
+  width: 410px;
+  height: 341px;
+  background: url("../img/pages/crowdfunding-page/back2.svg") 0 0/100% 100% no-repeat;
+}
+
+.work-crowdfunding-page__items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-crowdfunding-page__item {
+  flex: 0 1 33.333%;
+  display: flex;
+  justify-content: center;
+}
+
+.work-crowdfunding-page__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+}
+
+.work-crowdfunding-page__icon {
+  width: 100px;
+  height: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #EB00FF 0%, #00DBC8 100%);
+  box-shadow: 0px 0px 40px #6F72E2;
+}
+
+.work-crowdfunding-page__text {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.work-crowdfunding-page p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+/* scoring-crowdfunding-page */
+
+.scoring-crowdfunding-page {
+  margin-top: 44px;
+}
+
+.scoring-crowdfunding-page__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.scoring-crowdfunding-page__body--right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.scoring-crowdfunding-page__body--right h2 {
+  width: 570px;
+  margin-top: 16px;
+}
+
+.scoring-crowdfunding-page__body--right p {
+  width: 670px;
+  margin-top: 32px;
+}
+
+.scoring-crowdfunding-page__body--text-mobile {
+  display: none;
+}
+
+.scoring-crowdfunding-page__img {
+  margin-top: 98px;
+  margin-left: 105px;
+  position: relative;
+}
+
+.scoring-crowdfunding-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -63px;
+  width: 439px;
+  height: 415px;
+  background: url("../img/pages/crowdfunding-page/back3.svg") 0 0/100% 100% no-repeat;
+}
+
+/* diagram-crowdfunding-page */
+
+.diagram-crowdfunding-page {
+  margin-top: 60px;
+}
+
+.diagram-crowdfunding-page__container h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.diagram-crowdfunding-page__container > span {
+  text-align: center;
+  margin-top: 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #B9B9B9;
+}
+
+.diagram-crowdfunding-page__item {
+  position: absolute;
+  width: 185px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.diagram-crowdfunding-page__item span {
+  font-family: "Inter";
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.diagram-crowdfunding-page__item span:first-child {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.diagram-crowdfunding-page__item span:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.diagram-crowdfunding-page__body {
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+}
+
+.diagram-crowdfunding-page__circle {
+  position: relative;
+  width: 700px;
+  height: 600px;
+}
+
+.diagram-crowdfunding-page__circle img {
+  width: 100%;
+  height: 100%;
+}
+
+.diagram-crowdfunding-page__item1 {
+  top: 1.5%;
+  left: 2%;
+  transform: translate(-100%, 0);
+}
+
+.diagram-crowdfunding-page__item2 {
+  top: 16%;
+  left: 2%;
+  transform: translate(-100%, 0);
+}
+
+.diagram-crowdfunding-page__item3 {
+  top: 35%;
+  left: 2%;
+  transform: translate(-100%, 0);
+}
+
+.diagram-crowdfunding-page__item4 {
+  top: 88.5%;
+  left: 2%;
+  transform: translate(-100%, 0);
+}
+
+.diagram-crowdfunding-page__item5 {
+  top: 17.5%;
+  right: 1.5%;
+  transform: translate(100%, 0);
+}
+
+/* risk-crowdfunding-page */
+
+.risk-crowdfunding-page {
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+
+.risk-crowdfunding-page__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.risk-crowdfunding-page__body {
+  margin-bottom: 127px;
+}
+
+.risk-crowdfunding-page__body--left h2 {
+  margin-top: 124px;
+}
+
+.risk-crowdfunding-page__body--left p {
+  margin-top: 32px;
+  width: 600px;
+}
+
+.risk-crowdfunding-page__body--text-mobile {
+  display: none;
+}
+
+.risk-crowdfunding-page__img {
+  margin-top: 80px;
+  margin-right: 198px;
+  position: relative;
+}
+
+.risk-crowdfunding-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -63px;
+  width: 439px;
+  height: 378px;
+  background: url("../img/pages/crowdfunding-page/back4.svg") 0 0/100% 100% no-repeat;
+}
+
+/* hero-staking */
+
+.hero-staking__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.hero-staking__body--left {
+  margin-top: 32px;
+}
+
+.hero-staking__body--left h1 {
+  width: 500px;
+  display: block;
+}
+
+.hero-staking__body--left h1 span {
+  background: linear-gradient(90deg, #EB00FF 73.6%, #00DBC8 99.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero-staking__body--left p {
+  width: 600px;
+  margin-top: 32px;
+}
+
+.hero-staking__body--text-mobile {
+  display: none;
+}
+
+.hero-staking__img {
+  margin-top: 80px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.hero-staking__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -98px;
+  left: -63px;
+  width: 522px;
+  height: 409px;
+  background: url("../img/pages/staking/back1.svg") 0 0/100% 100% no-repeat;
+}
+
+.hero-staking__items {
+  margin-top: 79px;
+}
+
+.hero-staking__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-staking__item {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 33.333%;
+}
+
+.hero-staking__column {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-staking__icon {
+  width: 100px;
+  height: 100px;
+  background: #01E2EC;
+  box-shadow: 0px 0px 40px #01E2EC;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.hero-staking__text {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.hero-staking__body-second--img {
+  margin-top: 114px;
+  margin-left: 96px;
+  position: relative;
+}
+
+.hero-staking__body-second--img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -46px;
+  width: 432px;
+  height: 307px;
+  background: url("../img/pages/staking/back2.svg") 0 0/100% 100% no-repeat;
+}
+
+.hero-staking__body-second p {
+  width: 600px;
+  margin-top: 129px;
+  text-align: right;
+}
+
+/* fix-staking */
+
+.fix-staking {
+  margin-top: 12px;
+}
+
+.fix-staking__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.fix-staking__container > p:last-child {
+  text-align: center;
+}
+
+.fix-staking__body--left h2 {
+  margin-top: 68px;
+}
+
+.fix-staking__body--left p {
+  margin-top: 48px;
+  width: 600px;
+}
+
+.fix-staking__body--text-mobile {
+  display: none;
+}
+
+.fix-staking__img {
+  margin-top: 133px;
+  margin-right: 138px;
+  position: relative;
+}
+
+.fix-staking__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -46px;
+  width: 432px;
+  height: 357px;
+  background: url("../img/pages/staking/back3.svg") 0 0/100% 100% no-repeat;
+}
+
+.risk-staking {
+  margin-top: 32px;
+  margin-bottom: 80px;
+}
+
+.risk-staking__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.risk-staking__body--left h2 {
+  margin-top: 48px;
+}
+
+.risk-staking__body--left p {
+  margin-top: 48px;
+  width: 600px;
+}
+
+.risk-staking__body--text-mobile {
+  display: none;
+}
+
+.risk-staking__img {
+  margin-top: 49px;
+  margin-left: 144px;
+  position: relative;
+}
+
+.risk-staking__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -36px;
+  left: -96px;
+  width: 432px;
+  height: 307px;
+  background: url("../img/pages/staking/back4.svg") 0 0/100% 100% no-repeat;
+}
+
+/* hero-buy-page */
+
+.hero-buy-page__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.hero-buy-page__body--left {
+  margin-top: 62px;
+}
+
+.hero-buy-page__body--left h1 {
+  width: 500px;
+  display: block;
+}
+
+.hero-buy-page__body--left h1 span {
+  background: linear-gradient(90deg, #EB00FF 73.6%, #00DBC8 99.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero-buy-page__body--left p {
+  width: 600px;
+  margin-top: 32px;
+}
+
+.hero-buy-page__body--text-mobile {
+  display: none;
+}
+
+.hero-buy-page__img {
+  margin-top: 63px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.hero-buy-page__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -85px;
+  left: -110px;
+  width: 490px;
+  height: 510px;
+  background: url("../img/pages/buy-page/back1.svg") 0 0/100% 100% no-repeat;
+}
+
+/* easy-buy-page */
+
+.easy-buy-page {
+  margin-top: 60px;
+}
+
+.easy-buy-page__container p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.easy-buy-page__container p:nth-child(4) {
+  margin-top: 60px;
+}
+
+.easy-buy-page__container p:nth-child(6) {
+  margin-top: 60px;
+  text-align: center;
+  width: 1150px;
+  max-width: 100%;
+}
+
+.easy-buy-page__container p:last-child {
+  margin-top: 60px;
+  font-weight: 600;
+}
+
+.easy-buy-page__reference {
+  background: #9980C8;
+  box-shadow: 0px 0px 10px #F4F6F8;
+  border-radius: 30px;
+  border: 4px solid #F4F6F8;
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 38px 40px;
+  margin-top: 60px;
+}
+
+.easy-buy-page__reference--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  margin-right: 56px;
+  position: relative;
+}
+
+.easy-buy-page__reference--left img {
+  width: 104px;
+  height: 173px;
+}
+
+.easy-buy-page__reference--left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #ffffff;
+}
+
+.easy-buy-page__reference--right {
+  flex: 0 0 819px;
+}
+
+.easy-buy-page__reference--title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.easy-buy-page__reference--text {
+  margin-top: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #F4F6F8;
+}
+
+.easy-buy-page__reference--text span:first-child {
+  color: #3BBCFF;
+}
+
+.easy-buy-page__reference--text span:last-child {
+  color: #EEB909;
+}
+
+.easy-buy-page__items {
+  margin-top: 91px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.easy-buy-page__column {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.easy-buy-page__icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9980C8;
+  box-shadow: 0px 0px 40px #9980C8;
+}
+
+.easy-buy-page__icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.easy-buy-page__text {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+/* hero-future */
+
+.hero-future {
+  margin-top: 80px;
+}
+
+.hero-future__container > p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.hero-future__body--left {
+  margin-top: 32px;
+}
+
+.hero-future__body--left h1 {
+  width: 500px;
+  display: block;
+}
+
+.hero-future__body--left h1 span {
+  display: inline-block;
+  background: linear-gradient(90deg, #EB00FF 73.6%, #00DBC8 99.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero-future__body--left p {
+  font-weight: 600;
+  width: 570px;
+  margin-top: 32px;
+}
+
+.hero-future__body--text-mobile {
+  display: none;
+}
+
+.hero-future__img {
+  margin-top: 80px;
+  margin-right: 209px;
+  position: relative;
+}
+
+.hero-future__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -85px;
+  left: -110px;
+  width: 490px;
+  height: 510px;
+  background: url("../img/pages/future/back1.svg") 0 0/100% 100% no-repeat;
+}
+
+/* whatis-future */
+
+.whatis-future {
+  margin-top: 80px;
+}
+
+.whatis-future h2 {
+  display: block;
+  text-align: center;
+}
+
+.whatis-future p {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.whatis-future__items {
+  margin-top: 78px;
+}
+
+.whatis-future__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.whatis-future__item {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 33.333%;
+}
+
+.whatis-future__column {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatis-future__icon {
+  width: 100px;
+  height: 100px;
+  background: #A8CCFC;
+  box-shadow: 0px 0px 40px #A8CCFC;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.whatis-future__subtitle {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.whatis-future__text {
+  margin-top: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #B9B9B9;
+}
+
+/* block-video */
+
+.block-video {
+  margin-top: 226px;
+}
+
+.block-video__container {
+  position: relative;
+}
+
+.block-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.block-video__player,
+.block-video__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.block-video__img {
+  filter: drop-shadow(0px 0px 49px rgba(255, 255, 255, 0.5));
+  border-radius: 22px;
+  transition: all 0.3s ease 0s;
+  pointer-events: auto;
+  cursor: pointer;
+  background: url("../img/svg/block-video/1.svg") center/cover no-repeat;
+}
+
+.block-video__img.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.block-video__pause {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+}
+
+.block-video__title {
+  transition: all 0.3s ease 0s;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.block-video__play-btn {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease 0s;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.block-video__play-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.block-video__play-btn.hide {
+  opacity: 0;
+}
+
+.future-block-video {
+  margin-top: 48px;
+}
+
+.future-block-video__wrapper {
+  margin: 0 auto;
+  width: 970px;
+}
+
+.future-block-video__img {
+  filter: drop-shadow(0px 0px 10px #FFFFFF);
+}
+
+.future-block-video p {
+  margin: 0 auto;
+  margin-top: 48px;
+  text-align: center;
+  width: 1150px;
+  max-width: 100%;
+}
+
+/* earn-future */
+
+.earn-future {
+  margin-top: 69px;
+}
+
+.earn-future__container > p {
+  margin: 0 auto;
+  width: 1150px;
+  max-width: 100%;
+  text-align: left;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.earn-future__body--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.earn-future__body--left h2 {
+  width: 570px;
+  max-width: 100%;
+  margin-top: 11px;
+  text-align: right;
+}
+
+.earn-future__body--left p {
+  width: 570px;
+  margin-top: 48px;
+  width: 600px;
+  text-align: right;
+}
+
+.earn-future__body--text-mobile {
+  display: none;
+}
+
+.earn-future__img {
+  margin-top: 32px;
+  margin-left: 179px;
+  position: relative;
+}
+
+.earn-future__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -122px;
+  left: -81px;
+  width: 390px;
+  height: 510px;
+  background: url("../img/pages/future/back2.svg") 0 0/100% 100% no-repeat;
+}
+
+.earn-future__items {
+  margin-top: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.earn-future__item {
+  width: 370px;
+  display: flex;
+  justify-content: center;
+}
+
+.earn-future__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+}
+
+.earn-future__icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #89E6D2;
+  box-shadow: 0px 0px 40px #89E6D2;
+}
+
+.earn-future__icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.earn-future__text {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+/* scale-future */
+
+.scale-future {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.scale-future__container > p {
+  width: 1150px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scale-future__container > p:last-child {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.scale-future__body {
+  margin-bottom: 55px;
+}
+
+.scale-future__body--left {
+  margin-top: 32px;
+}
+
+.scale-future__body--left h1 {
+  width: 500px;
+  display: block;
+}
+
+.scale-future__body--left h1 span {
+  display: inline-block;
+  background: linear-gradient(90deg, #EB00FF 73.6%, #00DBC8 99.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.scale-future__body--left p {
+  font-weight: 600;
+  width: 570px;
+  margin-top: 32px;
+}
+
+.scale-future__body--text-mobile {
+  display: none;
+}
+
+.scale-future__img {
+  margin-top: 43px;
+  margin-right: 216px;
+  position: relative;
+}
+
+.scale-future__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -122px;
+  left: -105px;
+  width: 541px;
+  height: 510px;
+  background: url("../img/pages/future/back3.svg") 0 0/100% 100% no-repeat;
+}
+
+.scale-future__items {
+  margin-top: 78px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scale-future__item {
+  width: 270px;
+  display: flex;
+  justify-content: center;
+}
+
+.scale-future__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+}
+
+.scale-future__icon {
+  width: 100px;
+  height: 100px;
+  background: #FDCFB7;
+  box-shadow: 0px 0px 40px #FDCFB7;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.scale-future__text {
+  margin-top: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  margin-bottom: 116px;
+}
+
+.error__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 300px;
+  line-height: 363px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.error__text {
+  margin-top: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.error__btn {
+  width: 460px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 28px;
+  background: #05C8DE;
+  border-radius: 25px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* login */
+
+.login__right--btn {
+  margin-top: 32px;
+}
+
+.login .form__pasword {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login .form__pasword--fogot {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #84FAB0;
+}
+
+.login .form__pasword label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login .form__pasword .form__input-email {
+  flex: 1 1 100%;
+}
+
+/* singin */
+
+.singin__right {
+  padding-top: 77px;
+}
+
+.singin__right::before {
+  border-radius: 30px 0 0 30px !important;
+}
+
+.singin__right .form-side--btn {
+  margin-top: 32px;
+}
+
+.singin__form {
+  border-radius: 0 30px 30px 0 !important;
+}
+
+.singin .form__tel--text {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #F4F6F8;
+}
+
+.singin .form__captcha {
+  margin-top: 10px;
+}
+
+/* popap */
+
+.general-popap-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.general-popap {
+  width: 751px;
+  max-width: 100%;
+  background: #897DF6;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  position: relative;
+}
+
+.general-popap__container {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.general-popap__close {
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 25px;
+  height: 25px;
+}
+
+.general-popap__close::before,
+.general-popap__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.general-popap__close::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.general-popap__close::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.general-popap__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.general-popap__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B9B9B9;
+}
+
+.general-popap__btn {
+  width: 143px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F4F6F8;
+  background: #08A652;
+  border-radius: 24px;
+}
+
+.singin__popap {
+  height: 505px;
+}
+
+.singin__popap--container {
+  width: 520px;
+}
+
+.singin__popap--title {
+  margin-top: 64px;
+  width: 520px;
+}
+
+.singin__popap--icon {
+  margin-top: 56px;
+}
+
+.singin__popap--text {
+  margin-top: 75px;
+}
+
+.success-change__popap {
+  height: 488px;
+}
+
+.success-change__popap--container {
+  width: 520px;
+}
+
+.success-change__popap--icon {
+  margin-top: 33px;
+}
+
+.success-change__popap--title {
+  width: 492px;
+  margin-top: 15px;
+}
+
+.success-change__popap--text {
+  width: 309px;
+  margin-top: 15px;
+}
+
+.success-change__popap--btn {
+  margin-top: 41px;
+}
+
+.success-recovery__popap {
+  height: 488px;
+}
+
+.success-recovery__popap--container {
+  width: 401px;
+}
+
+.success-recovery__popap--icon {
+  margin-top: 33px;
+}
+
+.success-recovery__popap--title {
+  width: 492px;
+  margin-top: 15px;
+}
+
+.success-recovery__popap--text {
+  width: 309px;
+  margin-top: 15px;
+}
+
+.success-recovery__popap--btn {
+  margin-top: 41px;
+}
+
+.form-side a {
+  transition: all 0.3s ease 0s;
+}
+
+.form-side a:hover {
+  opacity: 0.7;
+}
+
+.form {
+  width: 483px;
+  background: #897DF7;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  padding: 32px 0;
+}
+
+.form button {
+  transition: all 0.8s ease 0s;
+}
+
+.form button:hover {
+  opacity: 0.7;
+}
+
+.form label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #F4F6F8;
+}
+
+.form__container {
+  width: 363px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form__container .form__subtitle {
+  margin: 0 -30px;
+  margin-bottom: 19px;
+}
+
+.form__container .form__subtitle br {
+  display: block;
+}
+
+.form__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.form__subtitle {
+  margin-top: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.form__subtitle-tel {
+  margin: 24px -10px 16px;
+}
+
+.form__name {
+  margin-top: 32px;
+}
+
+.form__btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.form__btn {
+  cursor: pointer;
+  white-space: nowrap;
+  height: 48px;
+  border: 2px solid #5B4ECB;
+  border-radius: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5B4ECB;
+  transition: all 0.3s ease 0s;
+  padding: 0 24px;
+}
+
+.form__btn:hover {
+  opacity: 0.7;
+}
+
+.form__btn.active {
+  background: #5B4ECB;
+  border-radius: 24px;
+  color: #F4F6F8;
+}
+
+.form__input .input {
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 4px 5px #B5A2E2;
+  border-radius: 30px;
+  padding-left: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #121D33;
+}
+
+.form__input .input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCB9;
+}
+
+.form__input-name {
+  margin-top: 10px;
+}
+
+.form__input-email {
+  margin-top: 10px;
+}
+
+.form__input-tel {
+  position: relative;
+}
+
+.form__input-tel::before {
+  content: "+7";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #274360;
+}
+
+.form__input-tel img {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  transform: translate(0, -50%);
+}
+
+.form__input-tel .input {
+  padding-left: 35px;
+}
+
+.form__input-tel--text {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #F4F6F8;
+}
+
+.form__input-question {
+  height: 98px;
+  margin-top: 10px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 4px 5px #B5A2E2;
+  border-radius: 20px;
+  padding: 12px 24px;
+}
+
+.form__input-question-text {
+  background-color: transparent;
+}
+
+.form__input-question-text input {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #121D33;
+}
+
+.form__input-question-text input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCB9;
+}
+
+.form__input-question-file {
+  margin-top: 30px;
+  position: relative;
+  background-color: transparent;
+}
+
+.form__input-question-file input[type=file] {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form__input-question-file .question-file {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.form__input-question-file .question-file span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCB9;
+}
+
+.form__email {
+  margin-top: 32px;
+}
+
+.form__tel {
+  margin-top: 32px;
+}
+
+.form__body-tel {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.form__select-country-tel {
+  cursor: pointer;
+  width: 64px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 4px 5px #B5A2E2;
+  border-radius: 30px;
+}
+
+.form__question {
+  margin-top: 40px;
+}
+
+.form__captcha {
+  margin-top: 40px;
+  padding-right: 11px;
+  width: 100%;
+  height: 115px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form__captcha-bottom {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: #062240;
+}
+
+.form__confirm-sms--title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 24px;
+  text-align: center;
+  color: #F4F6F8;
+}
+
+.form__confirm-sms--text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #B9B9B9;
+}
+
+.form__confirm-sms--valid {
+  margin-top: 16px;
+}
+
+.form__button {
+  width: 100%;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #08A652;
+  border-radius: 24px;
+  margin-top: 32px;
+}
+
+.checkbox {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translate(0, -50%);
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+}
+
+.checkbox__label {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__label span {
+  color: #274360;
+  font-weight: 400;
+}
+
+.checkbox__label::before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background: #897DF6;
+  box-shadow: inset 0px 2px 5px #3A309A;
+  border-radius: 4px;
+  margin: 0px 10px 0px 0px;
+}
+
+.checkbox__label::after {
+  transition: all 0.3s ease 0s;
+  content: "";
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/pages/contacts/arrow-green.svg") 0 0/100% 100% no-repeat;
+  border-radius: 4px;
+}
+
+.red-star {
+  color: red;
+}
+
+.form-relative {
+  position: relative;
+  transition: all 0.8s ease 0s;
+  transform-style: preserve-3d;
+  width: 946px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.general-form-container {
+  display: flex;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.general-form-container .form {
+  padding-top: 90px;
+  padding-bottom: 92px;
+  flex: 0 1 50%;
+  border-radius: 30px 0 0 30px;
+}
+
+.general-form-container .form .checkbox-remember {
+  margin-top: 24px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.general-form-container .form .checkbox__label::before {
+  background: #F5F1FF;
+  box-shadow: inset 0px 2px 5px #B5A2E2;
+}
+
+.general-form-container .form .checkbox-remember__label span {
+  white-space: nowrap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F4F6F8;
+}
+
+.general-form-container .form-side {
+  flex: 0 1 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-form-container .form-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 48, 91, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 0 30px 30px 0;
+}
+
+.general-form-container .form-side--title {
+  width: 343px;
+  position: relative;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.general-form-container .form-side--btn {
+  width: 291px;
+  height: 48px;
+  position: relative;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 24px;
+}
+
+.general-form-container .form-side--btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(90px);
+  border-radius: 24px;
+}
+
+.general-form-container .form-side--btn span {
+  position: relative;
+}
+
+.general-form-container .form-side__btns-submit-code {
+  display: flex;
+}
+
+.general-form-container .form-side__btns-submit-code .form-side__button-send-again {
+  margin-top: 33px;
+  width: 214px;
+  height: 48px;
+  color: #5B4ECB;
+  border: 2px solid #5B4ECB;
+  background-color: transparent;
+}
+
+.general-form-container .form-side__btns-submit-code .form-side__button-send {
+  margin-top: 33px;
+  width: 135px;
+  height: 47px;
+  margin-left: 37px;
+}
+
+.form-back-side .form-side::before {
+  border-radius: 30px 0 0 30px;
+}
+
+.form-back-side .form {
+  border-radius: 0 30px 30px 0;
+}
+
+.checkbox-radio {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #F4F6F8;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: block;
+  margin-top: 38px;
+  padding-left: 36px;
+}
+
+.checkbox-radio a {
+  color: #F9CE35;
+}
+
+.checkbox-radio.active:before {
+  background-color: #08A652;
+}
+
+.checkbox-radio.active:after {
+  background-color: #08A652;
+  left: 16px;
+}
+
+.checkbox-radio:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 16px;
+  background: #D9CEF2;
+  box-shadow: inset 0px 2px 2px #B5A2E2;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+}
+
+.checkbox-radio:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
+}
+
+.checkbox-radio input {
+  display: none;
+}
+
+.pincode input[type=number]::-webkit-outer-spin-button,
+.pincode input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.pincode {
+  width: 172px;
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pincode .input-number {
+  width: 28px;
+  height: 36px;
+  background: #F5F1FF;
+  box-shadow: inset 0px 2px 5px #B5A2E2;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #274360;
+  padding-left: 8px;
+}
+
+.pincode input[type=number]:focus {
+  box-shadow: inset 0px 2px 5px #08A652;
 }
 
 @media (max-width: 4799px) {
@@ -4312,6 +6391,12 @@ p {
     margin-top: 50px;
   }
 
+  .hero-bridges-page__img::before {
+    width: 500px;
+    height: 300px;
+    left: -120px;
+  }
+
   .hero-bridges-page__img {
     margin-top: 44px;
   }
@@ -4327,6 +6412,12 @@ p {
 
   .whatis-bridges-page__text-img1 p {
     margin-right: -22px;
+  }
+
+  .whatis-bridges-page__img1::before {
+    width: 380px;
+    height: 270px;
+    left: -120px;
   }
 
   .whatis-bridges-page__img1 {
@@ -4346,6 +6437,13 @@ p {
     row-gap: 30px;
   }
 
+  .whatis-bridges-page__img2::before {
+    width: 500px;
+    height: 390px;
+    top: -57px;
+    left: -136px;
+  }
+
   .whatis-bridges-page__img2 {
     margin-right: 45px;
   }
@@ -4356,6 +6454,13 @@ p {
 
   .cards-bridges-page__column {
     width: 370px;
+  }
+
+  .type-bridges-page__img::before {
+    width: 426px;
+    height: 427px;
+    top: -70px;
+    left: -94px;
   }
 
   .type-bridges-page__img {
@@ -4370,6 +6475,13 @@ p {
 
   .type-bridges-page__item {
     flex: 0 1 370px;
+  }
+
+  .work-bridges-page__img::before {
+    width: 389px;
+    height: 357px;
+    top: -76px;
+    left: -88px;
   }
 
   .work-bridges-page__img {
@@ -4398,6 +6510,13 @@ p {
     width: 550px;
   }
 
+  .hero-wallet__img::before {
+    width: 349px;
+    height: 390px;
+    top: -82px;
+    left: -63px;
+  }
+
   .hero-wallet__img {
     margin-right: 15px;
   }
@@ -4408,6 +6527,13 @@ p {
 
   .wallet-whatis__body p {
     margin-top: 94px;
+  }
+
+  .wallet-whatis__img::before {
+    width: 349px;
+    height: 390px;
+    top: -82px;
+    left: -63px;
   }
 
   .wallet-whatis__img {
@@ -4430,6 +6556,13 @@ p {
 
   .wallet-function {
     margin-top: 35px;
+  }
+
+  .wallet-function__img::before {
+    width: 356px;
+    height: 390px;
+    top: -63px;
+    left: -61px;
   }
 
   .wallet-function__img {
@@ -4455,6 +6588,13 @@ p {
 
   .wallet-work__body--left h2 {
     margin-top: 65px;
+  }
+
+  .wallet-work__img::before {
+    width: 356px;
+    height: 390px;
+    top: -63px;
+    left: -90px;
   }
 
   .wallet-work__img {
@@ -4485,6 +6625,13 @@ p {
     margin-top: 95px;
   }
 
+  .hero-crowdfunding-page__img::before {
+    width: 388px;
+    height: 390px;
+    top: -50px;
+    left: -45px;
+  }
+
   .hero-crowdfunding-page__img {
     width: 315px;
     height: 232px;
@@ -4494,6 +6641,425 @@ p {
   .hero-crowdfunding-page__img img {
     width: 100%;
     height: 100%;
+  }
+
+  .model-crowdfunding-page__row-top {
+    margin: 0 -11.5px;
+  }
+
+  .model-crowdfunding-page__item-top {
+    padding: 0 11.5px;
+  }
+
+  .model-crowdfunding-page__item-top:not(:last-child) .model-crowdfunding-page__title-top::after {
+    width: 23px;
+    height: 31px;
+  }
+
+  .model-crowdfunding-page__item-top:last-child::after {
+    bottom: -32px;
+    height: 32px;
+  }
+
+  .model-crowdfunding-page__column-top {
+    width: 291px;
+  }
+
+  .model-crowdfunding-page__title-top {
+    height: 118px;
+    font-size: 25.2287px;
+    line-height: 31px;
+  }
+
+  .model-crowdfunding-page__text-top {
+    height: 220px;
+    font-size: 18.9215px;
+    line-height: 23px;
+    padding: 0 7.5px;
+  }
+
+  .model-crowdfunding-page__items-bottom {
+    margin-top: 63px;
+  }
+
+  .model-crowdfunding-page__items-bottom::before {
+    top: -37.5px;
+    left: 78.5px;
+    width: calc(100% - 154px);
+  }
+
+  .model-crowdfunding-page__item-bottom {
+    width: 157px;
+    height: 157px;
+  }
+
+  .model-crowdfunding-page__text-bottom {
+    font-size: 14.1911px;
+    line-height: 17px;
+  }
+
+  .work-crowdfunding-page__img::before {
+    width: 388px;
+    height: 305px;
+    top: -47px;
+    left: -58px;
+  }
+
+  .work-crowdfunding-page__img {
+    margin-right: 159px;
+  }
+
+  .work-crowdfunding-page__items {
+    margin-top: 43px;
+  }
+
+  .scoring-crowdfunding-page {
+    margin-top: 60px;
+  }
+
+  .scoring-crowdfunding-page__body--right h2 {
+    width: 346px;
+    margin-top: 60px;
+  }
+
+  .scoring-crowdfunding-page__body--right p {
+    width: 465px;
+  }
+
+  .scoring-crowdfunding-page__img::before {
+    width: 423px;
+    height: 366px;
+    top: -47px;
+    left: -58px;
+  }
+
+  .scoring-crowdfunding-page__img {
+    margin-top: 151px;
+    margin-left: 53px;
+  }
+
+  .diagram-crowdfunding-page__item {
+    width: 160px;
+    height: 52px;
+    border: 4.3218px solid #FFFFFF;
+    border-radius: 8.64359px;
+  }
+
+  .diagram-crowdfunding-page__item span:first-child {
+    font-size: 17.2872px;
+    line-height: 21px;
+  }
+
+  .diagram-crowdfunding-page__item span:last-child {
+    font-size: 13.8297px;
+    line-height: 17px;
+  }
+
+  .diagram-crowdfunding-page__body {
+    margin-top: 60px;
+  }
+
+  .diagram-crowdfunding-page__circle {
+    width: 604px;
+    height: 519px;
+  }
+
+  .risk-crowdfunding-page {
+    margin-top: 60px;
+  }
+
+  .risk-crowdfunding-page__body--left h2 {
+    margin-top: 94px;
+  }
+
+  .risk-crowdfunding-page__img::before {
+    width: 423px;
+    height: 366px;
+    top: -47px;
+    left: -58px;
+  }
+
+  .risk-crowdfunding-page__img {
+    margin-right: 79px;
+  }
+
+  .hero-staking__body--left p {
+    width: 500px;
+  }
+
+  .hero-staking__img::before {
+    width: 423px;
+    height: 366px;
+    top: -47px;
+    left: -58px;
+  }
+
+  .hero-staking__img {
+    width: 320px;
+    height: 178px;
+    margin-right: 15px;
+  }
+
+  .hero-staking__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-staking__body-second--img::before {
+    width: 401px;
+    height: 366px;
+    top: -95px;
+    left: -24px;
+  }
+
+  .hero-staking__body-second--img {
+    margin-left: 26px;
+  }
+
+  .hero-staking__body-second p {
+    width: 500px;
+  }
+
+  .fix-staking {
+    margin-top: 71px;
+  }
+
+  .fix-staking__body--left h2 {
+    margin-top: 0;
+  }
+
+  .fix-staking__body--left p {
+    width: 490px;
+  }
+
+  .fix-staking__img::before {
+    width: 401px;
+    height: 366px;
+    top: -95px;
+    left: -24px;
+  }
+
+  .fix-staking__img {
+    margin-right: 89px;
+  }
+
+  .fix-staking__img {
+    margin-top: 96px;
+  }
+
+  .risk-staking {
+    margin-top: 37px;
+  }
+
+  .risk-staking__body--left h2 {
+    margin-top: 48px;
+  }
+
+  .risk-staking__body--left p {
+    width: 490px;
+  }
+
+  .risk-staking__img::before {
+    width: 401px;
+    height: 366px;
+    top: -95px;
+    left: -24px;
+  }
+
+  .risk-staking__img {
+    margin-left: 74px;
+  }
+
+  .risk-staking__img {
+    margin-top: 96px;
+  }
+
+  .hero-buy-page__body--left {
+    margin-top: 0;
+  }
+
+  .hero-buy-page__body--left h1 {
+    width: 486px;
+  }
+
+  .hero-buy-page__body--left p {
+    width: 513px;
+  }
+
+  .hero-buy-page__img::before {
+    width: 401px;
+    height: 366px;
+    top: -95px;
+    left: -24px;
+  }
+
+  .hero-buy-page__img {
+    width: 233px;
+    height: 281px;
+    margin-top: 102px;
+    margin-right: 89px;
+  }
+
+  .hero-buy-page__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .easy-buy-page__container h2 {
+    text-align: center;
+  }
+
+  .easy-buy-page__reference--right {
+    flex: 0 0 586px;
+  }
+
+  .easy-buy-page__items {
+    flex-wrap: wrap;
+    width: 687px;
+    margin: 91px auto 0;
+    row-gap: 30px;
+  }
+
+  .hero-future {
+    margin-top: 0;
+  }
+
+  .hero-future__body--left p {
+    width: 500px;
+  }
+
+  .hero-future__img::before {
+    width: 476px;
+    height: 390px;
+    top: -28px;
+    left: -123px;
+  }
+
+  .hero-future__img {
+    width: 235px;
+    height: 300px;
+    margin-top: 45px;
+    margin-right: 80px;
+  }
+
+  .hero-future__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .block-video {
+    margin-top: 222px;
+  }
+
+  .block-video__container {
+    padding: 0 !important;
+  }
+
+  .block-video-wrapper {
+    height: 525px;
+  }
+
+  .block-video__img {
+    background: url("../img/svg/block-video/11.svg") center/100% 100% no-repeat;
+  }
+
+  .future-block-video {
+    margin-top: 48px;
+  }
+
+  .future-block-video__wrapper {
+    width: 924px;
+    max-width: 100%;
+  }
+
+  .future-block-video__img {
+    background: url("../img/svg/block-video/1.svg") center/100% 100% no-repeat;
+  }
+
+  .future-block-video p {
+    width: 924px;
+  }
+
+  .earn-future {
+    margin-top: 60px;
+  }
+
+  .earn-future__body--left h2 {
+    margin-top: 0;
+  }
+
+  .earn-future__body--left p {
+    width: 490px;
+  }
+
+  .earn-future__img::before {
+    width: 476px;
+    height: 390px;
+    top: -28px;
+    left: -123px;
+  }
+
+  .earn-future__img {
+    margin-left: 57px;
+  }
+
+  .earn-future__img {
+    margin-top: 96px;
+  }
+
+  .earn-future__items {
+    flex-wrap: wrap;
+    margin: 78px auto 0;
+  }
+
+  .earn-future__item {
+    width: 270px;
+  }
+
+  .earn-future__column {
+    width: 370px;
+  }
+
+  .scale-future {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .scale-future__body--left p {
+    width: 500px;
+  }
+
+  .scale-future__img::before {
+    width: 513px;
+    height: 415px;
+    top: -107px;
+    left: -123px;
+  }
+
+  .scale-future__img {
+    width: 216px;
+    height: 252px;
+    margin-top: 45px;
+    margin-right: 127px;
+  }
+
+  .scale-future__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .scale-future__items {
+    flex-wrap: wrap;
+    margin: 78px auto 48px;
+    row-gap: 43px;
+  }
+
+  .scale-future__item {
+    width: 370px;
+  }
+
+  .scale-future__column {
+    width: 370px;
   }
 }
 
@@ -4954,6 +7520,10 @@ p {
     text-align: center;
   }
 
+  .hero-wallet__img::before {
+    top: -92px;
+  }
+
   .hero-wallet__img {
     margin-right: 0;
   }
@@ -4969,6 +7539,10 @@ p {
   .wallet-whatis__body p {
     margin-top: 97px;
     width: 100%;
+  }
+
+  .wallet-whatis__img::before {
+    top: -92px;
   }
 
   .wallet-whatis__img {
@@ -5034,6 +7608,10 @@ p {
     margin-top: 92px;
   }
 
+  .wallet-function__img::before {
+    top: -60px;
+  }
+
   .wallet-function__img {
     margin-right: 0;
   }
@@ -5069,6 +7647,10 @@ p {
     order: 1;
   }
 
+  .wallet-work__img::before {
+    top: -64px;
+  }
+
   .wallet-work__img {
     margin-top: 80px;
     margin-left: 0;
@@ -5093,9 +7675,667 @@ p {
     margin-top: 117px;
   }
 
+  .hero-crowdfunding-page__img::before {
+    width: 407px;
+    height: 386px;
+    top: -50px;
+    left: -45px;
+  }
+
   .hero-crowdfunding-page__img {
     margin-top: 50px;
     margin-right: 0;
+  }
+
+  .model-crowdfunding-page__row-top {
+    margin: 0 -9px;
+  }
+
+  .model-crowdfunding-page__item-top {
+    padding: 0 9px;
+  }
+
+  .model-crowdfunding-page__item-top:not(:last-child) .model-crowdfunding-page__title-top::after {
+    width: 18px;
+    height: 24px;
+  }
+
+  .model-crowdfunding-page__item-top:last-child::after {
+    bottom: -30px;
+    height: 30px;
+  }
+
+  .model-crowdfunding-page__column-top {
+    width: 223px;
+  }
+
+  .model-crowdfunding-page__title-top {
+    height: 90px;
+    font-size: 19.3311px;
+    line-height: 23px;
+  }
+
+  .model-crowdfunding-page__text-top {
+    height: 169px;
+    font-size: 14.4983px;
+    line-height: 18px;
+    padding: 0 5px;
+  }
+
+  .model-crowdfunding-page__items-bottom {
+    margin-top: 48px;
+  }
+
+  .model-crowdfunding-page__items-bottom::before {
+    height: 5px;
+    top: -24px;
+    left: 58.5px;
+    width: calc(100% - 116.5px);
+  }
+
+  .model-crowdfunding-page__item-bottom {
+    width: 120px;
+    height: 120px;
+  }
+
+  .model-crowdfunding-page__item-bottom::before {
+    top: -25.8px;
+    height: 26px;
+  }
+
+  .model-crowdfunding-page__text-bottom {
+    font-size: 10.8737px;
+    line-height: 13px;
+  }
+
+  .work-crowdfunding-page__body--left h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .work-crowdfunding-page__body--text-desktop {
+    display: none;
+  }
+
+  .work-crowdfunding-page__body--text-mobile {
+    display: block;
+    margin-top: 63px;
+    align-self: flex-start;
+  }
+
+  .work-crowdfunding-page__img::before {
+    width: 407px;
+    height: 337px;
+    top: -78px;
+    left: -70px;
+  }
+
+  .work-crowdfunding-page__img {
+    margin-top: 88px;
+    margin-right: 0;
+  }
+
+  .work-crowdfunding-page__items {
+    width: 597px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    row-gap: 31px;
+  }
+
+  .work-crowdfunding-page__item {
+    flex: 0 1 50%;
+  }
+
+  .work-crowdfunding-page p {
+    margin-top: 36px;
+  }
+
+  .scoring-crowdfunding-page {
+    margin-top: 0;
+  }
+
+  .scoring-crowdfunding-page__container > p {
+    margin-top: 36px;
+  }
+
+  .scoring-crowdfunding-page__body--right {
+    order: 1;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: center;
+  }
+
+  .scoring-crowdfunding-page__body--right h2 {
+    width: 708px;
+  }
+
+  .scoring-crowdfunding-page__body--text-desktop {
+    display: none;
+  }
+
+  .scoring-crowdfunding-page__body--text-mobile {
+    display: block;
+    margin-top: 66px;
+    order: 3;
+    text-align: left;
+  }
+
+  .scoring-crowdfunding-page__img::before {
+    width: 393px;
+    height: 428px;
+    top: -78px;
+    left: -36px;
+  }
+
+  .scoring-crowdfunding-page__img {
+    order: 2;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  .diagram-crowdfunding-page__item {
+    width: 122px;
+    height: 40px;
+    border: 3.31151px solid #FFFFFF;
+    border-radius: 6.62301px;
+  }
+
+  .diagram-crowdfunding-page__item span:first-child {
+    font-size: 13.246px;
+    line-height: 16px;
+  }
+
+  .diagram-crowdfunding-page__item span:last-child {
+    font-size: 10.5968px;
+    line-height: 13px;
+  }
+
+  .diagram-crowdfunding-page__body {
+    margin-top: 37px;
+  }
+
+  .diagram-crowdfunding-page__circle {
+    width: 464px;
+    height: 397px;
+  }
+
+  .risk-crowdfunding-page__container > p {
+    margin-top: 36px;
+  }
+
+  .risk-crowdfunding-page__body {
+    margin-bottom: 0;
+  }
+
+  .risk-crowdfunding-page__body--left {
+    order: 1;
+  }
+
+  .risk-crowdfunding-page__body--left h2 {
+    margin-top: 0;
+  }
+
+  .risk-crowdfunding-page__body--text-desktop {
+    display: none;
+  }
+
+  .risk-crowdfunding-page__body--text-mobile {
+    display: block;
+    order: 3;
+    margin-top: 79px;
+    text-align: left;
+  }
+
+  .risk-crowdfunding-page__img::before {
+    width: 393px;
+    height: 428px;
+    top: -78px;
+    left: -36px;
+  }
+
+  .risk-crowdfunding-page__img {
+    order: 2;
+    margin-top: 96px;
+    margin-right: 0;
+  }
+
+  .hero-staking__body--text-desktop {
+    display: none;
+  }
+
+  .hero-staking__body--text-mobile {
+    display: block;
+    margin-top: 93px;
+    text-align: left;
+  }
+
+  .hero-staking__img::before {
+    width: 454px;
+    height: 380px;
+    top: -111px;
+    left: -73px;
+  }
+
+  .hero-staking__img {
+    margin-top: 104px;
+    margin-right: 0;
+  }
+
+  .hero-staking__items {
+    margin-top: 48px;
+  }
+
+  .hero-staking__row {
+    flex-direction: column;
+  }
+
+  .hero-staking__item {
+    flex: 1 1 auto;
+  }
+
+  .hero-staking__item:not(:first-child) {
+    margin: 41px 0px 0px 0px;
+  }
+
+  .hero-staking__item:not(:first-child) {
+    margin: 105px 0px 0px 0px;
+  }
+
+  .hero-staking__item:not(:first-child) {
+    margin: 26px 0px 0px 0px;
+  }
+
+  .hero-staking__body-second--img::before {
+    width: 393px;
+    height: 428px;
+    top: -120px;
+    left: -24px;
+  }
+
+  .hero-staking__body-second--img {
+    margin-top: 90px;
+    margin-left: 0;
+  }
+
+  .hero-staking__body-second p {
+    text-align: left;
+    width: 100%;
+    margin-top: 90px;
+    align-self: flex-start;
+  }
+
+  .fix-staking {
+    margin-top: 60px;
+  }
+
+  .fix-staking__container > p {
+    margin-top: 36px;
+  }
+
+  .fix-staking__body--text-desktop {
+    display: none;
+  }
+
+  .fix-staking__body--text-mobile {
+    display: block;
+    margin-top: 55px;
+    text-align: left;
+  }
+
+  .fix-staking__img::before {
+    width: 393px;
+    height: 428px;
+    top: -120px;
+    left: -24px;
+  }
+
+  .fix-staking__img {
+    margin-top: 85px;
+    margin-right: 0;
+  }
+
+  .risk-staking {
+    margin-top: 60px;
+  }
+
+  .risk-staking__container > p {
+    margin-top: 36px;
+  }
+
+  .risk-staking__body--left {
+    order: 1;
+  }
+
+  .risk-staking__body--left h2 {
+    margin-top: 0;
+  }
+
+  .risk-staking__body--text-desktop {
+    display: none;
+  }
+
+  .risk-staking__body--text-mobile {
+    display: block;
+    margin-top: 55px;
+    text-align: left;
+    order: 3;
+  }
+
+  .risk-staking__img::before {
+    width: 393px;
+    height: 428px;
+    top: -120px;
+    left: -24px;
+  }
+
+  .risk-staking__img {
+    margin-top: 49px;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .hero-buy-page__body--left h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buy-page__body--text-desktop {
+    display: none;
+  }
+
+  .hero-buy-page__body--text-mobile {
+    display: block;
+    margin-top: 102px;
+    text-align: left;
+  }
+
+  .hero-buy-page__img::before {
+    width: 393px;
+    height: 428px;
+    top: -120px;
+    left: -24px;
+  }
+
+  .hero-buy-page__img {
+    margin-top: 65px;
+    margin-right: 0;
+  }
+
+  .easy-buy-page__container p {
+    margin-top: 36px;
+  }
+
+  .easy-buy-page__container p:nth-child(4) {
+    margin-top: 48px;
+  }
+
+  .easy-buy-page__container p:nth-child(6) {
+    margin-top: 48px;
+  }
+
+  .easy-buy-page__container p:last-child {
+    margin-top: 48px;
+  }
+
+  .easy-buy-page__reference {
+    margin-top: 48px;
+  }
+
+  .easy-buy-page__reference--right {
+    flex: 0 0 390px;
+  }
+
+  .easy-buy-page__items {
+    width: 626px;
+    margin-top: 79px;
+  }
+
+  .hero-future__body--left {
+    margin-top: 0;
+    order: 1;
+  }
+
+  .hero-future__body--left h1 {
+    text-align: center;
+    width: 708px;
+    max-width: 100%;
+  }
+
+  .hero-future__body--left h1 br {
+    display: none;
+  }
+
+  .hero-future__body--text-desktop {
+    display: none;
+  }
+
+  .hero-future__body--text-mobile {
+    display: block;
+    margin-top: 69px;
+    text-align: center;
+    order: 3;
+  }
+
+  .hero-future__img::before {
+    width: 453px;
+    height: 488px;
+    top: -74px;
+    left: -97px;
+  }
+
+  .hero-future__img {
+    margin-top: 69px;
+    margin-right: 0;
+    order: 2;
+  }
+
+  .whatis-future__items {
+    margin-top: 48px;
+  }
+
+  .whatis-future__row {
+    flex-wrap: wrap;
+  }
+
+  .whatis-future__item {
+    flex: 0 1 auto;
+  }
+
+  .whatis-future__item:last-child {
+    margin-top: 54px;
+    flex: 1 1 100%;
+  }
+
+  .whatis-future__subtitle {
+    margin-top: 25px;
+  }
+
+  .future-block-video {
+    margin-top: 48px;
+  }
+
+  .future-block-video__wrapper {
+    width: 708px;
+  }
+
+  .future-block-video p {
+    width: 708px;
+  }
+
+  .earn-future {
+    margin-top: 60px;
+  }
+
+  .earn-future__container > p {
+    margin-top: 36px;
+  }
+
+  .earn-future__container > p {
+    margin-top: 111px;
+  }
+
+  .earn-future__container > p:nth-child(2) {
+    display: none;
+  }
+
+  .earn-future__body--left {
+    order: 1;
+  }
+
+  .earn-future__body--left h2 {
+    text-align: center;
+  }
+
+  .earn-future__body--text-desktop {
+    display: none;
+  }
+
+  .earn-future__body--text-mobile {
+    display: block;
+    margin-top: 55px;
+    text-align: left;
+    order: 3;
+    text-align: center;
+  }
+
+  .earn-future__img::before {
+    width: 409px;
+    height: 488px;
+    top: -112px;
+    left: -79px;
+  }
+
+  .earn-future__img {
+    margin-top: 85px;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .earn-future__items {
+    width: 626px;
+    margin-top: 79px;
+  }
+
+  .earn-future__item {
+    width: 270px;
+  }
+
+  .earn-future__item:last-child {
+    width: 100%;
+    margin-top: 54px;
+  }
+
+  .earn-future__column {
+    width: 270px;
+  }
+
+  .scale-future__body {
+    margin-bottom: 47px;
+  }
+
+  .scale-future__body--left {
+    margin-top: 0;
+    order: 1;
+  }
+
+  .scale-future__body--left h1 {
+    text-align: center;
+    width: 708px;
+    max-width: 100%;
+  }
+
+  .scale-future__body--left h1 br {
+    display: none;
+  }
+
+  .scale-future__body--text-desktop {
+    display: none;
+  }
+
+  .scale-future__body--text-mobile {
+    display: block;
+    margin-top: 47px;
+    text-align: center;
+    order: 3;
+  }
+
+  .scale-future__img::before {
+    width: 520px;
+    height: 529px;
+    top: -162px;
+    left: -130px;
+  }
+
+  .scale-future__img {
+    margin-top: 69px;
+    margin-right: 0;
+    order: 2;
+  }
+
+  .scale-future__items {
+    margin-top: 79px;
+    margin-bottom: 0;
+    row-gap: 54px;
+  }
+
+  .scale-future__item {
+    width: 330px;
+  }
+
+  .scale-future__column {
+    width: 330px;
+  }
+
+  .error {
+    padding-top: 220px;
+  }
+
+  .error__title {
+    font-size: 200px;
+    line-height: 242px;
+  }
+
+  .error__text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .error__btn {
+    width: 448px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .singin__form {
+    border-radius: 30px !important;
+  }
+
+  .form__container .form__subtitle {
+    margin: 0 -20px 19px;
+  }
+
+  .form__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .form-relative {
+    width: 483px;
+  }
+
+  .general-form-container {
+    padding: 0 !important;
+  }
+
+  .general-form-container .form {
+    border-radius: 30px;
+    min-width: 100%;
+  }
+
+  .general-form-container .form-side {
+    display: none;
   }
 }
 
@@ -5558,6 +8798,10 @@ p {
     margin-top: 20px;
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .block-video-wrapper {
+    height: 394px;
   }
 }
 
@@ -6143,12 +9387,12 @@ p {
     display: block;
   }
 
-  .form {
-    width: 420px;
-  }
-
   .hero-bridges-page__row h1 {
     width: 450px;
+  }
+
+  .hero-bridges-page__img::before {
+    width: 480px;
   }
 
   .hero-bridges-page__img {
@@ -6159,6 +9403,11 @@ p {
     margin-top: 61px;
   }
 
+  .whatis-bridges-page__img1::before {
+    width: 250px;
+    left: -60px;
+  }
+
   .whatis-bridges-page__text {
     font-size: 14px;
     line-height: 17px;
@@ -6166,6 +9415,13 @@ p {
 
   .whatis-bridges-page__text-img2 {
     margin-bottom: 24px;
+  }
+
+  .whatis-bridges-page__img2::before {
+    width: 493px;
+    height: 384px;
+    top: -44px;
+    left: -128px;
   }
 
   .cards-bridges-page p {
@@ -6211,6 +9467,13 @@ p {
 
   .type-bridges-page__body p {
     margin-top: 51px;
+  }
+
+  .type-bridges-page__img::before {
+    width: 430px;
+    height: 430px;
+    top: -64px;
+    left: -94px;
   }
 
   .type-bridges-page__img {
@@ -6262,6 +9525,13 @@ p {
     text-align: center;
   }
 
+  .work-bridges-page__img::before {
+    width: 365px;
+    height: 430px;
+    top: -111px;
+    left: -80px;
+  }
+
   .work-bridges-page__img {
     margin-top: 29px;
     margin-right: 0;
@@ -6298,6 +9568,13 @@ p {
     width: 440px;
   }
 
+  .hero-wallet__img::before {
+    width: 430px;
+    height: 430px;
+    top: -130px;
+    left: -94px;
+  }
+
   .wallet-whatis {
     margin-top: 36px;
   }
@@ -6314,6 +9591,13 @@ p {
 
   .wallet-whatis__container > p br {
     display: none;
+  }
+
+  .wallet-whatis__img::before {
+    width: 430px;
+    height: 430px;
+    top: -130px;
+    left: -94px;
   }
 
   .wallet-whatis__img {
@@ -6419,6 +9703,13 @@ p {
     text-align: left;
   }
 
+  .wallet-function__img::before {
+    width: 378px;
+    height: 396px;
+    top: -70px;
+    left: -70px;
+  }
+
   .wallet-function__img {
     margin-top: 77px;
   }
@@ -6452,6 +9743,13 @@ p {
     margin-top: 72px;
   }
 
+  .wallet-work__img::before {
+    width: 349px;
+    height: 353px;
+    top: -43px;
+    left: -90px;
+  }
+
   .wallet-work__img {
     margin-top: 72px;
   }
@@ -6477,8 +9775,708 @@ p {
     margin-top: 111px;
   }
 
+  .hero-crowdfunding-page__img::before {
+    width: 397px;
+    height: 371px;
+    top: -43px;
+    left: -40px;
+  }
+
   .hero-crowdfunding-page__img {
     margin-top: 44px;
+  }
+
+  .model-crowdfunding-page__container p {
+    margin-top: 36px;
+  }
+
+  .model-crowdfunding-page__container ul {
+    margin-top: 7px;
+  }
+
+  .model-crowdfunding-page__container ul li {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 21px;
+  }
+
+  .model-crowdfunding-page__container ul li::before {
+    width: 4px;
+    height: 4px;
+    left: 9px;
+  }
+
+  .model-crowdfunding-page__items-top {
+    margin-top: 36px;
+  }
+
+  .model-crowdfunding-page__row-top {
+    margin: 0 -5.75px;
+  }
+
+  .model-crowdfunding-page__item-top {
+    padding: 0 5.75px;
+  }
+
+  .model-crowdfunding-page__item-top:not(:last-child) .model-crowdfunding-page__title-top::after {
+    width: 11.51px;
+    height: 15.35px;
+  }
+
+  .model-crowdfunding-page__item-top:last-child::after {
+    width: 2px;
+    bottom: -18px;
+    height: 19px;
+  }
+
+  .model-crowdfunding-page__column-top {
+    width: 142px;
+  }
+
+  .model-crowdfunding-page__title-top {
+    box-shadow: 0px 0px 3.83654px #F4F6F8;
+    border-radius: 11.5096px 11.5096px 0px 0px;
+    height: 57px;
+    font-size: 12.2769px;
+    line-height: 15px;
+  }
+
+  .model-crowdfunding-page__text-top {
+    padding: 0 3.5px;
+  }
+
+  .model-crowdfunding-page__text-top {
+    height: 107px;
+    font-size: 9.20771px;
+    line-height: 11px;
+    border: 1.91827px solid #F4F6F8;
+    border-radius: 0px 0px 11.5096px 11.5096px;
+  }
+
+  .model-crowdfunding-page__items-bottom {
+    margin-top: 30px;
+  }
+
+  .model-crowdfunding-page__items-bottom::before {
+    height: 2px;
+    top: -15px;
+    left: 37px;
+    width: calc(100% - 75px);
+  }
+
+  .model-crowdfunding-page__item-bottom {
+    width: 76px;
+    height: 76px;
+    border: 1.91827px solid #F4F6F8;
+    box-shadow: 0px 0px 3.83654px rgba(244, 246, 248, 0.25);
+    border-radius: 9.59136px;
+  }
+
+  .model-crowdfunding-page__item-bottom::before {
+    width: 2px;
+    top: -15.8px;
+    height: 15px;
+  }
+
+  .model-crowdfunding-page__text-bottom {
+    font-size: 6.90578px;
+    line-height: 8px;
+  }
+
+  .work-crowdfunding-page {
+    margin-top: 36px;
+  }
+
+  .work-crowdfunding-page__body--left h2 {
+    width: 450px;
+  }
+
+  .work-crowdfunding-page__img::before {
+    width: 358px;
+    height: 371px;
+    top: -92px;
+    left: -40px;
+  }
+
+  .work-crowdfunding-page__items {
+    width: 270px;
+    row-gap: 14px;
+  }
+
+  .work-crowdfunding-page__item {
+    flex: 1 1 100%;
+  }
+
+  .work-crowdfunding-page__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .work-crowdfunding-page p {
+    margin-top: 24px;
+  }
+
+  .scoring-crowdfunding-page__container > p {
+    margin-top: 24px;
+  }
+
+  .scoring-crowdfunding-page__body--right {
+    margin: 0 auto;
+  }
+
+  .scoring-crowdfunding-page__body--right h2 {
+    margin-top: 36px;
+    width: 450px;
+  }
+
+  .scoring-crowdfunding-page__body--text-mobile {
+    margin-top: 72px;
+  }
+
+  .scoring-crowdfunding-page__img::before {
+    width: 390px;
+    height: 476px;
+    top: -92px;
+    left: -40px;
+  }
+
+  .scoring-crowdfunding-page__img {
+    margin-top: 39px;
+  }
+
+  .diagram-crowdfunding-page {
+    margin-top: 36px;
+  }
+
+  .diagram-crowdfunding-page__container h2 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .diagram-crowdfunding-page__container > span {
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .diagram-crowdfunding-page__item {
+    width: 78px;
+    height: 25px;
+    border: 2.10477px solid #FFFFFF;
+    border-radius: 4.20954px;
+  }
+
+  .diagram-crowdfunding-page__item span:first-child {
+    font-size: 8.41908px;
+    line-height: 10px;
+  }
+
+  .diagram-crowdfunding-page__item span:last-child {
+    font-size: 6.73527px;
+    line-height: 8px;
+  }
+
+  .diagram-crowdfunding-page__body {
+    margin-top: 24px;
+  }
+
+  .diagram-crowdfunding-page__circle {
+    width: 294px;
+    height: 253px;
+  }
+
+  .risk-crowdfunding-page {
+    margin-top: 36px;
+    margin-bottom: 40px;
+  }
+
+  .risk-crowdfunding-page__container > p {
+    margin-top: 24px;
+  }
+
+  .risk-crowdfunding-page__body--text-mobile {
+    margin-top: 65px;
+  }
+
+  .risk-crowdfunding-page__img::before {
+    width: 390px;
+    height: 476px;
+    top: -92px;
+    left: -40px;
+  }
+
+  .risk-crowdfunding-page__img {
+    margin-top: 119px;
+  }
+
+  .hero-staking__container > p {
+    margin-top: 24px;
+  }
+
+  .hero-staking__body--left h1 {
+    width: 378px;
+    text-align: center;
+  }
+
+  .hero-staking__body--text-mobile {
+    margin-top: 101px;
+  }
+
+  .hero-staking__img::before {
+    width: 435px;
+    height: 476px;
+    top: -164px;
+    left: -67px;
+  }
+
+  .hero-staking__img {
+    margin-top: 95px;
+  }
+
+  .hero-staking__items {
+    margin-top: 55px;
+    margin-bottom: 48px;
+  }
+
+  .hero-staking__body-second--img::before {
+    width: 390px;
+    height: 476px;
+    top: -151px;
+    left: -23px;
+  }
+
+  .fix-staking {
+    margin-top: 125px;
+  }
+
+  .fix-staking__container > p {
+    margin-top: 24px;
+  }
+
+  .fix-staking__body--text-mobile {
+    margin-top: 74px;
+  }
+
+  .fix-staking__img::before {
+    width: 390px;
+    height: 476px;
+    top: -151px;
+    left: -23px;
+  }
+
+  .fix-staking__img {
+    margin-top: 96px;
+  }
+
+  .risk-staking {
+    margin-top: 91px;
+    margin-bottom: 40px;
+  }
+
+  .risk-staking__container > p {
+    margin-top: 24px;
+  }
+
+  .risk-staking__img::before {
+    width: 390px;
+    height: 476px;
+    top: -151px;
+    left: -23px;
+  }
+
+  .risk-staking__img {
+    margin-top: 49px;
+  }
+
+  .hero-buy-page__container > p {
+    margin-top: 24px;
+  }
+
+  .hero-buy-page__body--left h1 {
+    text-align: center;
+  }
+
+  .hero-buy-page__body--text-mobile {
+    margin-top: 101px;
+  }
+
+  .hero-buy-page__img::before {
+    width: 390px;
+    height: 476px;
+    top: -151px;
+    left: -23px;
+  }
+
+  .hero-buy-page__img {
+    margin-top: 56px;
+  }
+
+  .easy-buy-page {
+    margin-top: 36px;
+  }
+
+  .easy-buy-page__container p:nth-child(4) {
+    margin-top: 24px;
+  }
+
+  .easy-buy-page__container p:nth-child(6) {
+    margin-top: 36px !important;
+  }
+
+  .easy-buy-page__container p {
+    margin-top: 24px;
+  }
+
+  .easy-buy-page__reference {
+    flex-direction: column;
+    align-items: center;
+    padding: 21px 0px;
+  }
+
+  .easy-buy-page__reference--left {
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+
+  .easy-buy-page__reference--left::after {
+    top: 100%;
+    width: 100%;
+    height: 3px;
+  }
+
+  .easy-buy-page__reference--right {
+    width: 420px;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .easy-buy-page__reference--title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .easy-buy-page__reference--text {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .easy-buy-page__items {
+    width: 270px;
+    margin-top: 67px;
+    row-gap: 45px;
+  }
+
+  .easy-buy-page__column {
+    width: 100%;
+  }
+
+  .easy-buy-page__text {
+    margin-top: 65px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .hero-future__container > p {
+    margin-top: 24px;
+  }
+
+  .hero-future__body--left h1 {
+    width: 378px;
+    text-align: center;
+  }
+
+  .hero-future__body--left h1 span {
+    margin-right: 10px;
+  }
+
+  .hero-future__img::before {
+    width: 456px;
+    height: 476px;
+    top: -74px;
+    left: -109px;
+  }
+
+  .hero-future__img {
+    margin-top: 69px;
+  }
+
+  .whatis-future {
+    margin-top: 36px;
+  }
+
+  .whatis-future p {
+    margin-top: 24px;
+  }
+
+  .whatis-future__items {
+    margin-top: 66px;
+    margin-bottom: 48px;
+  }
+
+  .whatis-future__item {
+    flex: 1 1 100%;
+  }
+
+  .whatis-future__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .whatis-future__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .block-video {
+    margin-top: 316px;
+  }
+
+  .block-video-wrapper {
+    height: 265px;
+  }
+
+  .block-video__play-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .future-block-video {
+    margin-top: 36px;
+  }
+
+  .future-block-video__img {
+    background: url("../img/svg/block-video/11.svg") center/100% 100% no-repeat;
+  }
+
+  .future-block-video p {
+    width: 450px;
+    margin-top: 36px;
+  }
+
+  .earn-future {
+    margin-top: 36px;
+  }
+
+  .earn-future__container > p {
+    margin-top: 24px;
+  }
+
+  .earn-future__body--left h2 {
+    width: 450px;
+  }
+
+  .earn-future__body--text-mobile {
+    margin-top: 55px;
+  }
+
+  .earn-future__img::before {
+    width: 390px;
+    height: 476px;
+    top: -104px;
+    left: -78px;
+  }
+
+  .earn-future__img {
+    margin-top: 96px;
+  }
+
+  .earn-future__items {
+    width: 270px;
+    margin-top: 66px;
+  }
+
+  .earn-future__item {
+    width: 270px;
+  }
+
+  .earn-future__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .earn-future__column {
+    width: 270px;
+  }
+
+  .earn-future__text {
+    margin-top: 65px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .scale-future {
+    margin-top: 36px;
+    margin-bottom: 40px;
+  }
+
+  .scale-future__container > p {
+    margin-top: 24px;
+  }
+
+  .scale-future__body {
+    margin-bottom: 0;
+  }
+
+  .scale-future__body--left h1 {
+    width: 450px;
+    text-align: center;
+  }
+
+  .scale-future__body--left h1 span {
+    margin-right: 10px;
+  }
+
+  .scale-future__img::before {
+    width: 480px;
+    height: 488px;
+    top: -140px;
+    left: -99px;
+  }
+
+  .scale-future__img {
+    margin-top: 69px;
+    margin-right: 90px;
+  }
+
+  .scale-future__items {
+    width: 270px;
+    margin-top: 66px;
+    row-gap: 0;
+  }
+
+  .scale-future__item {
+    width: 270px;
+  }
+
+  .scale-future__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .scale-future__column {
+    width: 270px;
+  }
+
+  .scale-future__text {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .error__title {
+    font-size: 150px;
+    line-height: 182px;
+  }
+
+  .error__text {
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .error__btn {
+    width: 370px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .general-popap {
+    width: 319px;
+    height: 394px;
+    border-radius: 8px;
+  }
+
+  .general-popap__container {
+    width: 185px;
+  }
+
+  .general-popap__title {
+    margin-top: 64px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .general-popap__text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .singin__popap--container {
+    width: 185px;
+  }
+
+  .singin__popap--title {
+    width: 261px;
+    margin-top: 64px;
+  }
+
+  .singin__popap--icon {
+    margin-top: 15px;
+  }
+
+  .singin__popap--text {
+    width: 183px;
+    margin-top: 15px;
+  }
+
+  .success-change__popap--container {
+    width: 185px;
+  }
+
+  .success-change__popap--title {
+    width: 261px;
+    margin-top: 19px;
+  }
+
+  .success-change__popap--text {
+    width: 261px;
+    margin-top: 17px;
+  }
+
+  .success-change__popap--btn {
+    width: 209px;
+    margin-top: 24px;
+  }
+
+  .success-recovery__popap--container {
+    width: 185px;
+  }
+
+  .success-recovery__popap--title {
+    width: 261px;
+    margin-top: 19px;
+  }
+
+  .success-recovery__popap--text {
+    width: 261px;
+    margin-top: 17px;
+  }
+
+  .success-recovery__popap--btn {
+    width: 209px;
+    margin-top: 24px;
+  }
+
+  .form {
+    width: 420px;
+  }
+
+  .form__title {
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  .form__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .form__input-tel img {
+    display: none;
+  }
+
+  .general-form-container {
+    padding: 0 30px !important;
   }
 }
 
@@ -7319,166 +11317,30 @@ p {
     margin-bottom: 40px;
   }
 
-  .form {
-    width: 280px;
-  }
-
-  .form label {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__container {
-    width: 242px;
-  }
-
-  .form__title {
-    width: 197px;
-    font-size: 21px;
-    line-height: 21px;
-  }
-
-  .form__name {
-    margin-top: 21.33px;
-  }
-
-  .form__btns {
-    margin-top: 13.33px;
-    column-gap: 20px;
-  }
-
-  .form__btn {
-    width: 78.67px;
-    height: 32px;
-    font-size: 10.6667px;
-    line-height: 13px;
-    border-radius: 16px;
-  }
-
-  .form__input .input {
-    height: 32px;
-    padding-left: 16px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__input .input::placeholder {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__input-name {
-    margin-top: 6px;
-  }
-
-  .form__input-email {
-    margin-top: 5.34px;
-  }
-
-  .form__input-tel::before {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__input-tel .input {
-    padding-left: 26px;
-  }
-
-  .form__input-question {
-    height: 65px;
-    padding: 8px 16px;
-  }
-
-  .form__input-question-text input {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__input-question-text input::placeholder {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__input-question-file {
-    margin-top: 20px;
-  }
-
-  .form__input-question-file .question-file img {
-    width: 14.67px;
-    height: 16.67px;
-  }
-
-  .form__input-question-file .question-file span {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .form__email {
-    margin-top: 21px;
-  }
-
-  .form__tel {
-    margin-top: 21px;
-  }
-
-  .form__body-tel {
-    column-gap: 10px;
-  }
-
-  .form__select-country-tel {
-    height: 32px;
-  }
-
-  .form__question {
-    margin: 26px 0px 0px 0px;
-  }
-
-  .form__captcha {
-    margin-top: 21px;
-    height: 76px;
-  }
-
-  .form__captcha-icon {
-    width: 56.67px;
-    height: 56.67px;
-  }
-
-  .form__captcha-icon img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .form__captcha-bottom {
-    font-size: 6.66666px;
-    line-height: 13px;
-  }
-
-  .form__button {
-    margin-top: 21px;
-  }
-
-  .checkbox {
-    left: 16px;
-    display: flex;
-    align-items: center;
-  }
-
-  .checkbox__label::before {
-    flex: 0 0 16px;
-    height: 16px;
-  }
-
-  .checkbox__label::after {
-    width: 16px;
-    height: 16px;
+  .contacts__form--title {
+    width: 197px !important;
+    font-size: 21px !important;
+    line-height: 21px !important;
   }
 
   .hero-bridges-page__row h1 {
     width: 300px;
   }
 
+  .hero-bridges-page__img::before {
+    width: 300px;
+    height: 200px;
+    top: -40px;
+    left: -70px;
+  }
+
   .hero-bridges-page__img {
     margin-top: 34px;
+  }
+
+  .hero-bridges-page__img img {
+    width: 176px;
+    height: 112px;
   }
 
   .hero-bridges-page p {
@@ -7495,6 +11357,13 @@ p {
 
   .whatis-bridges-page__text-img1 p {
     margin-top: 60px;
+  }
+
+  .whatis-bridges-page__img1::before {
+    width: 184px;
+    height: 200px;
+    top: -40px;
+    left: -40px;
   }
 
   .whatis-bridges-page__img1 {
@@ -7528,6 +11397,13 @@ p {
     margin-top: 10px;
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .whatis-bridges-page__img2::before {
+    width: 320px;
+    height: 273px;
+    top: -40px;
+    left: -87px;
   }
 
   .whatis-bridges-page__img2 img {
@@ -7573,6 +11449,13 @@ p {
     line-height: 105.02%;
   }
 
+  .type-bridges-page__img::before {
+    width: 286px;
+    height: 290px;
+    top: -45px;
+    left: -67px;
+  }
+
   .type-bridges-page__img {
     width: 139px;
     height: 197px;
@@ -7604,6 +11487,13 @@ p {
     margin-top: 35px;
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .work-bridges-page__img::before {
+    width: 242px;
+    height: 290px;
+    top: -82px;
+    left: -55px;
   }
 
   .work-bridges-page__img {
@@ -7647,6 +11537,13 @@ p {
     width: 293px;
   }
 
+  .hero-wallet__img::before {
+    width: 286px;
+    height: 290px;
+    top: -85px;
+    left: -67px;
+  }
+
   .hero-wallet__img {
     margin-top: 102px;
     width: 171px;
@@ -7672,6 +11569,13 @@ p {
 
   .wallet-whatis__body p {
     margin-top: 54px;
+  }
+
+  .wallet-whatis__img::before {
+    width: 286px;
+    height: 290px;
+    top: -85px;
+    left: -67px;
   }
 
   .wallet-whatis__img {
@@ -7812,6 +11716,13 @@ p {
     margin-top: 46px;
   }
 
+  .wallet-function__img::before {
+    width: 234px;
+    height: 246px;
+    top: -36px;
+    left: -43px;
+  }
+
   .wallet-function__img {
     width: 166px;
     height: 192px;
@@ -7874,6 +11785,13 @@ p {
     margin-top: 44px;
   }
 
+  .wallet-work__img::before {
+    width: 239px;
+    height: 237px;
+    top: -25px;
+    left: -60px;
+  }
+
   .wallet-work__img {
     width: 128px;
     height: 182px;
@@ -7918,10 +11836,891 @@ p {
     margin-top: 68px;
   }
 
+  .hero-crowdfunding-page__img::before {
+    width: 270px;
+    height: 246px;
+    top: -25px;
+    left: -33px;
+  }
+
   .hero-crowdfunding-page__img {
     width: 210px;
     height: 154px;
     margin-top: 22px;
+  }
+
+  .model-crowdfunding-page__container p:nth-child(3) {
+    margin-top: 24px;
+  }
+
+  .model-crowdfunding-page__container p:last-child {
+    margin-top: 16px;
+  }
+
+  .model-crowdfunding-page__container ul li {
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 16px;
+  }
+
+  .model-crowdfunding-page__container ul li::before {
+    width: 3px;
+    height: 3px;
+    left: 6px;
+  }
+
+  .model-crowdfunding-page__items-top {
+    margin-top: 24px;
+  }
+
+  .model-crowdfunding-page__row-top {
+    margin: 0 -4px;
+  }
+
+  .model-crowdfunding-page__item-top {
+    padding: 0 4px;
+  }
+
+  .model-crowdfunding-page__item-top:not(:last-child) .model-crowdfunding-page__title-top::after {
+    width: 8px;
+    height: 10px;
+  }
+
+  .model-crowdfunding-page__item-top:last-child::after {
+    width: 1.5px;
+    bottom: -9px;
+    height: 9px;
+  }
+
+  .model-crowdfunding-page__column-top {
+    width: 94px;
+  }
+
+  .model-crowdfunding-page__title-top {
+    height: 38px;
+    font-size: 8px;
+    line-height: 10px;
+    box-shadow: 0px 0px 2.5577px #F4F6F8;
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  .model-crowdfunding-page__text-top {
+    padding: 0;
+  }
+
+  .model-crowdfunding-page__text-top {
+    height: 71px;
+    border: 1.27885px solid #F4F6F8;
+    border-radius: 0px 0px 7.67309px 7.67309px;
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .model-crowdfunding-page__items-bottom {
+    margin-top: 21px;
+  }
+
+  .model-crowdfunding-page__items-bottom::before {
+    top: -15px;
+    left: 24px;
+    width: calc(100% - 49px);
+  }
+
+  .model-crowdfunding-page__item-bottom {
+    width: 51px;
+    height: 51px;
+    border: 1.27885px solid #F4F6F8;
+    box-shadow: 0px 0px 2.5577px rgba(244, 246, 248, 0.25);
+    border-radius: 6px;
+  }
+
+  .model-crowdfunding-page__item-bottom::before {
+    width: 1.5px;
+    top: -14.8px;
+    height: 14px;
+  }
+
+  .model-crowdfunding-page__text-bottom {
+    font-size: 5px;
+    line-height: 6px;
+  }
+
+  .work-crowdfunding-page {
+    margin-top: 24px;
+  }
+
+  .work-crowdfunding-page__body--left h2 {
+    width: 300px;
+  }
+
+  .work-crowdfunding-page__body--text-mobile {
+    margin-top: 27px;
+  }
+
+  .work-crowdfunding-page__img::before {
+    width: 240px;
+    height: 194px;
+    top: -32px;
+    left: -27px;
+  }
+
+  .work-crowdfunding-page__img {
+    width: 158px;
+    height: 153px;
+    margin-top: 59px;
+  }
+
+  .work-crowdfunding-page__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .work-crowdfunding-page__items {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    row-gap: 10px;
+  }
+
+  .work-crowdfunding-page__icon {
+    width: 67px;
+    height: 67px;
+    font-size: 43px;
+    line-height: 52px;
+  }
+
+  .work-crowdfunding-page__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .work-crowdfunding-page p {
+    margin-top: 14px;
+  }
+
+  .scoring-crowdfunding-page__container > p {
+    margin-top: 14px;
+  }
+
+  .scoring-crowdfunding-page__body--right h2 {
+    margin-top: 24px;
+    width: 300px;
+  }
+
+  .scoring-crowdfunding-page__body--text-mobile {
+    margin-top: 43px;
+  }
+
+  .scoring-crowdfunding-page__img::before {
+    width: 255px;
+    height: 257px;
+    top: -32px;
+    left: -27px;
+  }
+
+  .scoring-crowdfunding-page__img {
+    margin-top: 26px;
+    width: 197px;
+    height: 173px;
+  }
+
+  .scoring-crowdfunding-page__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .diagram-crowdfunding-page {
+    margin-top: 24px;
+  }
+
+  .diagram-crowdfunding-page__container h2 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .diagram-crowdfunding-page__container > span {
+    margin-top: 3px;
+    font-size: 7px;
+    line-height: 8px;
+  }
+
+  .diagram-crowdfunding-page__item {
+    width: 52px;
+    height: 17px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+  }
+
+  .diagram-crowdfunding-page__item span:first-child {
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .diagram-crowdfunding-page__item span:last-child {
+    font-size: 4px;
+    line-height: 5px;
+  }
+
+  .diagram-crowdfunding-page__body {
+    margin-top: 16px;
+  }
+
+  .diagram-crowdfunding-page__circle {
+    width: 196px;
+    height: 168px;
+  }
+
+  .risk-crowdfunding-page {
+    margin-top: 24px;
+  }
+
+  .risk-crowdfunding-page__container > p {
+    margin-top: 14px;
+  }
+
+  .risk-crowdfunding-page__body--text-mobile {
+    margin-top: 38px;
+  }
+
+  .risk-crowdfunding-page__img::before {
+    width: 255px;
+    height: 257px;
+    top: -32px;
+    left: -27px;
+  }
+
+  .risk-crowdfunding-page__img {
+    margin-top: 76px;
+    width: 186px;
+    height: 161px;
+  }
+
+  .risk-crowdfunding-page__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-staking__container > p {
+    margin-top: 14px;
+  }
+
+  .hero-staking__body--left h1 {
+    width: 252px;
+  }
+
+  .hero-staking__body--text-mobile {
+    margin-top: 56px;
+  }
+
+  .hero-staking__img::before {
+    width: 313px;
+    height: 247px;
+    top: -73px;
+    left: -50px;
+  }
+
+  .hero-staking__img {
+    width: 213px;
+    height: 118px;
+  }
+
+  .hero-staking__items {
+    margin-top: 34px;
+    margin-bottom: 0px;
+  }
+
+  .hero-staking__column {
+    width: 180px;
+  }
+
+  .hero-staking__icon {
+    width: 66px;
+    height: 66px;
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .hero-staking__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .hero-staking__body-second--img::before {
+    width: 290px;
+    height: 257px;
+    top: -64px;
+    left: -29px;
+  }
+
+  .hero-staking__body-second--img {
+    width: 231px;
+    height: 127px;
+  }
+
+  .hero-staking__body-second--img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fix-staking {
+    margin-top: 24px;
+  }
+
+  .fix-staking__container > p {
+    margin-top: 14px;
+  }
+
+  .fix-staking__body--text-mobile {
+    margin-top: 47px;
+  }
+
+  .fix-staking__img::before {
+    width: 218px;
+    height: 257px;
+    top: -64px;
+    left: -34px;
+  }
+
+  .fix-staking__img {
+    width: 137px;
+    height: 140px;
+    margin-top: 64px;
+  }
+
+  .fix-staking__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .risk-staking {
+    margin-top: 24px;
+  }
+
+  .risk-staking__container > p {
+    margin-top: 14px;
+  }
+
+  .risk-staking__body--text-mobile {
+    margin-top: 37px;
+  }
+
+  .risk-staking__img::before {
+    width: 218px;
+    height: 257px;
+    top: -64px;
+    left: -34px;
+  }
+
+  .risk-staking__img {
+    width: 143px;
+    height: 152px;
+    margin-top: 32px;
+  }
+
+  .risk-staking__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-buy-page__container > p {
+    margin-top: 14px;
+  }
+
+  .hero-buy-page__body--text-mobile {
+    margin-top: 63px;
+  }
+
+  .hero-buy-page__img::before {
+    width: 218px;
+    height: 257px;
+    top: -64px;
+    left: -34px;
+  }
+
+  .hero-buy-page__img {
+    width: 155px;
+    height: 187px;
+    margin-top: 38px;
+  }
+
+  .easy-buy-page__container p:first-child {
+    margin-top: 12px !important;
+  }
+
+  .easy-buy-page__container p:nth-child(4) {
+    margin-top: 9px;
+  }
+
+  .easy-buy-page__container p {
+    margin-top: 9px;
+  }
+
+  .easy-buy-page__reference {
+    margin-top: 21px;
+    box-shadow: 0px 0px 6.66667px #F4F6F8;
+    border-radius: 20px;
+    border: 2.66667px solid #F4F6F8;
+    padding: 14px 0px 10px;
+  }
+
+  .easy-buy-page__reference--left {
+    width: 200px;
+    margin-bottom: 11px;
+    padding-bottom: 16px;
+  }
+
+  .easy-buy-page__reference--left img {
+    width: 70px;
+    height: 116px;
+  }
+
+  .easy-buy-page__reference--left::after {
+    height: 2px;
+  }
+
+  .easy-buy-page__reference--right {
+    width: 280px;
+  }
+
+  .easy-buy-page__reference--text {
+    margin-top: 6px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .easy-buy-page__items {
+    width: 180px;
+    margin-top: 45px;
+    row-gap: 30px;
+  }
+
+  .easy-buy-page__icon {
+    width: 67px;
+    height: 67px;
+  }
+
+  .easy-buy-page__icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .easy-buy-page__text {
+    margin-top: 11px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .hero-future__container > p {
+    margin-top: 14px;
+  }
+
+  .hero-future__body--left h1 {
+    width: 252px;
+  }
+
+  .hero-future__body--text-mobile {
+    margin-top: 44px;
+  }
+
+  .hero-future__img::before {
+    width: 315px;
+    height: 266px;
+    top: -5px;
+    left: -68px;
+  }
+
+  .hero-future__img {
+    margin-top: 43px;
+    width: 180px;
+    height: 229px;
+  }
+
+  .whatis-future {
+    margin-top: 24px;
+  }
+
+  .whatis-future p {
+    margin-top: 12px;
+  }
+
+  .whatis-future__items {
+    margin-top: 54px;
+    margin-bottom: 0px;
+  }
+
+  .whatis-future__column {
+    width: 180px;
+  }
+
+  .whatis-future__icon {
+    width: 66px;
+    height: 66px;
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .whatis-future__subtitle {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .whatis-future__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .block-video {
+    margin-top: 205px;
+  }
+
+  .block-video-wrapper {
+    height: 176px;
+  }
+
+  .future-block-video {
+    margin-top: 24px;
+  }
+
+  .future-block-video p {
+    width: 300px;
+    margin-top: 24px;
+  }
+
+  .earn-future {
+    margin-top: 24px;
+  }
+
+  .earn-future__container > p {
+    margin-top: 14px;
+  }
+
+  .earn-future__body--left h2 {
+    width: 300px;
+  }
+
+  .earn-future__body--text-mobile {
+    margin-top: 50px;
+  }
+
+  .earn-future__img::before {
+    width: 302px;
+    height: 257px;
+    top: -29px;
+    left: -63px;
+  }
+
+  .earn-future__img {
+    width: 182px;
+    height: 197px;
+    margin-top: 51px;
+  }
+
+  .earn-future__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .earn-future__items {
+    margin-top: 54px;
+  }
+
+  .earn-future__icon {
+    width: 67px;
+    height: 67px;
+  }
+
+  .earn-future__icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .earn-future__text {
+    margin-top: 11px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .scale-future {
+    margin-top: 24px;
+  }
+
+  .scale-future__container > p {
+    margin-top: 14px;
+  }
+
+  .scale-future__body--left h1 {
+    width: 300px;
+  }
+
+  .scale-future__body--text-mobile {
+    margin-top: 57px;
+  }
+
+  .scale-future__img::before {
+    width: 340px;
+    height: 286px;
+    top: -64px;
+    left: -63px;
+  }
+
+  .scale-future__img {
+    margin-top: 58px;
+    width: 144px;
+    height: 168px;
+  }
+
+  .scale-future__items {
+    margin-top: 54px;
+  }
+
+  .scale-future__icon {
+    width: 66px;
+    height: 66px;
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  .scale-future__text {
+    margin-top: 11px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .error__title {
+    font-size: 100px;
+    line-height: 121px;
+  }
+
+  .error__text {
+    font-size: 10px;
+    line-height: 21px;
+  }
+
+  .error__btn {
+    width: 246px;
+    height: 52px;
+    border-radius: 16.6667px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .login .form__pasword--fogot {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .singin .form__tel--text {
+    margin-top: 0;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .singin .form__captcha {
+    margin-top: 0;
+  }
+
+  .form {
+    width: 280px;
+  }
+
+  .form label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__container {
+    width: 242px;
+  }
+
+  .form__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .form__subtitle br {
+    display: none;
+  }
+
+  .form__name {
+    margin-top: 21.33px;
+  }
+
+  .form__btns {
+    margin-top: 13.33px;
+    column-gap: 20px;
+  }
+
+  .form__btn {
+    width: 78.67px;
+    height: 32px;
+    font-size: 10.6667px;
+    line-height: 13px;
+    border-radius: 16px;
+  }
+
+  .form__input .input {
+    height: 32px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input .input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input-name {
+    margin-top: 6px;
+  }
+
+  .form__input-email {
+    margin-top: 5.34px;
+  }
+
+  .form__input-tel::before {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input-tel .input {
+    padding-left: 26px;
+  }
+
+  .form__input-tel--text {
+    margin-top: 0;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .form__input-question {
+    height: 65px;
+    padding: 8px 16px;
+  }
+
+  .form__input-question-text input {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input-question-text input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__input-question-file {
+    margin-top: 20px;
+  }
+
+  .form__input-question-file .question-file img {
+    width: 14.67px;
+    height: 16.67px;
+  }
+
+  .form__input-question-file .question-file span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form__email {
+    margin-top: 21px;
+  }
+
+  .form__tel {
+    margin-top: 21px;
+  }
+
+  .form__body-tel {
+    column-gap: 10px;
+  }
+
+  .form__select-country-tel {
+    height: 32px;
+  }
+
+  .form__question {
+    margin: 26px 0px 0px 0px;
+  }
+
+  .form__captcha {
+    margin-top: 21px;
+    height: 76px;
+  }
+
+  .form__captcha-icon {
+    width: 56.67px;
+    height: 56.67px;
+  }
+
+  .form__captcha-icon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form__captcha-bottom {
+    font-size: 6.66666px;
+    line-height: 13px;
+  }
+
+  .form__confirm-sms--title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .form__confirm-sms--text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .form__button {
+    margin-top: 21px;
+  }
+
+  .checkbox {
+    left: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox__label::before {
+    flex: 0 0 16px;
+    height: 16px;
+  }
+
+  .checkbox__label::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .general-form-container {
+    padding: 0 20px !important;
+  }
+
+  .general-form-container .form {
+    padding: 9px 0;
+    border-radius: 20px;
+  }
+
+  .general-form-container .form-side__btns-submit-code .form-side__button-send-again {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .general-form-container .form-side__btns-submit-code .form-side__button-send {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .checkbox-radio {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 

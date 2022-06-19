@@ -49,26 +49,14 @@ pauseblock.addEventListener("click", function (e) {
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".menu-bottom-header__burger").click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu-bottom-header__burger, .menu-bottom-header__list').toggleClass("active");
-});
-
-/***/ }),
-
-/***/ "./src/js/import/components.js":
-/*!*************************************!*\
-  !*** ./src/js/import/components.js ***!
-  \*************************************/
 /***/ (function() {
 
-
+var header__burger = document.querySelector('.menu-bottom-header__burger');
+var header__list = document.querySelector('.menu-bottom-header__list');
+header__burger.addEventListener("click", function (e) {
+  header__burger.classList.toggle('active');
+  header__list.classList.toggle('active');
+});
 
 /***/ }),
 
@@ -81,6 +69,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".menu-bottom-header__burger").cli
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/block-video/block-video */ "./src/blocks/modules/block-video/block-video.js");
@@ -109,31 +98,105 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('active').next().slideToggle(300);
   });
 });
-/* Contacts */
-
-/* btns */
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".form__btn-email").click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-email').addClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-tel').removeClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__tel').slideUp(500);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__email').slideDown(500);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.input-number').keydown(function (e) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val('');
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".form__btn-tel").click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-tel').addClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__btn-email').removeClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__email').slideUp(500);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.form__tel').slideDown(500);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.input-number').keyup(function (e) {
+  var $wrap = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.pincode');
+  var $inputs = $wrap.find('input[type="number"]');
+  var val = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val();
+
+  if (val == val.replace(/[0-9]/, '')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val('');
+    return false;
+  }
+
+  $inputs.eq($inputs.index(this) + 1).focus();
 });
-var inputs = document.querySelectorAll('.input-question-file');
-Array.prototype.forEach.call(inputs, function (input) {
-  var label = input.nextElementSibling,
-      labelVal = label.querySelector('.input__file-button-text').innerText;
-  input.addEventListener('change', function (e) {
-    var countFiles = '';
-    if (this.files && this.files.length >= 1) countFiles = this.files.length;
-    if (countFiles) label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;else label.querySelector('.input__file-button-text').innerText = labelVal;
-  });
+
+function startTimer(duration, display) {
+  var timer = duration,
+      minutes,
+      seconds;
+  setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = "Код действителен " + minutes + " мин. " + seconds + " сек.";
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+function startTimer1(duration, display) {
+  var timer = duration,
+      minutes,
+      seconds;
+  setInterval(function () {
+    seconds = parseInt(timer % 60, 10);
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = "Выслать новый через " + seconds + " сек.";
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+function startTimer2(duration, display) {
+  var timer = duration,
+      minutes,
+      seconds;
+  setInterval(function () {
+    seconds = parseInt(timer % 60, 10);
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = seconds + " секунд вы перейдёте в личный кабинет";
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+window.onload = function () {
+  var oneMinutes = 10 * 1,
+      display = document.querySelector('#time2');
+  startTimer2(oneMinutes, display);
+  var oneMinutes = 59 * 1,
+      display = document.querySelector('#time1');
+  startTimer1(oneMinutes, display);
+  var thirtyMinutes = 60 * 30,
+      display1 = document.querySelector('#time');
+  startTimer(thirtyMinutes, display1);
+};
+
+function playClipblock(media) {
+  media.play();
+}
+
+function stopClipblock(media) {
+  media.pause();
+}
+
+var video__playerblock = document.getElementById("block-video__player");
+var playblock = document.querySelector('.block-video__img');
+var pauseblock = document.querySelector('.block-video__pause');
+var block__video__body = document.querySelector('.block-video__play-btn');
+var block__video__frame = document.querySelector('.block-video__frame');
+playblock.addEventListener("click", function (e) {
+  playClipblock(video__playerblock);
+  this.classList.add('hide');
+  block__video__body.classList.add('hide');
+  block__video__frame.classList.add('hide');
+});
+pauseblock.addEventListener("click", function (e) {
+  stopClipblock(video__playerblock);
+  playblock.classList.remove('hide');
+  block__video__body.classList.remove('hide');
+  block__video__frame.classList.remove('hide');
 });
 
 /***/ }),
@@ -148,9 +211,6 @@ Array.prototype.forEach.call(inputs, function (input) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _import_pages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/pages */ "./src/js/import/pages.js");
 /* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./import/components */ "./src/js/import/components.js");
-/* harmony import */ var _import_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_import_components__WEBPACK_IMPORTED_MODULE_2__);
-
 
 
 

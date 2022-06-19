@@ -54,6 +54,31 @@
 
 				&__img {
 					margin-right: 75px;
+					position: relative;
+					&::before{
+						content:'';
+						position: absolute;
+						z-index: -1;
+						top: -60px;
+						left: -144px;
+						width: 670px;
+						height: 399px;
+						background: url('../img/pages/bridges-page/back1.svg') 0 0 / 100% 100% no-repeat;
+						@media (max-width: 1439px){
+							width: 500px;
+							height: 300px;
+							left: -120px;
+						}
+						@media (max-width: 767px){
+							width: 480px;
+						}
+						@media (max-width: 479px){
+							width: 300px;
+							height: 200px;
+							top: -40px;
+							left: -70px;
+						}
+					}
 					@media (max-width: 1439px){
 						margin-top: 44px;
 					}
@@ -73,6 +98,10 @@
 						@media (max-width: 1439px){
 							width: 265px;
 							height: 169px;
+						}
+						@media (max-width: 479px){
+							width: 176px;
+							height: 112px;
 						}
 					}
 				}
@@ -97,8 +126,6 @@
 
 
 
-
-.bridges-page__whatis {}
 
 .whatis-bridges-page {
 	margin-top: 40px;
@@ -140,6 +167,36 @@
 			&__img1 {
 				margin-top: 40px;
 				margin-left: 196px;
+				position: relative;
+				
+					&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -50px;
+						left: -204px;
+						width: 600px;
+						height: 360px;
+						background: url('../img/pages/bridges-page/back2.svg') 0 0 / 100% 100% no-repeat;
+				
+						@media (max-width: 1439px) {
+							width: 380px;
+							height: 270px;
+							left: -120px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 250px;
+							left: -60px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 184px;
+							height: 200px;
+							top: -40px;
+							left: -40px;
+						}
+					}
 				@media (max-width: 1439px){
 					margin-top: 76px;
 					margin-left: 142px;
@@ -256,6 +313,38 @@
 			&__img2 {
 				margin-top: 30px;
 				margin-right: 198px;
+				position: relative;
+				&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -40px;
+						left: -204px;
+						width: 639px;
+						height: 375px;
+						background: url('../img/pages/bridges-page/back3.svg') 0 0 / 100% 100% no-repeat;
+				
+						@media (max-width: 1439px) {
+							width: 500px;
+							height: 390px;
+							top: -57px;
+							left: -136px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 493px;
+							height: 384px;
+							top: -44px;
+							left: -128px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 320px;
+							height: 273px;
+							top: -40px;
+							left: -87px;
+						}
+					}
 				@media (max-width: 1919px){
 					margin-right: 214px;
 				}
@@ -544,6 +633,39 @@
 			&__img {
 				margin-top: 5px;
 				margin-left: 202px;
+				position: relative;
+				
+					&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -78px;
+						left: -105px;
+						width: 443px;
+						height: 444px;
+						background: url('../img/pages/bridges-page/back4.svg') 0 0 / 100% 100% no-repeat;
+
+						@media (max-width: 1439px) {
+							width: 426px;
+							height: 427px;
+							top: -70px;
+							left: -94px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 430px;
+							height: 430px;
+							top: -64px;
+							left: -94px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 286px;
+							height: 290px;
+							top: -45px;
+							left: -67px;
+						}
+					}
 				@media (max-width: 1439px){
 					margin-left: 31px;
 				}
@@ -738,8 +860,42 @@
 			}
 		
 			&__img {
+				position: relative;
 				margin-top: 45px;
 				margin-right: 270px;
+				position: relative;
+				
+					&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -89px;
+						left: -82px;
+						width: 370px;
+						height: 388px;
+						background: url('../img/pages/bridges-page/back5.svg') 0 0 / 100% 100% no-repeat;
+				
+						@media (max-width: 1439px) {
+							width: 389px;
+							height: 357px;
+							top: -76px;
+							left: -88px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 365px;
+							height: 430px;
+							top: -111px;
+							left: -80px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 242px;
+							height: 290px;
+							top: -82px;
+							left: -55px;
+						}
+					}
 				@media (max-width: 1439px){
 					margin-top: 41px;
 					margin-right: 127px;

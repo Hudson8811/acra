@@ -1,0 +1,50 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.login.form-relative
+				.login__back-side.container.general-form-container.form-back-side.active 
+					.login__left.form-side 
+						a(href="#").login__back--btn.form-side--btn
+							span Вернуться назад
+					form.login__form.form(action="#" method="method")
+						.form__title.login__form--title Вход
+						.form__subtitle На вашу почту было выслано сообщение 
+							br
+							|с кодом подтверждения
+						.form__container
+							.form__confirm-sms 
+								.form__confirm-sms--title Код подтверждения из сообщения*
+									span.red-star *
+								.pincode
+									input.input-number(type='number')
+									input.input-number(type='number')
+									input.input-number(type='number')
+									input.input-number(type='number')
+									input.input-number(type='number')
+								.form__confirm-sms--input 
+								#time.form__confirm-sms--valid.form__confirm-sms--text 
+									|Код действителен 
+									span.valid-minutes.timer__minutes 30 
+									|мин. 
+									span.valid-seconds.timer__seconds 00 
+									|сек. 
+								#time1.form__confirm-sms--send-new.form__confirm-sms--text 
+									|Выслать новый через 
+									span.send-new-seconds.timer__seconds1 59 
+									|сек.
+							.form-side__btns-submit-code
+								button.form__button.form-side__button-send-again(type="submit") Отправить повторно
+								button.form__button.form-side__button-send(type="submit") Отправить
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

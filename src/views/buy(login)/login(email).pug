@@ -1,0 +1,58 @@
+extends ../layouts/default
+
+block variables
+	- const title = "AKRA";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.login.form-relative
+				.login__container.container.general-form-container.form-front-side 
+					form.login__form.form(action="#" method="method")
+						.form__title.login__form--title Вход
+						.form__subtitle Выберите, какую информацию использовать для входа в личный кабинет
+						.form__container
+							.form__btns
+								.form__btn.form__btn-email.active  
+									|E-mail
+								.form__btn.form__btn-tel
+									|Телефон
+							.form__email
+								label E-mail
+									span.red-star *
+								.form__input.form__input-email
+									input(type="text", placeholder="Введите ваш e-mail").input
+							.form__pasword
+								label 
+									span Пароль
+										span.red-star *
+								a.form__pasword--fogot(href="#") Забыли пароль?
+								.form__input.form__input-email
+									input(type="text", placeholder="Введите ваш пароль").input
+							.form__captcha
+								.checkbox
+									input#formAgreement.checkbox__input._req(type='checkbox' name='agreement')
+									label.checkbox__label(for='formAgreement')
+										span
+											|Я не робот
+								.form__captcha-icon 
+									img(src="img/pages/contacts/captcha.svg", alt="alt")
+								.form__captcha-bottom Конфиденциальность — условия использования
+							.checkbox.checkbox-remember
+								input#remember.checkbox__input._req(type='checkbox' name='agreement')
+								label.checkbox__label.checkbox-remember__label(for='remember')
+									span
+										|Запомнить меня
+							button.form__button.form__button-front(type="submit") Отправить
+					.login__right.form-side 
+						.login__right--title.form-side--title Присоединяйтесь к команде AKRA
+						a.login__right--btn.form-side--btn(href="#") 
+							span Зарегистрироваться
+
+		include ../../blocks/modules/footer/footer
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

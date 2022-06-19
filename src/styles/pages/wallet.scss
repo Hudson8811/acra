@@ -51,6 +51,41 @@
 		&__img {
 			margin-top: 158px;
 			margin-right: 94px;
+			position: relative;
+			
+				&::before {
+					content: '';
+					position: absolute;
+					z-index: -1;
+					top: -117px;
+					left: -105px;
+					width: 443px;
+					height: 444px;
+					background: url('../img/pages/wallet/back1.svg') 0 0 / 100% 100% no-repeat;
+			
+					@media (max-width: 1439px) {
+						width: 349px;
+						height: 390px;
+						top: -82px;
+						left: -63px;
+					}
+					@media (max-width: 1023px){
+						top: -92px;
+					}
+					@media (max-width: 767px) {
+						width: 430px;
+						height: 430px;
+						top: -130px;
+						left: -94px;
+					}
+			
+					@media (max-width: 479px) {
+						width: 286px;
+						height: 290px;
+						top: -85px;
+						left: -67px;
+					}
+				}
 			@media (max-width: 1439px){
 				margin-right: 15px;
 			}
@@ -145,6 +180,43 @@
 			&__img {
 				margin-top: 82px;
 				margin-left: 100px;
+				position: relative;
+				
+					&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -70px;
+						left: -51px;
+						width: 382px;
+						height: 393px;
+						background: url('../img/pages/wallet/back2.svg') 0 0 / 100% 100% no-repeat;
+				
+						@media (max-width: 1439px) {
+							width: 349px;
+							height: 390px;
+							top: -82px;
+							left: -63px;
+						}
+				
+						@media (max-width: 1023px) {
+							top: -92px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 430px;
+							height: 430px;
+							top: -130px;
+							left: -94px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 286px;
+							height: 290px;
+							top: -85px;
+							left: -67px;
+						}
+					}
 				@media (max-width: 1439px){
 					margin-top: 74px;
 					margin-left: 0px;
@@ -621,6 +693,43 @@
 			&__img {
 				margin-top: 53px;
 				margin-right: 102px;
+				position: relative;
+				
+					&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -68px;
+						left: -71px;
+						width: 400px;
+						height: 400px;
+						background: url('../img/pages/wallet/back3.svg') 0 0 / 100% 100% no-repeat;
+				
+						@media (max-width: 1439px) {
+							width: 356px;
+							height: 390px;
+							top: -63px;
+							left: -61px;
+						}
+				
+						@media (max-width: 1023px) {
+							top: -60px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 378px;
+							height: 396px;
+							top: -70px;
+							left: -70px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 234px;
+							height: 246px;
+							top: -36px;
+							left: -43px;
+						}
+					}
 				@media (max-width: 1439px){
 					margin-right: 48px;
 				}
@@ -846,6 +955,43 @@
 			&__img {
 				margin-top: 48px;
 				margin-left: 102px;
+				position: relative;
+				
+					&::before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: -68px;
+						left: -110px;
+						width: 400px;
+						height: 400px;
+						background: url('../img/pages/wallet/back4.svg') 0 0 / 100% 100% no-repeat;
+				
+						@media (max-width: 1439px) {
+							width: 356px;
+							height: 390px;
+							top: -63px;
+							left: -90px;
+						}
+				
+						@media (max-width: 1023px) {
+							top: -64px;
+						}
+				
+						@media (max-width: 767px) {
+							width: 349px;
+							height: 353px;
+							top: -43px;
+							left: -90px;
+						}
+				
+						@media (max-width: 479px) {
+							width: 239px;
+							height: 237px;
+							top: -25px;
+							left: -60px;
+						}
+					}
 				@media (max-width: 1439px){
 					margin-left: 58px;
 				}
