@@ -3,24 +3,25 @@ body {
 }
 
 .wrapper {
+	overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100%;
-		background: url('../img/back-main.png') center / cover no-repeat;
+		background: url('../img/back/1920.svg') center / cover no-repeat;
     @media (max-width: 1919px){
-		background: url('../img/back-main1.png') center / cover no-repeat;
+		background: url('../img/back/1440.svg') center / cover no-repeat;
 	 }
 	@media (max-width: 1439px) {
-		background: url('../img/back-main2.png') center / cover no-repeat;
+		background: url('../img/back/1024.svg') center / cover no-repeat;
 	}
 	@media (max-width: 1023px) {
-		background: url('../img/back-main3.png') center / cover no-repeat;
+		background: url('../img/back/768.svg') center / cover no-repeat;
 	}
 	 @media (max-width: 767px) {
-	 	background: url('../img/back-main4.png') center / cover no-repeat;
+	 	background: url('../img/back/480.svg') center / cover no-repeat;
 	 }
 	@media (max-width: 479px) {
-		background: url('../img/back-main5.png') center / cover no-repeat;
+		background: url('../img/back/320.svg') center / cover no-repeat;
 	}
 	.page {
       flex: 1 1 auto;

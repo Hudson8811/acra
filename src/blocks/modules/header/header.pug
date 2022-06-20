@@ -3,12 +3,16 @@ header.header
 			.container.top-header__container
 				.top-header__logo 
 					img(src="img/svg/logo.svg", alt="logo")
-				.top-header__lang 
-					img(src="img/svg/flag.svg", alt="flag").top-header__flag
-					select(name="").top-header__select
-						option Русский / RUB
-						option Русский / RUB
-					img(src="img/svg/arrow.svg", alt="arrow").top-header__arrow
+				.top-header__selector
+					.top-header__lang
+						img(src="img/svg/flag.svg", alt="flag").top-header__flag
+						.top-header__select Русский / RUB
+						img(src="img/svg/arrow.svg", alt="arrow").top-header__arrow
+					ul.top-header__options
+						li
+							a(href="") English / USD
+						li
+							a(href="") English / EUR
 				
 		.header__bottom.bottom-header 	
 			.container.bottom-header__container

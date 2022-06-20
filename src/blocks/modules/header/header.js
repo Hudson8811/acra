@@ -1,7 +1,28 @@
-const header__burger = document.querySelector('.menu-bottom-header__burger');
-const header__list = document.querySelector('.menu-bottom-header__list');
+import $ from "jquery";
 
-header__burger.addEventListener("click", function(e) {
-	header__burger.classList.toggle("active");
-	header__list.classList.toggle("active")
+$(document).ready(function (){
+	const header__burger = $('.menu-bottom-header__burger');
+	const header__list = $('.menu-bottom-header__list');
+	header__burger.on("click", function(e) {
+		header__burger.toggleClass("active");
+		header__list.toggleClass("active")
+	});
+
+
+	const langSelector = $('.top-header__selector');
+	const langToggle = $('.top-header__lang');
+	const langOptions = $('.top-header__options');
+	if (langSelector){
+		langToggle.on('click',function (){
+			langOptions.slideToggle(200);
+			langSelector.toggleClass("active");
+		})
+
+		$(document).on('click',function (event) {
+			if (!$(event.target).hasClass('top-header__selector') && $(event.target).parents('.top-header__selector').length === 0){
+				langOptions.slideUp(200);
+				langSelector.removeClass("active");
+			}
+		});
+	}
 });
