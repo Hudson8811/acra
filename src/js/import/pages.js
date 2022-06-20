@@ -1,9 +1,5 @@
 import $ from "jquery";
 
-
-
-
-
 /* FAQ */
 $(document).ready(function() {
 	$('.faq__subtitle').click(function(event) {
