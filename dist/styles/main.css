@@ -1121,14 +1121,16 @@ h6 {
 }
 
 .top-crowdfunding__icon {
-  min-width: 6.25rem;
-  min-height: 6.25rem;
+  width: 6.25rem;
+  height: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #00DBC8;
   box-shadow: 0 0 2.5rem #00DBC8;
   border-radius: 50%;
+  flex-shrink: 0;
+  margin: 0 auto;
 }
 
 .top-crowdfunding__title {
@@ -3603,10 +3605,10 @@ p {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -2.875rem;
+  top: -1.5rem;
   left: -3.625rem;
   width: 30.875rem;
-  height: 28.0625rem;
+  height: 25.0625rem;
   background: url("../img/pages/crowdfunding-page/back1.svg") 0 0/100% 100% no-repeat;
 }
 
@@ -5406,6 +5408,12 @@ p {
 @media screen and (-ms-high-contrast: active) and (min-width: 29.9376rem), (-ms-high-contrast: none) and (min-width: 29.9376rem) {
   .form__btn + .form__btn {
     margin-left: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 48rem) and (-ms-high-contrast: active), (min-width: 48rem) and (-ms-high-contrast: none) {
+  .hero-wallet__body h1 {
+    width: 38.25rem;
   }
 }
 
@@ -10440,8 +10448,8 @@ p {
   }
 
   .top-crowdfunding__icon {
-    min-width: 4.166875rem;
-    min-height: 4.166875rem;
+    width: 4.166875rem;
+    height: 4.166875rem;
   }
 
   .top-crowdfunding__icon img {
@@ -12513,6 +12521,14 @@ p {
     align-self: stretch;
   }
 
+  .top-crowdfunding__icon {
+    align-self: stretch;
+  }
+
+  .top-crowdfunding__text {
+    align-self: stretch;
+  }
+
   .presale__card-top {
     align-self: stretch;
   }
@@ -12601,8 +12617,14 @@ p {
     align-self: stretch;
   }
 
+  .wallet-whatis__icon-big {
+    border: 1px solid #EEB909;
+  }
+
   .wallet-whatis__text {
     align-self: stretch;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .type-wallet-whatis__fact--text {
@@ -12661,6 +12683,10 @@ p {
   .hero-future__body--left h1 span {
     background: none;
     color: #EB00FF;
+  }
+
+  .whatis-future__subtitle {
+    align-self: stretch;
   }
 
   .whatis-future__text {

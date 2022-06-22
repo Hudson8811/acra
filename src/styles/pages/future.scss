@@ -286,6 +286,10 @@
 			font-size: 0.875rem;
 			line-height: 1.0625rem;
 		}
+
+		@include ie(){
+			align-self: stretch;
+		}
 	}
 	&__text {
 		margin-top: 0.75rem;

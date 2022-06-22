@@ -112,17 +112,22 @@
 		}
 	}
 	&__icon {
-		min-width: 6.25rem;
-		min-height: 6.25rem;
+		width: 6.25rem;
+		height: 6.25rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background: #00DBC8;
 		box-shadow: 0 0 2.5rem #00DBC8;
 		border-radius: 50%;
+		flex-shrink: 0;
+		margin: 0 auto;
+		@include ie(){
+			align-self: stretch;
+		}
 		@media (max-width: 29.9375rem){
-			min-width: 4.166875rem;
-			min-height: 4.166875rem;
+			width: 4.166875rem;
+			height: 4.166875rem;
 			img {
 				width: 2.916875rem;
 				height: 2.916875rem;
@@ -169,6 +174,10 @@
 		@media (max-width: 29.9375rem){
 			height: auto;
 			margin-top: 0.4375rem;
+		}
+
+		@include ie(){
+			align-self: stretch;
 		}
 	}
 	@media (max-width: 89.9375rem) {
