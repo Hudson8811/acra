@@ -8,22 +8,28 @@
 /***/ (function() {
 
 var video__playerblock = document.getElementById("block-video__player");
-var playblock = document.querySelector('.block-video__img');
-var pauseblock = document.querySelector('.block-video__pause');
-var block__video__body = document.querySelector('.block-video__play-btn');
-var block__video__frame = document.querySelector('.block-video__frame');
-playblock.addEventListener("click", function (e) {
-  playClipblock(video__playerblock);
-  this.classList.add('hide');
-  block__video__body.classList.add('hide');
-  block__video__frame.classList.add('hide');
-});
-pauseblock.addEventListener("click", function (e) {
-  stopClipblock(video__playerblock);
-  playblock.classList.remove('hide');
-  block__video__body.classList.remove('hide');
-  block__video__frame.classList.remove('hide');
-});
+
+if (video__playerblock) {
+  var playblock = document.querySelector('.block-video__img');
+  var block__video__body = document.querySelector('.block-video__play-btn');
+  var block__video__frame = document.querySelector('.block-video__frame');
+  playblock.addEventListener("click", function (e) {
+    playClipblock(video__playerblock);
+    this.classList.add('hide');
+    block__video__body.classList.add('hide');
+    if (block__video__frame) block__video__frame.classList.add('hide');
+    video__playerblock.classList.add('active');
+  });
+
+  video__playerblock.onpause = function (event) {
+    if (video__playerblock.readyState === 4) {
+      playblock.classList.remove('hide');
+      block__video__body.classList.remove('hide');
+      if (block__video__frame) block__video__frame.classList.remove('hide');
+      video__playerblock.classList.remove('active');
+    }
+  };
+}
 
 function playClipblock(media) {
   media.play();
@@ -35,27 +41,40 @@ function stopClipblock(media) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/footer/footer.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/footer/footer.js ***!
-  \*********************************************/
-/***/ (function() {
-
-
-
-/***/ }),
-
 /***/ "./src/blocks/modules/header/header.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-var header__burger = document.querySelector('.menu-bottom-header__burger');
-var header__list = document.querySelector('.menu-bottom-header__list');
-header__burger.addEventListener("click", function (e) {
-  header__burger.classList.toggle("active");
-  header__list.classList.toggle("active");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  var header__burger = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu-bottom-header__burger');
+  var header__list = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu-bottom-header__list');
+  header__burger.on("click", function (e) {
+    header__burger.toggleClass("active");
+    header__list.toggleClass("active");
+  });
+  var langSelector = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.top-header__selector');
+  var langToggle = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.top-header__lang');
+  var langOptions = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.top-header__options');
+
+  if (langSelector) {
+    langToggle.on('click', function () {
+      langOptions.slideToggle(200);
+      langSelector.toggleClass("active");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('click', function (event) {
+      if (!jquery__WEBPACK_IMPORTED_MODULE_0___default()(event.target).hasClass('top-header__selector') && jquery__WEBPACK_IMPORTED_MODULE_0___default()(event.target).parents('.top-header__selector').length === 0) {
+        langOptions.slideUp(200);
+        langSelector.removeClass("active");
+      }
+    });
+  }
 });
 
 /***/ }),
@@ -69,12 +88,8 @@ header__burger.addEventListener("click", function (e) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/block-video/block-video */ "./src/blocks/modules/block-video/block-video.js");
-/* harmony import */ var _modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var _modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/block-video/block-video */ "./src/blocks/modules/block-video/block-video.js");
+/* harmony import */ var _modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_block_video_block_video__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -91,112 +106,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-/* FAQ */
-
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.faq__subtitle').click(function (event) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass('active').next().slideToggle(300);
   });
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.input-number').keydown(function (e) {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val('');
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.input-number').keyup(function (e) {
-  var $wrap = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).closest('.pincode');
-  var $inputs = $wrap.find('input[type="number"]');
-  var val = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val();
-
-  if (val == val.replace(/[0-9]/, '')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val('');
-    return false;
-  }
-
-  $inputs.eq($inputs.index(this) + 1).focus();
-});
-
-function startTimer(duration, display) {
-  var timer = duration,
-      minutes,
-      seconds;
-  setInterval(function () {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    display.textContent = "Код действителен " + minutes + " мин. " + seconds + " сек.";
-
-    if (--timer < 0) {
-      timer = duration;
-    }
-  }, 1000);
-}
-
-function startTimer1(duration, display) {
-  var timer = duration,
-      minutes,
-      seconds;
-  setInterval(function () {
-    seconds = parseInt(timer % 60, 10);
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    display.textContent = "Выслать новый через " + seconds + " сек.";
-
-    if (--timer < 0) {
-      timer = duration;
-    }
-  }, 1000);
-}
-
-function startTimer2(duration, display) {
-  var timer = duration,
-      minutes,
-      seconds;
-  setInterval(function () {
-    seconds = parseInt(timer % 60, 10);
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    display.textContent = seconds + " секунд вы перейдёте в личный кабинет";
-
-    if (--timer < 0) {
-      timer = duration;
-    }
-  }, 1000);
-}
-
-window.onload = function () {
-  var oneMinutes = 10 * 1,
-      display = document.querySelector('#time2');
-  startTimer2(oneMinutes, display);
-  var oneMinutes = 59 * 1,
-      display = document.querySelector('#time1');
-  startTimer1(oneMinutes, display);
-  var thirtyMinutes = 60 * 30,
-      display1 = document.querySelector('#time');
-  startTimer(thirtyMinutes, display1);
-};
-
-function playClipblock(media) {
-  media.play();
-}
-
-function stopClipblock(media) {
-  media.pause();
-}
-
-var video__playerblock = document.getElementById("block-video__player");
-var playblock = document.querySelector('.block-video__img');
-var pauseblock = document.querySelector('.block-video__pause');
-var block__video__body = document.querySelector('.block-video__play-btn');
-var block__video__frame = document.querySelector('.block-video__frame');
-playblock.addEventListener("click", function (e) {
-  playClipblock(video__playerblock);
-  this.classList.add('hide');
-  block__video__body.classList.add('hide');
-  block__video__frame.classList.add('hide');
-});
-pauseblock.addEventListener("click", function (e) {
-  stopClipblock(video__playerblock);
-  playblock.classList.remove('hide');
-  block__video__body.classList.remove('hide');
-  block__video__frame.classList.remove('hide');
 });
 
 /***/ }),

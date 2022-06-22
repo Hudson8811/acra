@@ -9,7 +9,8 @@ if (video__playerblock){
         playClipblock(video__playerblock);
         this.classList.add('hide');
         block__video__body.classList.add('hide');
-        block__video__frame.classList.add('hide');
+        if (block__video__frame) block__video__frame.classList.add('hide');
+        video__playerblock.classList.add('active');
     });
 
 
@@ -17,7 +18,8 @@ if (video__playerblock){
 		if (video__playerblock.readyState === 4){
 			playblock.classList.remove('hide');
 			block__video__body.classList.remove('hide');
-			block__video__frame.classList.remove('hide');
+            if (block__video__frame) block__video__frame.classList.remove('hide');
+            video__playerblock.classList.remove('active');
 		}
 	};
 }

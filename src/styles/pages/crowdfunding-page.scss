@@ -2,25 +2,23 @@
 .hero-crowdfunding-page {
 	&__row {
 		h1 {
-			width: 500px;
+			width: 31.25rem;
 			max-width: 100%;
-			margin-top: 76px;
+			margin-top: 4.75rem;
 			display: block;
 			font-family: 'Inter';
 			font-style: normal;
 			font-weight: 600;
-			font-size: 48px;
-			line-height: 58px;
+			font-size: 3rem;
+			line-height: 3.625rem;
 			color: #FFFFFF;
-			@media (max-width: 1439px){
-				margin-top: 48px;
+			@media (max-width: 89.9375rem){
+				margin-top: 3rem;
 			}
-			@media (max-width: 1023px){
+			@media (max-width: 63.9375rem){
 				margin-top: 0;
 				text-align: center;
 				margin: 0 auto;
-			}
-			@media (max-width: 767px){
 			}
 			span {
 				background: linear-gradient(90deg, #EB00FF 0%, #00DBC8 25.8%);
@@ -28,103 +26,107 @@
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
 				text-fill-color: transparent;
+
+				@include ie(){
+					background: none;
+					color: #EB00FF;
+				}
 			}
 		}
 	}
 	p {
-		margin-top: 48px;
-		@media (max-width: 1023px){
-			margin-top: 36px;
+		margin-top: 3rem;
+		@media (max-width: 63.9375rem){
+			margin-top: 2.25rem;
 		}
-		@media (max-width: 767px){
+		@media (max-width: 47.9375rem){
 			text-align: left;
-			margin-top: 24px;
+			margin-top: 1.5rem;
 		}
-		@media (max-width: 479px){
-			margin-top: 14px;
+		@media (max-width: 29.9375rem){
+			margin-top: 0.875rem;
 		}
 		&:nth-child(2){
-			margin-top: 108px;
+			margin-top: 6.75rem;
 			font-weight: 600;
-			@media (max-width: 1439px){
-				margin-top: 95px;
+			@media (max-width: 89.9375rem){
+				margin-top: 5.9375rem;
 			}
-			@media (max-width: 1023px){
-				margin-top: 117px;
+			@media (max-width: 63.9375rem){
+				margin-top: 7.3125rem;
 			}
-			@media (max-width: 767px){
-				margin-top: 111px;
+			@media (max-width: 47.9375rem){
+				margin-top: 6.9375rem;
 			}
-			@media (max-width: 479px){
-				margin-top: 68px;
+			@media (max-width: 29.9375rem){
+				margin-top: 4.25rem;
 			}
 		}
 	}
-		&__img {
-			margin-top: 14px;
-			margin-right: 135px;
-			position: relative;
-			
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: -1;
-					top: -46px;
-						left: -58px;
-						width: 494px;
-						height: 449px;
-					background: url('../img/pages/crowdfunding-page/back1.svg') 0 0 / 100% 100% no-repeat;
-			
-					@media (max-width: 1439px) {
-						width: 388px;
-						height: 390px;
-						top: -50px;
-						left: -45px;
-					}
-			
-					@media (max-width: 1023px) {
-						width: 407px;
-						height: 386px;
-						top: -50px;
-						left: -45px;
-					}
-			
-					@media (max-width: 767px) {
-						width: 397px;
-						height: 371px;
-						top: -43px;
-						left: -40px;
-					}
-			
-					@media (max-width: 479px) {
-						width: 270px;
-						height: 246px;
-						top: -25px;
-						left: -33px;
-					}
-				}
-			@media (max-width: 1439px){
-				width: 315px;
-				height: 232px;
-				margin-right: 49px;
-				img {
-					width: 100%;
-					height: 100%;
-				}
+	&__img {
+		margin-top: 0.875rem;
+		margin-right: 8.4375rem;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -2.875rem;
+			left: -3.625rem;
+			width: 30.875rem;
+			height: 28.0625rem;
+			background: url('../img/pages/crowdfunding-page/back1.svg') 0 0 / 100% 100% no-repeat;
+
+			@media (max-width: 89.9375rem) {
+				width: 24.25rem;
+				height: 24.375rem;
+				top: -3.125rem;
+				left: -2.8125rem;
 			}
-			@media (max-width: 1023px){
-				margin-top: 50px;
-				margin-right: 0;
+
+			@media (max-width: 63.9375rem) {
+				width: 25.4375rem;
+				height: 24.125rem;
+				top: -3.125rem;
+				left: -2.8125rem;
 			}
-			@media (max-width: 767px){
-				margin-top: 44px;
+
+			@media (max-width: 47.9375rem) {
+				width: 24.8125rem;
+				height: 23.1875rem;
+				top: -2.6875rem;
+				left: -2.5rem;
 			}
-			@media (max-width: 479px){
-				width: 210px;
-				height: 154px;
-				margin-top: 22px;
+
+			@media (max-width: 29.9375rem) {
+				width: 16.875rem;
+				height: 15.375rem;
+				top: -1.5625rem;
+				left: -2.0625rem;
 			}
 		}
+		@media (max-width: 89.9375rem){
+			width: 19.6875rem;
+			height: 14.5rem;
+			margin-right: 3.0625rem;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		@media (max-width: 63.9375rem){
+			margin-top: 3.125rem;
+			margin-right: 0;
+		}
+		@media (max-width: 47.9375rem){
+			margin-top: 2.75rem;
+		}
+		@media (max-width: 29.9375rem){
+			width: 13.125rem;
+			height: 9.625rem;
+			margin-top: 1.375rem;
+		}
+	}
 }
 
 
@@ -132,905 +134,904 @@
 .model-crowdfunding-page {
 	&__container {
 		p {
-			margin-top: 48px;
+			margin-top: 3rem;
 			text-align: left;
-			@media (max-width: 767px){
-				margin-top: 36px;
+			@media (max-width: 47.9375rem){
+				margin-top: 2.25rem;
 			}
-			@media (max-width: 479px){
+			@media (max-width: 29.9375rem){
 				&:nth-child(3){
-					margin-top: 24px;
+					margin-top: 1.5rem;
 				}
 				&:last-child{
-					margin-top: 16px;
+					margin-top: 1rem;
 				}
 			}
 		}
 		ul {
-			margin-top: 25px;
-			@media (max-width: 767px){
-				margin-top: 7px;
+			margin-top: 1.5625rem;
+			@media (max-width: 47.9375rem){
+				margin-top: 0.4375rem;
 			}
 			li {
 				font-family: 'Inter';
 				font-style: normal;
 				font-weight: 500;
-				font-size: 24px;
-				line-height: 29px;
+				font-size: 1.5rem;
+				line-height: 1.8125rem;
 				display: flex;
 				align-items: center;
 				color: #F4F6F8;
-				padding-left: 38px;
+				padding-left: 2.375rem;
 				position: relative;
-				@media (max-width: 767px){
-					font-size: 14px;
-					line-height: 17px;
-					padding-left: 21px;
+				@media (max-width: 47.9375rem){
+					font-size: 0.875rem;
+					line-height: 1.0625rem;
+					padding-left: 1.3125rem;
 				}
-				@media (max-width: 479px){
-					font-size: 10px;
-					line-height: 12px;
-					padding-left: 16px;
+				@media (max-width: 29.9375rem){
+					font-size: 0.625rem;
+					line-height: 0.75rem;
+					padding-left: 1rem;
 				}
 				&::before{
 					content:'';
 					position: absolute;
 					top: 50%;
-					left: 15px;
-					width: 8px;
-					height: 8px;
+					left: 0.9375rem;
+					width: 0.5rem;
+					height: 0.5rem;
 					transform: translate(0, -50%);
 					background-color: #ffffff;
 					border-radius: 50%;
-					@media (max-width: 767px){
-						width: 4px;
-						height: 4px;
-						left: 9px;
+					@media (max-width: 47.9375rem){
+						width: 0.25rem;
+						height: 0.25rem;
+						left: 0.5625rem;
 					}
-					@media (max-width: 479px){
-						width: 3px;
-						height: 3px;
-						left: 6px;
+					@media (max-width: 29.9375rem){
+						width: 0.1875rem;
+						height: 0.1875rem;
+						left: 0.375rem;
 					}
 				}
 			}
 		}
 	}
-	
-		&__items-top {
-			margin-top: 48px;
-			@media (max-width: 767px){
-				margin-top: 36px;
-			}
-			@media (max-width: 479px){
-				margin-top: 24px;
+
+	&__items-top {
+		margin-top: 3rem;
+		@media (max-width: 47.9375rem){
+			margin-top: 2.25rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 1.5rem;
+		}
+	}
+
+	&__row-top {
+		display: flex;
+		margin: 0 -0.9375rem;
+		@media (max-width: 89.9375rem){
+			margin: 0 -0.71875rem;
+		}
+		@media (max-width: 63.9375rem){
+			margin: 0 -0.5625rem;
+		}
+		@media (max-width: 47.9375rem){
+			margin: 0 -0.359375rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin: 0 -0.25rem;
+		}
+	}
+
+	&__item-top {
+		padding: 0 0.9375rem;
+		@media (max-width: 89.9375rem){
+			padding: 0 0.71875rem;
+		}
+		@media (max-width: 63.9375rem){
+			padding: 0 0.5625rem;
+		}
+		@media (max-width: 47.9375rem){
+			padding: 0 0.359375rem;
+		}
+		@media (max-width: 29.9375rem){
+			padding: 0 0.25rem;
+		}
+		&:not(:last-child) {
+			.model-crowdfunding-page__title-top {
+				position: relative;
+				&::after{
+					content:'';
+					position: absolute;
+					right: 0;
+					top: 50%;
+					background: url('../img/pages/crowdfunding-page/arrows.svg') 0 0 / 100% 100% no-repeat;
+					width: 1.875rem;
+					height: 2.5rem;
+					transform: translate(100%, -50%);
+					@media (max-width: 89.9375rem){
+						width: 1.4375rem;
+						height: 1.9375rem;
+					}
+					@media (max-width: 63.9375rem){
+						width: 1.125rem;
+						height: 1.5rem;
+					}
+					@media (max-width: 47.9375rem){
+						width: 0.719375rem;
+						height: 0.959375rem;
+					}
+					@media (max-width: 29.9375rem){
+						width: 0.5rem;
+						height: 0.625rem;
+					}
+				}
 			}
 		}
-	
-			&__row-top {
-				display: flex;
-				margin: 0 -15px;
-				@media (max-width: 1439px){
-					margin: 0 -11.5px;
-				}
-				@media (max-width: 1023px){
-					margin: 0 -9px;
-				}
-				@media (max-width: 767px){
-					margin: 0 -5.75px;
-				}
-				@media (max-width: 479px){
-					margin: 0 -4px;
-				}
-			}
-	
-				&__item-top {
-					padding: 0 15px;
-					@media (max-width: 1439px){
-						padding: 0 11.5px;
-					}
-					@media (max-width: 1023px){
-						padding: 0 9px;
-					}
-					@media (max-width: 767px){
-						padding: 0 5.75px;
-					}
-					@media (max-width: 479px){
-						padding: 0 4px;
-					}
-					&:not(:last-child) {
-						.model-crowdfunding-page__title-top {
-							position: relative;
-							&::after{
-								content:'';
-								position: absolute;
-								right: 0;
-								top: 50%;
-								background: url('../img/pages/crowdfunding-page/arrows.svg') 0 0 / 100% 100% no-repeat;
-								width: 30px;
-								height: 40px;
-								transform: translate(100%, -50%);
-								@media (max-width: 1439px){
-									width: 23px;
-									height: 31px;
-								}
-								@media (max-width: 1023px){
-									width: 18px;
-									height: 24px;
-								}
-								@media (max-width: 767px){
-									width: 11.51px;
-									height: 15.35px;
-								}
-								@media (max-width: 479px){
-									width: 8px;
-									height: 10px;
-								}
-							}
-						}
-					}
-					&:last-child{
-						position: relative;
-						&::after{
-							content:'';
-							position: absolute;
-							bottom: -45px;
-							left: 50%;
-							width: 5px;
-							height: 45px;
-							background-color: #ffffff;
-							transform: translate(-50%, 0);
-							@media (max-width: 1439px){
-								bottom: -32px;
-								height: 32px;
-							}
-							@media (max-width: 1023px){
-								bottom: -30px;
-								height: 30px;
-							}
-							@media (max-width: 767px){
-								width: 2px;
-								bottom: -18px;
-								height: 19px;
-							}
-							@media (max-width: 479px){
-								width: 1.5px;
-								bottom: -9px;
-								height: 9px;
-							}
-						}
-					}
-				}
-	
-					&__column-top {
-						width: 370px;
-						@media (max-width: 1439px){
-							width: 291px;
-						}
-						@media (max-width: 1023px){
-							width: 223px;
-						}
-						@media (max-width: 767px){
-							width: 142px;
-						}
-						@media (max-width: 479px){
-							width: 94px;
-						}
-						.color1 {
-							background: #FFB3E7;
-						}
-						.color2 {
-							background: #00DBC8;
-						}
-						.color3 {
-							background: #B1A8FF;
-						}
-					}
-	
-						&__title-top {
-							width: 100%;
-							height: 150px;
-							box-shadow: 0px 0px 10px #F4F6F8;
-							border-radius: 30px 30px 0px 0px;
-							font-family: 'Inter';
-							font-style: normal;
-							font-weight: 400;
-							font-size: 32px;
-							line-height: 39px;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							text-align: center;
-							color: #F4F6F8;
-							@media (max-width: 1439px){
-								height: 118px;
-								font-size: 25.2287px;
-								line-height: 31px;
-							}
-							@media (max-width: 1023px){
-								height: 90px;
-								font-size: 19.3311px;
-								line-height: 23px;
-							}
-							@media (max-width: 767px){
-								box-shadow: 0px 0px 3.83654px #F4F6F8;
-								border-radius: 11.5096px 11.5096px 0px 0px;
-								height: 57px;
-								font-size: 12.2769px;
-								line-height: 15px;
-							}
-							@media (max-width: 479px){
-								height: 38px;
-								font-size: 8px;
-								line-height: 10px;
-								box-shadow: 0px 0px 2.5577px #F4F6F8;
-								border-radius: 7px 7px 0px 0px;
-							}
-						}
-	
-						&__text-top {
-							width: 100%;
-							height: 280px;
-							border: 5px solid #F4F6F8;
-							border-radius: 0px 0px 30px 30px;
-							position: relative;
-							font-family: 'Inter';
-							font-style: normal;
-							font-weight: 500;
-							font-size: 24px;
-							line-height: 29px;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							text-align: center;
-							color: #FFFFFF;
-							padding: 0 10px;
-							@media (max-width: 1439px){
-								height: 220px;
-								font-size: 18.9215px;
-								line-height: 23px;
-								padding: 0 7.5px;
-							}
-							@media (max-width: 1023px){
-								height: 169px;
-								font-size: 14.4983px;
-								line-height: 18px;
-								padding: 0 5px;
-							}
-							@media (max-width: 767px){
-								padding: 0 3.5px;
-							}
-							@media (max-width: 479px){
-								padding: 0;
-							}
-							@media (max-width: 767px){
-								height: 107px;
-								font-size: 9.20771px;
-								line-height: 11px;
-								border: 1.91827px solid #F4F6F8;
-								border-radius: 0px 0px 11.5096px 11.5096px;
-							}
-							@media (max-width: 479px){
-								height: 71px;
-								border: 1.27885px solid #F4F6F8;
-								border-radius: 0px 0px 7.67309px 7.67309px;
-								font-size: 6px;
-								line-height: 7px;
-							}
-							&::before{
-								content:'';
-								position: absolute;
-								top: 0;
-								left: 0;
-								width: 100%;
-								height: 100%;
-								filter: drop-shadow(0px 0px 10px #F4F6F8);
-							}
-						}
-	
-		&__items-bottom {
-			margin-top: 80px;
+		&:last-child{
 			position: relative;
-			@media (max-width: 1439px){
-				margin-top: 63px;
-			}
-			@media (max-width: 1023px){
-				margin-top: 48px;
-			}
-			@media (max-width: 767px){
-				margin-top: 30px;
-			}
-			@media (max-width: 479px){
-				margin-top: 21px;
-			}
-			&::before{
+			&::after{
 				content:'';
 				position: absolute;
-				top: -40px;
-				left: 97.5px;
-				width: calc(100% - 195px);
-				height: 5px;
+				bottom: -2.8125rem;
+				left: 50%;
+				width: 0.3125rem;
+				height: 2.8125rem;
 				background-color: #ffffff;
-				transform: translate(0, 50%);
-				@media (max-width: 1439px){
-					top: -37.5px;
-					left: 78.5px;
-					width: calc(100% - 154px);
+				transform: translate(-50%, 0);
+				@media (max-width: 89.9375rem){
+					bottom: -2rem;
+					height: 2rem;
 				}
-				@media (max-width: 1023px){
-					height: 5px;
-					top: -24px;
-					left: 58.5px;
-					width: calc(100% - 116.5px);
+				@media (max-width: 63.9375rem){
+					bottom: -1.875rem;
+					height: 1.875rem;
 				}
-				@media (max-width: 767px){
-					height: 2px;
-					top: -15px;
-					left: 37px;
-					width: calc(100% - 75px);
+				@media (max-width: 47.9375rem){
+					width: 0.125rem;
+					bottom: -1.125rem;
+					height: 1.1875rem;
 				}
-				@media (max-width: 479px){
-					top: -15px;
-					left: 24px;
-					width: calc(100% - 49px);
+				@media (max-width: 29.9375rem){
+					width: 0.09375rem;
+					bottom: -0.5625rem;
+					height: 0.5625rem;
 				}
 			}
 		}
-	
-			&__row-bottom {
-				display: flex;
-				justify-content: space-between;
+	}
+
+	&__column-top {
+		width: 23.125rem;
+		@media (max-width: 89.9375rem){
+			width: 18.1875rem;
+		}
+		@media (max-width: 63.9375rem){
+			width: 13.9375rem;
+		}
+		@media (max-width: 47.9375rem){
+			width: 8.875rem;
+		}
+		@media (max-width: 29.9375rem){
+			width: 5.875rem;
+		}
+		.color1 {
+			background: #FFB3E7;
+		}
+		.color2 {
+			background: #00DBC8;
+		}
+		.color3 {
+			background: #B1A8FF;
+		}
+	}
+
+	&__title-top {
+		width: 100%;
+		height: 9.375rem;
+		box-shadow: 0 0 0.625rem #F4F6F8;
+		border-radius: 1.875rem 1.875rem 0 0;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 2.4375rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #F4F6F8;
+		@media (max-width: 89.9375rem){
+			height: 7.375rem;
+			font-size: 1.57679375rem;
+			line-height: 1.9375rem;
+		}
+		@media (max-width: 63.9375rem){
+			height: 5.625rem;
+			font-size: 1.20819375rem;
+			line-height: 1.4375rem;
+		}
+		@media (max-width: 47.9375rem){
+			box-shadow: 0 0 0.23978375rem #F4F6F8;
+			border-radius: 0.71935rem 0.71935rem 0 0;
+			height: 3.5625rem;
+			font-size: 0.76730625rem;
+			line-height: 0.9375rem;
+		}
+		@media (max-width: 29.9375rem){
+			height: 2.375rem;
+			font-size: 0.5rem;
+			line-height: 0.625rem;
+			box-shadow: 0 0 0.15985625rem #F4F6F8;
+			border-radius: 0.4375rem 0.4375rem 0 0;
+		}
+	}
+
+	&__text-top {
+		width: 100%;
+		height: 17.5rem;
+		border: 0.3125rem solid #F4F6F8;
+		border-radius: 0 0 1.875rem 1.875rem;
+		position: relative;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.8125rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 0 0.625rem;
+		@media (max-width: 89.9375rem){
+			height: 13.75rem;
+			font-size: 1.18259375rem;
+			line-height: 1.4375rem;
+			padding: 0 0.46875rem;
+		}
+		@media (max-width: 63.9375rem){
+			height: 10.5625rem;
+			font-size: 0.90614375rem;
+			line-height: 1.125rem;
+			padding: 0 0.3125rem;
+		}
+		@media (max-width: 47.9375rem){
+			padding: 0 0.21875rem;
+		}
+		@media (max-width: 29.9375rem){
+			padding: 0;
+		}
+		@media (max-width: 47.9375rem){
+			height: 6.6875rem;
+			font-size: 0.575481875rem;
+			line-height: 0.6875rem;
+			border: 0.119891875rem solid #F4F6F8;
+			border-radius: 0 0 0.71935rem 0.71935rem;
+		}
+		@media (max-width: 29.9375rem){
+			height: 4.4375rem;
+			border: 0.079928125rem solid #F4F6F8;
+			border-radius: 0 0  0.479568125rem  0.479568125rem;
+			font-size: 0.375rem;
+			line-height: 0.4375rem;
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			filter: drop-shadow(0 0 0.625rem #F4F6F8);
+		}
+	}
+
+	&__items-bottom {
+		margin-top: 5rem;
+		position: relative;
+		@media (max-width: 89.9375rem){
+			margin-top: 3.9375rem;
+		}
+		@media (max-width: 63.9375rem){
+			margin-top: 3rem;
+		}
+		@media (max-width: 47.9375rem){
+			margin-top: 1.875rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 1.3125rem;
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			top: -2.5rem;
+			left: 6.09375rem;
+			width: calc(100% - 12.1875rem);
+			height: 0.3125rem;
+			background-color: #ffffff;
+			transform: translate(0, 50%);
+			@media (max-width: 89.9375rem){
+				top: -2.34375rem;
+				left: 4.90625rem;
+				width: calc(100% - 9.625rem);
 			}
-	
-				&__item-bottom {
-					width: 200px;
-					height: 200px;
-					background: #4D84EE;
-					border: 5px solid #F4F6F8;
-					box-shadow: 0px 0px 10px rgba(244, 246, 248, 0.25);
-					border-radius: 25px;
-					position: relative;
-					@media (max-width: 1439px){
-						width: 157px;
-						height: 157px;
-					}
-					@media (max-width: 1023px){
-						width: 120px;
-						height: 120px;
-					}
-					@media (max-width: 767px){
-						width: 76px;
-						height: 76px;
-						border: 1.91827px solid #F4F6F8;
-						box-shadow: 0px 0px 3.83654px rgba(244, 246, 248, 0.25);
-						border-radius: 9.59136px;
-					}
-					@media (max-width: 479px){
-						width: 51px;
-						height: 51px;
-						border: 1.27885px solid #F4F6F8;
-						box-shadow: 0px 0px 2.5577px rgba(244, 246, 248, 0.25);
-						border-radius: 6px;
-					}
-					&::before{
-						content:'';
-						position: absolute;
-						top: -40px;
-						left: 50%;
-						width: 5px;
-						height: 40px;
-						background-color: #ffffff;
-						transform: translate(-50%, 0);
-						@media (max-width: 1023px){
-							top: -25.8px;
-							height: 26px;
-						}
-						@media (max-width: 767px){
-							width: 2px;
-							top: -15.8px;
-							height: 15px;
-						}
-						@media (max-width: 479px){
-							width: 1.5px;
-							top: -14.8px;
-							height: 14px;
-						}
-					}
-				}
-	
-					&__text-bottom {
-						width: 100%;
-						height: 100%;
-						display: flex;
-						align-items: center;
-						font-family: 'Inter';
-						font-style: normal;
-						font-weight: 500;
-						font-size: 18px;
-						line-height: 22px;
-						display: flex;
-						align-items: center;
-						text-align: center;
-						color: #F4F6F8;
-						@media (max-width: 1439px){
-							font-size: 14.1911px;
-							line-height: 17px;
-						}
-						@media (max-width: 1023px){
-							font-size: 10.8737px;
-							line-height: 13px;
-						}
-						@media (max-width: 767px){
-							font-size: 6.90578px;
-							line-height: 8px;
-						}
-						@media (max-width: 479px){
-							font-size: 5px;
-							line-height: 6px;
-						}
-					}
+			@media (max-width: 63.9375rem){
+				height: 0.3125rem;
+				top: -1.5rem;
+				left: 3.65625rem;
+				width: calc(100% - 7.28125rem);
+			}
+			@media (max-width: 47.9375rem){
+				height: 0.125rem;
+				top: -0.9375rem;
+				left: 2.3125rem;
+				width: calc(100% - 4.6875rem);
+			}
+			@media (max-width: 29.9375rem){
+				top: -0.9375rem;
+				left: 1.5rem;
+				width: calc(100% - 3.0625rem);
+			}
+		}
+	}
+	&__row-bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item-bottom {
+		width: 12.5rem;
+		height: 12.5rem;
+		background: #4D84EE;
+		border: 0.3125rem solid #F4F6F8;
+		box-shadow: 0 0 0.625rem rgba(244, 246, 248, 0.25);
+		border-radius: 1.5625rem;
+		position: relative;
+		@media (max-width: 89.9375rem){
+			width: 9.8125rem;
+			height: 9.8125rem;
+		}
+		@media (max-width: 63.9375rem){
+			width: 7.5rem;
+			height: 7.5rem;
+		}
+		@media (max-width: 47.9375rem){
+			width: 4.75rem;
+			height: 4.75rem;
+			border: 0.119891875rem solid #F4F6F8;
+			box-shadow: 0 0 0.23978375rem rgba(244, 246, 248, 0.25);
+			border-radius: 0.59946rem;
+		}
+		@media (max-width: 29.9375rem){
+			width: 3.1875rem;
+			height: 3.1875rem;
+			border: 0.079928125rem solid #F4F6F8;
+			box-shadow: 0 0 0.15985625rem rgba(244, 246, 248, 0.25);
+			border-radius: 0.375rem;
+		}
+		&::before{
+			content:'';
+			position: absolute;
+			top: -2.5rem;
+			left: 50%;
+			width: 0.3125rem;
+			height: 2.5rem;
+			background-color: #ffffff;
+			transform: translate(-50%, 0);
+			@media (max-width: 63.9375rem){
+				top: -1.6125rem;
+				height: 1.625rem;
+			}
+			@media (max-width: 47.9375rem){
+				width: 0.125rem;
+				top: -0.9875rem;
+				height: 0.9375rem;
+			}
+			@media (max-width: 29.9375rem){
+				width: 0.09375rem;
+				top: -0.925rem;
+				height: 0.875rem;
+			}
+		}
+	}
+
+	&__text-bottom {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.125rem;
+		line-height: 1.375rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #F4F6F8;
+		@media (max-width: 89.9375rem){
+			font-size: 0.88694375rem;
+			line-height: 1.0625rem;
+		}
+		@media (max-width: 63.9375rem){
+			font-size: 0.67960625rem;
+			line-height: 0.8125rem;
+		}
+		@media (max-width: 47.9375rem){
+			font-size: 0.43161125rem;
+			line-height: 0.5rem;
+		}
+		@media (max-width: 29.9375rem){
+			font-size: 0.3125rem;
+			line-height: 0.375rem;
+		}
+	}
 }
 
 
 /* work-crowdfunding-page */
 .work-crowdfunding-page {
-	margin-top: 60px;
-	@media (max-width: 767px){
-		margin-top: 36px;
+	margin-top: 3.75rem;
+	@media (max-width: 47.9375rem){
+		margin-top: 2.25rem;
 	}
-	@media (max-width: 479px){
-		margin-top: 24px;
+	@media (max-width: 29.9375rem){
+		margin-top: 1.5rem;
 	}
 	&__container {}
-	
-		&__body {
-			&--left {
-				h2 {
-					width: 358px;
-					max-width: 100%;
-					margin-top: 75px;
-					@media (max-width: 1023px){
-						margin-top: 0;
-						text-align: center;
-					}
-					@media (max-width: 767px){
-						width: 450px;
-					}
-					@media (max-width: 479px){
-						width: 300px;
-					}
+
+	&__body {
+		&--left {
+			h2 {
+				width: 22.875rem;
+				max-width: 100%;
+				margin-top: 4.6875rem;
+				@media (max-width: 63.9375rem){
+					margin-top: 0;
+					text-align: center;
 				}
-				p {
-					width: 375px;
-					margin-top: 32px;
+				@media (max-width: 47.9375rem){
+					width: 28.125rem;
+				}
+				@media (max-width: 29.9375rem){
+					width: 18.75rem;
 				}
 			}
-			&--text-desktop {
-				@media (max-width: 1023px){
-					display: none;
-				}
+			p {
+				width: 23.4375rem;
+				margin-top: 2rem;
 			}
-			&--text-mobile {		
+		}
+		&--text-desktop {
+			@media (max-width: 63.9375rem){
 				display: none;
-				@media (max-width: 1023px){
-					display: block;
-					margin-top: 63px;
-					align-self: flex-start;
-				}
-				@media (max-width: 479px){
-					margin-top: 27px;
-				}
 			}
 		}
-	
-			&__img {
-				margin-top: 64px;
-				margin-right: 229px;
-				position: relative;
-				
-					&::before {
-						content: '';
-						position: absolute;
-						z-index: -1;
-						top: -70px;
-						left: -63px;
-						width: 410px;
-						height: 341px;
-						background: url('../img/pages/crowdfunding-page/back2.svg') 0 0 / 100% 100% no-repeat;
-				
-						@media (max-width: 1439px) {
-							width: 388px;
-							height: 305px;
-							top: -47px;
-							left: -58px;
-						}
-				
-						@media (max-width: 1023px) {
-							width: 407px;
-							height: 337px;
-							top: -78px;
-							left: -70px;
-						}
-				
-						@media (max-width: 767px) {
-							width: 358px;
-							height: 371px;
-							top: -92px;
-							left: -40px;
-						}
-				
-						@media (max-width: 479px) {
-							width: 240px;
-							height: 194px;
-							top: -32px;
-							left: -27px;
-						}
-					}
-				@media (max-width: 1439px){
-					margin-right: 159px;
-				}
-				@media (max-width: 1023px){
-					margin-top: 88px;
-					margin-right: 0;
-				}
-				@media (max-width: 479px){
-					width: 158px;
-					height: 153px;
-					margin-top: 59px;
-					img {
-						width: 100%;
-						height: 100%;
-					}
-				}
+		&--text-mobile {
+			display: none;
+			@media (max-width: 63.9375rem){
+				display: block;
+				margin-top: 3.9375rem;
+				align-self: flex-start;
 			}
-	
-		&__items {
-			margin-top: 50px;
-			display: flex;
-			justify-content: space-between;
-			@media (max-width: 1439px){
-				margin-top: 43px;
-			}
-			@media (max-width: 1023px){
-				width: 597px;
-				justify-content: center;
-				margin: 0 auto;
-				margin-top: 24px;
-				flex-wrap: wrap;
-				row-gap: 31px;
-			}
-			@media (max-width: 767px){
-				width: 270px;
-				row-gap: 14px;
-			}
-			@media (max-width: 479px){
-				width: 180px;
-				margin-top: 10px;
-				margin-bottom: 24px;
-				row-gap: 10px;
+			@media (max-width: 29.9375rem){
+				margin-top: 1.6875rem;
 			}
 		}
-	
-			&__item {
-				flex: 0 1 33.333%;
-				display: flex;
-				justify-content: center;
-				@media (max-width: 1023px){
-					flex: 0 1 50%;
-				}
-				@media (max-width: 767px){
-					flex: 1 1 100%;
-				}
+	}
+
+	&__img {
+		margin-top: 4rem;
+		margin-right: 14.3125rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -4.375rem;
+			left: -3.9375rem;
+			width: 25.625rem;
+			height: 21.3125rem;
+			background: url('../img/pages/crowdfunding-page/back2.svg') 0 0 / 100% 100% no-repeat;
+
+			@media (max-width: 89.9375rem) {
+				width: 24.25rem;
+				height: 19.0625rem;
+				top: -2.9375rem;
+				left: -3.625rem;
 			}
-	
-				&__column {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					width: 270px;
-				}
-	
-					&__icon {
-						width: 100px;
-						height: 100px;
-						font-family: 'Inter';
-						font-style: normal;
-						font-weight: 600;
-						font-size: 64px;
-						line-height: 77px;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						text-align: center;
-						border-radius: 50%;
-						color: #FFFFFF;
-						background: linear-gradient(180deg, #EB00FF 0%, #00DBC8 100%);
-						box-shadow: 0px 0px 40px #6F72E2;
-						@media (max-width: 479px){
-							width: 67px;
-							height: 67px;
-							font-size: 43px;
-							line-height: 52px;
-						}
-					}
-	
-					&__text {
-						margin-top: 15px;
-						font-family: 'Inter';
-						font-style: normal;
-						font-weight: 500;
-						font-size: 20px;
-						line-height: 24px;
-						display: flex;
-						align-items: center;
-						text-align: center;
-						color: #F4F6F8;
-						@media (max-width: 767px){
-							font-size: 14px;
-							line-height: 17px;
-						}
-						@media (max-width: 479px){
-							font-size: 10px;
-							line-height: 12px;
-						}
-					}
-		p {
-			text-align: left;
-			margin-top: 48px;
-			@media (max-width: 1023px){
-				margin-top: 36px;
+
+			@media (max-width: 63.9375rem) {
+				width: 25.4375rem;
+				height: 21.0625rem;
+				top: -4.875rem;
+				left: -4.375rem;
 			}
-			@media (max-width: 767px){
-				margin-top: 24px;
+
+			@media (max-width: 47.9375rem) {
+				width: 22.375rem;
+				height: 23.1875rem;
+				top: -5.75rem;
+				left: -2.5rem;
 			}
-			@media (max-width: 479px){
-				margin-top: 14px;
+
+			@media (max-width: 29.9375rem) {
+				width: 15rem;
+				height: 12.125rem;
+				top: -2rem;
+				left: -1.6875rem;
 			}
 		}
+		@media (max-width: 89.9375rem){
+			margin-right: 9.9375rem;
+		}
+		@media (max-width: 63.9375rem){
+			margin-top: 5.5rem;
+			margin-right: 0;
+		}
+		@media (max-width: 29.9375rem){
+			width: 9.875rem;
+			height: 9.5625rem;
+			margin-top: 3.6875rem;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	&__items {
+		margin-top: 3.125rem;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 89.9375rem){
+			margin-top: 2.6875rem;
+		}
+		@media (max-width: 63.9375rem){
+			width: 37.3125rem;
+			justify-content: center;
+			margin: 0 auto;
+			margin-top: 1.5rem;
+			flex-wrap: wrap;
+			row-gap: 1.9375rem;
+		}
+		@media (max-width: 47.9375rem){
+			width: 16.875rem;
+			row-gap: 0.875rem;
+		}
+		@media (max-width: 29.9375rem){
+			width: 11.25rem;
+			margin-top: 0.625rem;
+			margin-bottom: 1.5rem;
+			row-gap: 0.625rem;
+		}
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+		display: flex;
+		justify-content: center;
+		@media (max-width: 63.9375rem){
+			flex: 0 1 50%;
+		}
+		@media (max-width: 47.9375rem){
+			flex: 1 1 100%;
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 16.875rem;
+	}
+
+	&__icon {
+		width: 6.25rem;
+		height: 6.25rem;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 4rem;
+		line-height: 4.8125rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-radius: 50%;
+		color: #FFFFFF;
+		background: linear-gradient(180deg, #EB00FF 0%, #00DBC8 100%);
+		box-shadow: 0 0 2.5rem #6F72E2;
+		@media (max-width: 29.9375rem){
+			width: 4.1875rem;
+			height: 4.1875rem;
+			font-size: 2.6875rem;
+			line-height: 3.25rem;
+		}
+	}
+
+	&__text {
+		margin-top: 0.9375rem;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #F4F6F8;
+		@media (max-width: 47.9375rem){
+			font-size: 0.875rem;
+			line-height: 1.0625rem;
+		}
+		@media (max-width: 29.9375rem){
+			font-size: 0.625rem;
+			line-height: 0.75rem;
+		}
+
+		@include ie(){
+			align-self: stretch;
+		}
+	}
+	p {
+		text-align: left;
+		margin-top: 3rem;
+		@media (max-width: 63.9375rem){
+			margin-top: 2.25rem;
+		}
+		@media (max-width: 47.9375rem){
+			margin-top: 1.5rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 0.875rem;
+		}
+	}
 }
 
 
 /* scoring-crowdfunding-page */
 .scoring-crowdfunding-page {
-	margin-top: 44px;
-	@media (max-width: 1439px){
-		margin-top: 60px;
+	margin-top: 2.75rem;
+	@media (max-width: 89.9375rem){
+		margin-top: 3.75rem;
 	}
-	@media (max-width: 1023px){
+	@media (max-width: 63.9375rem){
 		margin-top: 0;
 	}
 	&__container {
 		>p {
 			text-align: left;
-			margin-top: 48px;
-			@media (max-width: 1023px){
-				margin-top: 36px;
+			margin-top: 3rem;
+			@media (max-width: 63.9375rem){
+				margin-top: 2.25rem;
 			}
-			@media (max-width: 767px){
-				margin-top: 24px;
+			@media (max-width: 47.9375rem){
+				margin-top: 1.5rem;
 			}
-			@media (max-width: 479px){
-				margin-top: 14px;
+			@media (max-width: 29.9375rem){
+				margin-top: 0.875rem;
 			}
 		}
 	}
-	
-		&__body {
-			&--right {
-				text-align: right;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-end;
-				@media (max-width: 1023px){
-					order: 1;
-					align-items: flex-start;
-					align-self: flex-start;
-					text-align: center;
+
+	&__body {
+		&--right {
+			text-align: right;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			@media (max-width: 63.9375rem){
+				order: 1;
+				align-items: flex-start;
+				align-self: flex-start;
+				text-align: center;
+			}
+			@media (max-width: 47.9375rem){
+				margin: 0 auto;
+			}
+			h2 {
+				width: 35.625rem;
+				margin-top: 1rem;
+				@media (max-width: 89.9375rem){
+					width: 21.625rem;
+					margin-top: 3.75rem;
 				}
-				@media (max-width: 767px){
-					margin: 0 auto;
+				@media (max-width: 63.9375rem){
+					width: 44.25rem;
 				}
-				h2 {
-					width: 570px;
-					margin-top: 16px;
-					@media (max-width: 1439px){
-						width: 346px;
-						margin-top: 60px;
-					}
-					@media (max-width: 1023px){
-						width: 708px;
-					}
-					@media (max-width: 767px){
-						margin-top: 36px;
-						width: 450px;
-					}
-					@media (max-width: 479px){
-						margin-top: 24px;
-						width: 300px;
-					}
+				@media (max-width: 47.9375rem){
+					margin-top: 2.25rem;
+					width: 28.125rem;
 				}
-				p {
-					width: 670px;
-					margin-top: 32px;
-					@media (max-width: 1439px){
-						width: 465px;
-					}
+				@media (max-width: 29.9375rem){
+					margin-top: 1.5rem;
+					width: 18.75rem;
 				}
 			}
-			
-				&--text-desktop {
-					@media (max-width: 1023px){
-						display: none;
-					}
+			p {
+				width: 41.875rem;
+				margin-top: 2rem;
+				@media (max-width: 89.9375rem){
+					width: 29.0625rem;
 				}
-			
-				&--text-mobile {
-					display: none;
-					@media (max-width: 1023px){
-						display: block;
-						margin-top: 66px;
-						order: 3;
-						text-align: left;
-					}
-					@media (max-width: 767px){
-						margin-top: 72px;
-					}
-					@media (max-width: 479px){
-						margin-top: 43px;
-					}
-				}
+			}
 		}
-	
-			&__img {
-				margin-top: 98px;
-				margin-left: 105px;
-				position: relative;
-				
-					&::before {
-						content: '';
-						position: absolute;
-						z-index: -1;
-						top: -70px;
-						left: -63px;
-						width: 439px;
-						height: 415px;
-						background: url('../img/pages/crowdfunding-page/back3.svg') 0 0 / 100% 100% no-repeat;
-				
-						@media (max-width: 1439px) {
-							width: 423px;
-							height: 366px;
-							top: -47px;
-							left: -58px;
-						}
-				
-						@media (max-width: 1023px) {
-							width: 393px;
-							height: 428px;
-							top: -78px;
-							left: -36px;
-						}
-				
-						@media (max-width: 767px) {
-							width: 390px;
-							height: 476px;
-							top: -92px;
-							left: -40px;
-						}
-				
-						@media (max-width: 479px) {
-							width: 255px;
-							height: 257px;
-							top: -32px;
-							left: -27px;
-						}
-					}
-				@media (max-width: 1439px){
-					margin-top: 151px;
-					margin-left: 53px;
-				}
-				@media (max-width: 1023px) {
-					order: 2;
-					margin-top: 50px;
-					margin-left: 0;
-				}
-				@media (max-width: 767px){
-					margin-top: 39px;
-				}
-				@media (max-width: 479px){
-					margin-top: 26px;
-					width: 197px;
-					height: 173px;
-					img {
-						width: 100%;
-						height: 100%;
-					}
-				}
+		&--text-desktop {
+			@media (max-width: 63.9375rem){
+				display: none;
 			}
+		}
+		&--text-mobile {
+			display: none;
+			@media (max-width: 63.9375rem){
+				display: block;
+				margin-top: 4.125rem;
+				order: 3;
+				text-align: left;
+			}
+			@media (max-width: 47.9375rem){
+				margin-top: 4.5rem;
+			}
+			@media (max-width: 29.9375rem){
+				margin-top: 2.6875rem;
+			}
+		}
+	}
+
+	&__img {
+		margin-top: 6.125rem;
+		margin-left: 6.5625rem;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -4.375rem;
+			left: -3.9375rem;
+			width: 27.4375rem;
+			height: 25.9375rem;
+			background: url('../img/pages/crowdfunding-page/back3.svg') 0 0 / 100% 100% no-repeat;
+
+			@media (max-width: 89.9375rem) {
+				width: 26.4375rem;
+				height: 22.875rem;
+				top: -2.9375rem;
+				left: -3.625rem;
+			}
+
+			@media (max-width: 63.9375rem) {
+				width: 24.5625rem;
+				height: 26.75rem;
+				top: -4.875rem;
+				left: -2.25rem;
+			}
+
+			@media (max-width: 47.9375rem) {
+				width: 24.375rem;
+				height: 29.75rem;
+				top: -5.75rem;
+				left: -2.5rem;
+			}
+
+			@media (max-width: 29.9375rem) {
+				width: 15.9375rem;
+				height: 16.0625rem;
+				top: -2rem;
+				left: -1.6875rem;
+			}
+		}
+		@media (max-width: 89.9375rem){
+			margin-top: 9.4375rem;
+			margin-left: 3.3125rem;
+		}
+		@media (max-width: 63.9375rem) {
+			order: 2;
+			margin-top: 3.125rem;
+			margin-left: 0;
+		}
+		@media (max-width: 47.9375rem){
+			margin-top: 2.4375rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 1.625rem;
+			width: 12.3125rem;
+			height: 10.8125rem;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 }
 
 
 /* diagram-crowdfunding-page */
 .diagram-crowdfunding-page {
-	margin-top: 60px;
-	@media (max-width: 767px){
-		margin-top: 36px;
+	margin-top: 3.75rem;
+	@media (max-width: 47.9375rem){
+		margin-top: 2.25rem;
 	}
-	@media (max-width: 479px){
-		  margin-top: 24px;
+	@media (max-width: 29.9375rem){
+		margin-top: 1.5rem;
 	}
 	&__container {
 		h2 {
 			justify-content: center;
 			text-align: center;
-			font-size: 36px;
-				line-height: 44px;
-			@media (max-width: 767px){
-				font-size: 26px;
-					line-height: 31px;
+			font-size: 2.25rem;
+			line-height: 2.75rem;
+			@media (max-width: 47.9375rem){
+				font-size: 1.625rem;
+				line-height: 1.9375rem;
 			}
-			@media (max-width: 479px){
-				font-size: 17px;
-					line-height: 21px;
+			@media (max-width: 29.9375rem){
+				font-size: 1.0625rem;
+				line-height: 1.3125rem;
 			}
 		}
 		>span {
 			text-align: center;
-			margin-top: 14px;
+			margin-top: 0.875rem;
 			font-family: 'Inter';
 			font-style: normal;
 			font-weight: 600;
-			font-size: 18px;
-			line-height: 22px;
+			font-size: 1.125rem;
+			line-height: 1.375rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
 			color: #B9B9B9;
-			@media (max-width: 767px){
-				margin-top: 4px;
-				font-size: 10px;
-				line-height: 12px;
+			@media (max-width: 47.9375rem){
+				margin-top: 0.25rem;
+				font-size: 0.625rem;
+				line-height: 0.75rem;
 			}
-			@media (max-width: 479px){
-				margin-top: 3px;
-				font-size: 7px;
-					line-height: 8px;
+			@media (max-width: 29.9375rem){
+				margin-top: 0.1875rem;
+				font-size: 0.4375rem;
+				line-height: 0.5rem;
 			}
 		}
 	}
 	&__item {
 		position: absolute;
-		width: 185px;
-		height: 60px;
+		width: 11.5625rem;
+		height: 3.75rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		border: 5px solid #FFFFFF;
-		border-radius: 10px;
-		@media (max-width: 1439px){
-			width: 160px;
-			height: 52px;
-			border: 4.3218px solid #FFFFFF;
-			border-radius: 8.64359px;
+		border: 0.3125rem solid #FFFFFF;
+		border-radius: 0.625rem;
+		@media (max-width: 89.9375rem){
+			width: 10rem;
+			height: 3.25rem;
+			border: 0.2701125rem solid #FFFFFF;
+			border-radius: 0.540224375rem;
 		}
-		@media (max-width: 1023px){
-			width: 122px;
-			height: 40px;
-			border: 3.31151px solid #FFFFFF;
-				border-radius: 6.62301px;
+		@media (max-width: 63.9375rem){
+			width: 7.625rem;
+			height: 2.5rem;
+			border: 0.206969375rem solid #FFFFFF;
+			border-radius: 0.413938125rem;
 		}
-		@media (max-width: 767px){
-			width: 78px;
-			height: 25px;
-			border: 2.10477px solid #FFFFFF;
-				border-radius: 4.20954px;
+		@media (max-width: 47.9375rem){
+			width: 4.875rem;
+			height: 1.5625rem;
+			border: 0.131548125rem solid #FFFFFF;
+			border-radius: 0.26309625rem;
 		}
-		@media (max-width: 479px){
-			width: 52px;
-			height: 17px;
-			border: 1px solid #FFFFFF;
-				border-radius: 3px;
+		@media (max-width: 29.9375rem){
+			width: 3.25rem;
+			height: 1.0625rem;
+			border: 0.0625rem solid #FFFFFF;
+			border-radius: 0.1875rem;
 		}
 		span {
 			font-family: 'Inter';
@@ -1038,267 +1039,261 @@
 			color: #FFFFFF;
 			&:first-child{
 				font-weight: 500;
-				font-size: 20px;
-				line-height: 24px;
-				@media (max-width: 1439px){
-					font-size: 17.2872px;
-						line-height: 21px;
+				font-size: 1.25rem;
+				line-height: 1.5rem;
+				@media (max-width: 89.9375rem){
+					font-size: 1.08045rem;
+					line-height: 1.3125rem;
 				}
-				@media (max-width: 1023px){
-					font-size: 13.246px;
-						line-height: 16px;
+				@media (max-width: 63.9375rem){
+					font-size: 0.827875rem;
+					line-height: 1rem;
 				}
-				@media (max-width: 767px){
-					font-size: 8.41908px;
-						line-height: 10px;
+				@media (max-width: 47.9375rem){
+					font-size: 0.5261925rem;
+					line-height: 0.625rem;
 				}
-				@media (max-width: 479px){
-					font-size: 6px;
-					line-height: 7px;
+				@media (max-width: 29.9375rem){
+					font-size: 0.375rem;
+					line-height: 0.4375rem;
 				}
 			}
 			&:last-child{
 				font-weight: 400;
-				font-size: 16px;
-				line-height: 19px;
-				@media (max-width: 1439px){
-					font-size: 13.8297px;
-						line-height: 17px;
+				font-size: 1rem;
+				line-height: 1.1875rem;
+				@media (max-width: 89.9375rem){
+					font-size: 0.86435625rem;
+					line-height: 1.0625rem;
 				}
-				@media (max-width: 1023px){
-					font-size: 10.5968px;
-						line-height: 13px;
+				@media (max-width: 63.9375rem){
+					font-size: 0.6623rem;
+					line-height: 0.8125rem;
 				}
-				@media (max-width: 767px){
-					font-size: 6.73527px;
-						line-height: 8px;
+				@media (max-width: 47.9375rem){
+					font-size: 0.420954375rem;
+					line-height: 0.5rem;
 				}
-				@media (max-width: 479px){
-					font-size: 4px;
-					line-height: 5px;
+				@media (max-width: 29.9375rem){
+					font-size: 0.25rem;
+					line-height: 0.3125rem;
 				}
 			}
 		}
 	}
-		&__body {
-			margin-top: 76px;
-			display: flex;
-			justify-content: center;
-			@media (max-width: 1439px){
-				margin-top: 60px;
-			}
-			@media (max-width: 1023px){
-				margin-top: 37px;
-			}
-			@media (max-width: 767px){
-				margin-top: 24px;
-			}
-			@media (max-width: 479px){
-				  margin-top: 16px;
-			}
+	&__body {
+		margin-top: 4.75rem;
+		display: flex;
+		justify-content: center;
+		@media (max-width: 89.9375rem){
+			margin-top: 3.75rem;
 		}
-	
-		&__circle {
-			position: relative;
-			width: 700px;
-			height: 600px;
-			@media (max-width: 1439px){
-				width: 604px;
-				height: 519px;
-			}
-			@media (max-width: 1023px){
-				width: 464px;
-				height: 397px;
-			}
-			@media (max-width: 767px){
-				width: 294px;
-				height: 253px;
-			}
-			@media (max-width: 479px){
-				width: 196px;
-				height: 168px;
-			}
-			img {
-				width: 100%;
-				height: 100%;
-			}
+		@media (max-width: 63.9375rem){
+			margin-top: 2.3125rem;
 		}
-	
+		@media (max-width: 47.9375rem){
+			margin-top: 1.5rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 1rem;
+		}
+	}
 
-				&__items {}
+	&__circle {
+		position: relative;
+		width: 43.75rem;
+		height: 37.5rem;
+		@media (max-width: 89.9375rem){
+			width: 37.75rem;
+			height: 32.4375rem;
+		}
+		@media (max-width: 63.9375rem){
+			width: 29rem;
+			height: 24.8125rem;
+		}
+		@media (max-width: 47.9375rem){
+			width: 18.375rem;
+			height: 15.8125rem;
+		}
+		@media (max-width: 29.9375rem){
+			width: 12.25rem;
+			height: 10.5rem;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
 
-				&__item1 {
-					top: 1.5%;
-					left: 2%;
-					transform: translate(-100%, 0);
-				}
+	&__items {}
 
-				&__item2 {
-					top: 16%;
-					left: 2%;
-					transform: translate(-100%, 0);
-				}
-
-				&__item3 {
-					top: 35%;
-					left: 2%;
-					transform: translate(-100%, 0);
-				}
-
-				&__item4 {
-					top: 88.5%;
-					left: 2%;
-					transform: translate(-100%, 0);
-				}
-
-
-				&__item5 {
-					top: 17.5%;
-					right: 1.5%;
-					transform: translate(100%, 0);
-				}
+	&__item1 {
+		top: 1.5%;
+		left: 2%;
+		transform: translate(-100%, 0);
+	}
+	&__item2 {
+		top: 16%;
+		left: 2%;
+		transform: translate(-100%, 0);
+	}
+	&__item3 {
+		top: 35%;
+		left: 2%;
+		transform: translate(-100%, 0);
+	}
+	&__item4 {
+		top: 88.5%;
+		left: 2%;
+		transform: translate(-100%, 0);
+	}
+	&__item5 {
+		top: 17.5%;
+		right: 1.5%;
+		transform: translate(100%, 0);
+	}
 }
 
 
 /* risk-crowdfunding-page */
 .risk-crowdfunding-page {
-	margin-top: 48px;
-	margin-bottom: 80px;
-	@media (max-width: 1439px){
-		margin-top: 60px;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	@media (max-width: 89.9375rem){
+		margin-top: 3.75rem;
 	}
-	@media (max-width: 767px){
-		margin-top: 36px;
-		margin-bottom: 40px;
+	@media (max-width: 47.9375rem){
+		margin-top: 2.25rem;
+		margin-bottom: 2.5rem;
 	}
-	@media (max-width: 479px){
-		margin-top: 24px;
+	@media (max-width: 29.9375rem){
+		margin-top: 1.5rem;
 	}
 	&__container {
 		>p {
 			text-align: left;
-			margin-top: 48px;
-			@media (max-width: 1023px){
-				margin-top: 36px;
+			margin-top: 3rem;
+			@media (max-width: 63.9375rem){
+				margin-top: 2.25rem;
 			}
-			@media (max-width: 767px){
-				margin-top: 24px;
+			@media (max-width: 47.9375rem){
+				margin-top: 1.5rem;
 			}
-			@media (max-width: 479px){
-				margin-top: 14px;
+			@media (max-width: 29.9375rem){
+				margin-top: 0.875rem;
 			}
 		}
 	}
-	
-		&__body {
-			margin-bottom: 127px;
-			@media (max-width: 1023px){
-				margin-bottom: 0;
-			}
-			&--left {
-				@media (max-width: 1023px){
-					order: 1;
-				}
-				h2 {
-					margin-top: 124px;
-					@media (max-width: 1439px){
-						margin-top: 94px;
-					}
-					@media (max-width: 1023px){
-						margin-top: 0;
-					}
-				}
-				p {
-					margin-top: 32px;
-					width: 600px;
-				}
-			}
-			
-				&--text-desktop {
-					@media (max-width: 1023px){
-						display: none;
-					}
-				}
-			
-				&--text-mobile {
-					display: none;
-					@media (max-width: 1023px){
-						display: block;
-						order: 3;
-						margin-top: 79px;
-						text-align: left;
-					}
-					@media (max-width: 767px){
-						margin-top: 65px;
-					}
-					@media (max-width: 479px){
-						margin-top: 38px;
-					}
-				}
+
+	&__body {
+		margin-bottom: 7.9375rem;
+		@media (max-width: 63.9375rem){
+			margin-bottom: 0;
 		}
-	
-		&__img {
-			margin-top: 80px;
-			margin-right: 198px;
-			position: relative;
-			
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: -1;
-					top: -70px;
-					left: -63px;
-					width: 439px;
-					height: 378px;
-					background: url('../img/pages/crowdfunding-page/back4.svg') 0 0 / 100% 100% no-repeat;
-			
-					@media (max-width: 1439px) {
-						width: 423px;
-						height: 366px;
-						top: -47px;
-						left: -58px;
-					}
-			
-					@media (max-width: 1023px) {
-						width: 393px;
-						height: 428px;
-						top: -78px;
-						left: -36px;
-					}
-			
-					@media (max-width: 767px) {
-						width: 390px;
-						height: 476px;
-						top: -92px;
-						left: -40px;
-					}
-			
-					@media (max-width: 479px) {
-						width: 255px;
-						height: 257px;
-						top: -32px;
-						left: -27px;
-					}
+		&--left {
+			@media (max-width: 63.9375rem){
+				order: 1;
+			}
+			h2 {
+				margin-top: 7.75rem;
+				@media (max-width: 89.9375rem){
+					margin-top: 5.875rem;
 				}
-			@media (max-width: 1439px){
-				margin-right: 79px;
-			}
-			@media (max-width: 1023px){
-				order: 2;
-				margin-top: 96px;
-				margin-right: 0;
-			}
-			@media (max-width: 767px){
-				margin-top: 119px;
-			}
-			@media (max-width: 479px){
-				margin-top: 76px;
-				width: 186px;
-				height: 161px;
-				img {
-					width: 100%;
-					height: 100%;
+				@media (max-width: 63.9375rem){
+					margin-top: 0;
 				}
+			}
+			p {
+				margin-top: 2rem;
+				width: 37.5rem;
 			}
 		}
+
+		&--text-desktop {
+			@media (max-width: 63.9375rem){
+				display: none;
+			}
+		}
+
+		&--text-mobile {
+			display: none;
+			@media (max-width: 63.9375rem){
+				display: block;
+				order: 3;
+				margin-top: 4.9375rem;
+				text-align: left;
+			}
+			@media (max-width: 47.9375rem){
+				margin-top: 4.0625rem;
+			}
+			@media (max-width: 29.9375rem){
+				margin-top: 2.375rem;
+			}
+		}
+	}
+
+	&__img {
+		margin-top: 5rem;
+		margin-right: 12.375rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: -4.375rem;
+			left: -3.9375rem;
+			width: 27.4375rem;
+			height: 23.625rem;
+			background: url('../img/pages/crowdfunding-page/back4.svg') 0 0 / 100% 100% no-repeat;
+
+			@media (max-width: 89.9375rem) {
+				width: 26.4375rem;
+				height: 22.875rem;
+				top: -2.9375rem;
+				left: -3.625rem;
+			}
+
+			@media (max-width: 63.9375rem) {
+				width: 24.5625rem;
+				height: 26.75rem;
+				top: -4.875rem;
+				left: -2.25rem;
+			}
+
+			@media (max-width: 47.9375rem) {
+				width: 24.375rem;
+				height: 29.75rem;
+				top: -8.75rem;
+				left: -2.5rem;
+			}
+
+			@media (max-width: 29.9375rem) {
+				width: 15.9375rem;
+				height: 16.0625rem;
+				top: -3.6rem;
+				left: -1.6875rem;
+			}
+		}
+		@media (max-width: 89.9375rem){
+			margin-right: 4.9375rem;
+		}
+		@media (max-width: 63.9375rem){
+			order: 2;
+			margin-top: 6rem;
+			margin-right: 0;
+		}
+		@media (max-width: 47.9375rem){
+			margin-top: 7.4375rem;
+		}
+		@media (max-width: 29.9375rem){
+			margin-top: 4.75rem;
+			width: 11.625rem;
+			height: 10.0625rem;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 }
