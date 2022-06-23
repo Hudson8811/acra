@@ -1261,7 +1261,7 @@ h6 {
 .middle-crowdfunding .arrow-crowdfunding {
   position: absolute;
   z-index: 5;
-  left: 50%;
+  left: calc(50% - 0.75rem);
   width: 19.125rem;
   height: 9.375rem;
   display: flex;
@@ -1312,10 +1312,10 @@ h6 {
 }
 
 .middle-crowdfunding__arrow-right::after {
-  transform: translate(50%, -50%);
+  transform: translate(38%, -50%);
   right: 0;
-  border: 5rem solid transparent;
-  border-left: 9.375rem solid #00DBC8;
+  border: 4rem solid transparent;
+  border-left: 7.5rem solid #00DBC8;
 }
 
 .middle-crowdfunding__arrow-left {
@@ -1337,10 +1337,10 @@ h6 {
 }
 
 .middle-crowdfunding__arrow-left::after {
-  transform: translate(50%, -50%);
+  transform: translate(38%, -50%);
   right: 0;
-  border: 5rem solid transparent;
-  border-left: 9.375rem solid #0DE5FE;
+  border: 4rem solid transparent;
+  border-left: 7.5rem solid #0DE5FE;
 }
 
 .middle-crowdfunding__right {
@@ -5660,6 +5660,28 @@ p {
   }
 }
 
+@media (max-width: 119.938rem) {
+  .middle-crowdfunding__arrow-right {
+    top: 1.25rem;
+  }
+
+  .middle-crowdfunding__arrow-right::after {
+    border: 4.25rem solid transparent;
+    border-left: 7.5rem solid #00DBC8;
+    transform: translate(39%, -50%);
+  }
+
+  .middle-crowdfunding__arrow-left {
+    bottom: 1.25rem;
+  }
+
+  .middle-crowdfunding__arrow-left::after {
+    border: 4.25rem solid transparent;
+    border-left: 7.5rem solid #0DE5FE;
+    transform: translate(39%, -50%);
+  }
+}
+
 @media (max-width: 99.9375rem) {
   .wrapper {
     background: url("../img/back/1440.svg") center top/cover no-repeat;
@@ -6839,6 +6861,18 @@ p {
   .middle-crowdfunding__circle-inner {
     width: 12.5rem;
     height: 12.5rem;
+  }
+
+  .middle-crowdfunding .arrow-crowdfunding {
+    left: calc(50% + 0.15rem);
+  }
+
+  .middle-crowdfunding__arrow-right {
+    top: 1.5rem;
+  }
+
+  .middle-crowdfunding__arrow-left {
+    bottom: 1.5rem;
   }
 }
 
@@ -10280,6 +10314,7 @@ p {
   .middle-crowdfunding__arrow-right::after {
     border: 3rem solid transparent;
     border-left: 4.563rem solid #00DBC8;
+    transform: translate(50%, -50%);
   }
 
   .middle-crowdfunding__arrow-left {
@@ -10290,6 +10325,7 @@ p {
   .middle-crowdfunding__arrow-left::after {
     border: 3rem solid transparent;
     border-left: 4.563rem solid #0DE5FE;
+    transform: translate(50%, -50%);
   }
 }
 
@@ -12585,6 +12621,7 @@ p {
   .middle-crowdfunding .arrow-crowdfunding {
     width: 8.313rem;
     height: 4.063rem;
+    left: calc(50% - 0.3rem);
   }
 
   .middle-crowdfunding .arrow-crowdfunding span {
@@ -12603,8 +12640,9 @@ p {
   }
 
   .middle-crowdfunding__arrow-right::after {
-    border: 2rem solid transparent;
-    border-left: 3.563rem solid #00DBC8;
+    border: 1.7rem solid transparent;
+    border-left: 3.2rem solid #00DBC8;
+    transform: translate(47%, -50%);
   }
 
   .middle-crowdfunding__arrow-left {
@@ -12612,8 +12650,9 @@ p {
   }
 
   .middle-crowdfunding__arrow-left::after {
-    border: 2rem solid transparent;
-    border-left: 3.563rem solid #0DE5FE;
+    border: 1.7rem solid transparent;
+    border-left: 3.2rem solid #0DE5FE;
+    transform: translate(40%, -50%);
   }
 }
 
