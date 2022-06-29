@@ -70,6 +70,10 @@
 		align-items: center;
 		text-align: center;
 		color: #FFFFFF;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			opacity: 0.7;
+		}
 		@media (max-width: 63.9375rem){
 			width: 28rem;
 			font-size: 1.75rem;

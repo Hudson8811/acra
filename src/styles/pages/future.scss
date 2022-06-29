@@ -62,7 +62,7 @@
 
 			p {
 				font-weight: 600;
-				width: 35.625rem;
+				width: 36.625rem;
 				margin-top: 2rem;
 
 				@media (max-width:  90rem) {
@@ -218,6 +218,10 @@
 		display: flex;
 		justify-content: center;
 		flex: 0 1 33.333%;
+		@media (max-width: 89.938rem) {
+			width: 16.875rem;
+			flex: 0 1 16.875rem;
+		}
 		@media (max-width: 63.9375rem) {
 			flex: 0 1 auto;
 			&:last-child{
@@ -234,10 +238,13 @@
 	}
 
 	&__column {
-		width: 16.875rem;
+		width: 20.625rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@media (max-width: 89.938rem){
+			width: 100%;
+		}
 		@media (max-width: 29.9375rem) {
 			width: 11.25rem;
 		}
@@ -424,18 +431,18 @@
 	}
 }
 .future-block-video {
-	margin-top: 3rem;
+	margin-top: 3rem!important;
 	@media (max-width: 89.9375rem){
-		margin-top: 3rem;
+		margin-top: 3rem!important;
 	}
 	@media (max-width: 63.9375rem){
-		margin-top: 3rem;
+		margin-top: 3rem!important;
 	}
 	@media (max-width: 47.9375rem){
-		margin-top: 2.25rem;
+		margin-top: 2.25rem!important;
 	}
 	@media (max-width: 29.9375rem){
-		margin-top: 1.5rem;
+		margin-top: 1.5rem!important;
 	}
 	&__wrapper {
 		margin: 0 auto;
@@ -461,7 +468,6 @@
 		margin: 0 auto;
 		margin-top: 3rem;
 		text-align: center;
-		width: 71.875rem;
 		max-width: 100%;
 		@media (max-width:  90rem){
 			width: 57.75rem;
@@ -499,7 +505,6 @@
 	&__container {
 		>p {
 			margin: 0 auto;
-			width: 71.875rem;
 			max-width: 100%;
 			text-align: left;
 			margin-top: 3rem;
@@ -742,8 +747,8 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		display: flex;
 		align-items: center;
 		text-align: center;
@@ -783,12 +788,11 @@
 	}
 	&__container {
 		>p {
-			width: 71.875rem;
 			max-width: 100%;
 			margin: 0 auto;
 			text-align: center;
 			&:last-child{
-				font-weight: 600;
+				font-weight: 500;
 				font-style: italic;
 			}
 			@media (max-width: 47.9375rem) {
@@ -1042,8 +1046,8 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		display: flex;
 		align-items: center;
 		text-align: center;

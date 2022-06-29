@@ -1,13 +1,13 @@
 .bridges {
-	margin-top: 9.6875rem;
+	margin-top: 11.4875rem;
 	@media (max-width: 89.9375rem) {
 		margin-top: 9.5rem;
 	}
 	@media (max-width: 62rem) {
-		margin-top: 5.8125rem;
+		margin-top: 7.3125rem;
 	}
 	@media (max-width: 47.9375rem) {
-		margin-top: 3rem;
+		margin-top: 4.688rem;
 	}
 	@media (max-width: 29.9375rem){
 		margin-top: 1.625rem;
@@ -76,6 +76,18 @@
 			order: 1;
 		}
 	}
+	&__title {
+		@media (max-width: 47.9375rem) {
+			width: 24rem;
+			max-width: 100%;
+			br {
+				display: none;
+			}
+		}
+		@media (max-width: 29.9375rem) {
+			width: 16rem;
+		}
+	}
 	&__text {
 		@media (max-width: 119.9375rem){
 			margin-top: 2.125rem!important;
@@ -90,8 +102,11 @@
 			line-height: 1.0625rem !important;
 			margin-top: 1.25rem!important;
 		}
+		@media (max-width: 47.9375rem){
+			max-width: 23.25rem;
+		}
 		@media (max-width: 29.9375rem){
-			margin-top: 0.875rem!important;
+			margin-top: 0.475rem!important;
 			max-width: 15.125rem;
 			font-size: 0.625rem!important;
 			line-height: 0.75rem!important;
@@ -102,6 +117,9 @@
 
 		@media (max-width: 62rem) {
 			margin-top: 1.9375rem !important;
+		}
+		@media (max-width: 47.9375rem) {
+			align-self: flex-end;
 		}
 		@media (max-width: 29.9375rem) {
 			font-size: 0.625rem!important;

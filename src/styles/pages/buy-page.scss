@@ -20,7 +20,7 @@
 				margin-top: 0;
 			}
 			h1 {
-				width: 31.25rem;
+				width: 40.25rem;
 				display: block;
 				@media (max-width: 89.9375rem){
 					width: 30.375rem;
@@ -200,6 +200,7 @@
 
 			}
 			&:last-child{
+				text-align: center;
 				margin-top: 3.75rem;
 				font-weight: 600;
 				@media (max-width: 63.9375rem){

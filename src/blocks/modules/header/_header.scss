@@ -8,7 +8,9 @@
 
 .top-header {
 	padding: 1.25rem 0;
-
+	@media (max-width: 27.5rem) {
+		padding: 1rem 0;
+	}
 	&__container {
 		display: flex;
 		align-items: center;
@@ -35,7 +37,7 @@
 		position: absolute;
 		top: calc(100% + 0.3125rem);
 		left: 0;
-		background: #F4F6F8;
+		background: #283347;
 		border-radius: 0.625rem;
 		width: 100%;
 		padding: 1.25rem;
@@ -45,16 +47,19 @@
 		opacity: 0;
 		transition: opacity 0.2s linear;
 		li{
-			text-align: center;
 			a{
 				font-family: 'Inter';
 				font-style: normal;
 				font-weight: 500;
 				font-size: 0.875rem;
 				line-height: 1.0625rem;
-				color: #121D33;
+				color: #D5D5D5;
 				text-decoration: none;
 				display: block;
+				transition: all 0.3s ease 0s;
+				&:hover{
+					color: #ffffff;
+				}
 			}
 			+li{
 				margin-top: 1.25rem;
@@ -123,6 +128,13 @@
 
 	&__selector{
 		position: relative;
+		transition: all 0.3s ease 0s;
+		padding: 4px 5px;
+		border-radius: 4px;
+		background-color: transparent;
+		&:hover{
+			background: #283347;
+		}
 		&.active{
 			.top-header{
 				&__options{
@@ -173,6 +185,11 @@
 			color: #fff;
 			border: 0.125rem solid #f4f6f8;
 			border-radius: 0.5rem;
+			transition: all 0.3s ease 0s;
+			&:hover{
+				color: #D5D5D5;
+				border: 0.125rem solid #D5D5D5;
+			}
 		}
 
 		&-signin {
@@ -180,7 +197,10 @@
 			color: #000;
 			background: #f4f6f8;
 			border-radius: 0.5rem;
-
+			transition: all 0.3s ease 0s;
+			&:hover{
+				background: #D5D5D5;
+			}
 			@media (max-width: 43.75rem) {
 				margin-left: 0.9375rem;
 			}
@@ -242,7 +262,7 @@
 					transform: translate(0, -50%);
 				}
 				&:nth-child(3) {
-					bottom: 0;
+					top: calc(100% - 0.09375rem);
 					transform: rotate(0);
 				}
 			}
@@ -257,14 +277,14 @@
 	&__burger.active {
 		span {
 			&:nth-child(1) {
-				top: 48%;
+				top: 50%;
 				transform: rotate(45deg);
 			}
 			&:nth-child(2) {
 				opacity: 0;
 			}
 			&:nth-child(3) {
-				bottom: 48%;
+				top: 50%;
 				transform: rotate(-45deg);
 			}
 		}
@@ -273,6 +293,7 @@
 	&__list {
 		display: flex;
 		z-index: 99;
+		margin: 0 -0.37rem;
 		&-points {
 			display: none;
 			@media (max-width: 43.75rem) {
@@ -288,12 +309,23 @@
 				position: absolute;
 				z-index: 99!important;
 				top: 50%;
-				right: -0.75rem;
-				width: 2.125rem;
-				height: 0.5rem;
+				right: 0;
 				transform: translate(100%, -50%);
 				cursor: pointer;
-				background: url("../img/svg/points.svg") center / 100% no-repeat;
+				transition: all 0.3s ease 0s;
+				border-radius: 4px;
+				padding: 5px;
+				&:hover{
+					background: #283347;
+				}
+				&-inner {
+					display: flex;
+					align-items: center;
+				}
+				img {
+					width: 2.125rem;
+					height: 0.5rem;
+				}
 			}
 			&-mob {
 				top: 100%;
@@ -321,6 +353,9 @@
 				opacity: 1;
 				pointer-events: auto;
 			}
+			&-mob:hover+&-points {
+				background: #283347;
+			}
 		}
 
 		@media (max-width: 43.75rem) {
@@ -335,9 +370,12 @@
 			padding: 1.25rem 0;
 			transition: all 0.5s ease 0s;
 			opacity: 0;
-			background: #f4f6f8;
+			background: #283347;
 			border-radius: 0.625rem;
 			pointer-events: none;
+			a {
+				color: #F4F6F8;
+			}
 		}
 	}
 
@@ -348,8 +386,14 @@
 	}
 
 	&__item {
+		background-color: transparent;
+		transition: all 0.3s ease 0s;
+		padding: 0.125rem 0.37rem;
+		border-radius: 4px;
+		&:hover{
+			background: #283347;
+		}
 		&:not(:first-child) {
-			margin-left: 0.75rem;
 
 			@media (max-width: 43.75rem) {
 				margin-left: 0;
@@ -387,12 +431,11 @@
 		right: -0.75rem;
 		width: 7.375rem;
 		height: 5.6875rem;
-		border: 0.1875rem solid #f4f6f8;
 		padding: 0.625rem 0;
 		transform: translate(100%, 0);
 		background: rgb(0 48 91 / 20%);
-		backdrop-filter: blur(0.3125rem);
-		border-radius: 0.625rem;
+		background: #283347;
+		border-radius: 6px;
 		@media (max-width: 62rem) {
 			display: flex;
 			flex-direction: column;

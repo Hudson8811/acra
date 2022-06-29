@@ -10,7 +10,7 @@
 	}
 	&__subtitle {
 		cursor: pointer;
-		padding: 1rem 0.75rem 1.25rem;
+		padding: 0.75rem;
 		position: relative;
 		@media (max-width: 89.9375rem){
 			padding: 1rem 0.5625rem 1.5rem;
@@ -57,25 +57,20 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 1.5rem;
-		line-height: 1.8125rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		display: flex;
 		align-items: center;
 		color: #B6BCB9;
-		padding: 0.25rem 5.375rem 5rem 1.875rem;
+		padding: 0rem 5.25rem 1.5rem 2rem;
 		display: none;
-		@media (max-width: 89.9375rem) {
-			padding: 1.5rem 2.5rem 4.9375rem 1.5rem;
-		}
 		@media (max-width: 47.9375rem){
-			font-size: 1.125rem;
-			line-height: 1.375rem;
-			padding: 0.3125rem 2.0625rem 1.5rem 0.6875rem;
+			padding: 0rem 2.25rem 1rem 1rem;
 		}
 		@media (max-width: 29.9375rem){
 			font-size: 0.75rem;
-			line-height: 0.9375rem;
-			padding: 0.25rem 2.0625rem 1.5rem 0.6875rem;
+			line-height: 0.875rem;
+			padding: 0rem 1.5rem 1rem 0.5rem;
 		}
 		&-first {
 			display: block;

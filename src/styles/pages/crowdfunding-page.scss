@@ -9,8 +9,6 @@
 			font-family: 'Inter';
 			font-style: normal;
 			font-weight: 600;
-			font-size: 3rem;
-			line-height: 3.625rem;
 			color: #FFFFFF;
 			@media (max-width: 89.9375rem){
 				margin-top: 3rem;
@@ -615,7 +613,7 @@
 			@media (max-width: 63.9375rem){
 				display: block;
 				margin-top: 3.9375rem;
-				align-self: flex-start;
+				text-align: center!important;
 			}
 			@media (max-width: 29.9375rem){
 				margin-top: 1.6875rem;

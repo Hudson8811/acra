@@ -17,6 +17,7 @@
 
 	@media (max-width: 29.9375rem) {
 		width: 17.5rem;
+		border-radius: 1.25rem;
 	}
 
 	label {
@@ -102,7 +103,10 @@
 	}
 
 	&__name {
-		margin-top: 2rem;
+		margin-top: 0.688rem;
+		@media (max-width: 62rem){
+			margin-top: 2rem;
+		}
 		@media (max-width: 29.9375rem) {
 			margin-top: 1.333125rem;
 		}

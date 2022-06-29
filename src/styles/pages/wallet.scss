@@ -120,6 +120,7 @@
 	&__container {
 		h2 {
 			text-align: center;
+			justify-content: center;
 			@media (max-width: 47.9375rem){
 				margin: 0 auto;
 				width: 25rem;
@@ -275,7 +276,7 @@
 	}
 
 	&__item {
-		flex: 0 1 29.375rem;
+		flex: 0 1 28.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -371,6 +372,7 @@
 	}
 
 	&__title {
+		width: 18rem;
 		font-weight: 600;
 		font-size: 1.5rem;
 		line-height: 1.8125rem;
@@ -392,8 +394,8 @@
 
 	&__text {
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		text-align: center;
 		margin-top: 1.3125rem;
 		color: #F4F6F8;
@@ -909,7 +911,7 @@
 	}
 	&__container {
 		>p {
-			text-align: left;
+			text-align: center;
 			margin-top: 3rem;
 			@media (max-width: 63.9375rem){
 				margin-top: 3.75rem;
@@ -1104,8 +1106,8 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		display: flex;
 		align-items: center;
 		text-align: center;

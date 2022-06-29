@@ -277,13 +277,13 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		text-align: center;
 		color: #F4F6F8;
 		@media (max-width: 47.9375rem){
 			font-size: 0.875rem;
-			line-height: 1.0625rem;
+			line-height: 1.059rem;
 		}
 		@media (max-width: 29.9375rem){
 			margin-top: 0.625rem;
@@ -368,8 +368,6 @@
 	}
 }
 
-.bridges-page__cards {}
-
 .cards-bridges-page {
 	margin-top: 3.75rem;
 	&__container {
@@ -378,6 +376,12 @@
 		}
 	}
 	h3 {
+		width: 58.75rem;
+		max-width: 100%;
+		font-size: 2rem;
+		line-height: 2.375rem;
+		text-align: center;
+		margin: 0 auto;
 		@media (max-width: 63.9375rem){
 			display: none;
 		}
@@ -544,6 +548,8 @@
 	margin-top: 3.75rem;
 	h3 {
 		color: #EEB909;
+		width: 58.75rem;
+		max-width: 100%;
 	}
 	p {
 		&:nth-child(1) {
@@ -777,8 +783,8 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		display: flex;
 		align-items: center;
 		text-align: center;
@@ -992,7 +998,7 @@
 	}
 
 	&__item {
-		padding: 0 0.9375rem;
+		padding: 0 0.6rem;
 		flex: 0 1 25%;
 		@media (max-width: 89.9375rem){
 			flex: 0 0 50%;
@@ -1053,8 +1059,8 @@
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1.25rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.188rem;
 		display: flex;
 		align-items: center;
 		text-align: center;

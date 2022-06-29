@@ -21,6 +21,7 @@
 	}
 	p {
 		text-align: center;
+		
 	}
 
 	&__hero {
@@ -120,6 +121,7 @@
 		}
 		p:last-child{
 			margin-top: 1.5rem;
+			display: block!important;
 			span {
 				font-weight: 600;
 			}
