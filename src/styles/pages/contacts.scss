@@ -1,4 +1,11 @@
 .contacts {
+	margin-top: 2.5rem;
+	@media (max-width: 47rem){
+		margin-top: 1rem;
+	}
+	@media (max-width: 29rem){
+		margin-top: 0;
+	}
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -15,13 +22,13 @@
 	}
 
 	p {
-		width: 30.5rem;
+		width: 41.5rem;
 		max-width: 100%;
 		font-family: 'Inter';
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 400;/* 
 		font-size: 1.125rem;
-		line-height: 1.375rem;
+		line-height: 1.375rem; */
 		color: #F4F6F8;
 		text-align: center;
 		margin: 0 auto;
@@ -34,9 +41,9 @@
 			display: block;
 		}
 		@media (max-width: 29.9375rem){
-			width: 15.5625rem;
+			width: 15.5625rem;/* 
 			font-size: 0.625rem;
-			line-height: 0.75rem;
+			line-height: 0.75rem; */
 		}
 		span {
 			font-weight: 600;

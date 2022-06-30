@@ -2607,6 +2607,10 @@ p {
   margin-top: 4.0625rem;
 }
 
+.program {
+  margin-top: 1.875rem;
+}
+
 .program h2 {
   display: flex;
   justify-content: center;
@@ -2736,6 +2740,10 @@ p {
   background-color: #ffffff;
 }
 
+.contacts {
+  margin-top: 2.5rem;
+}
+
 .contacts__container {
   display: flex;
   flex-direction: column;
@@ -2748,13 +2756,14 @@ p {
 }
 
 .contacts p {
-  width: 30.5rem;
+  width: 41.5rem;
   max-width: 100%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  /* 
+font-size: 1.125rem;
+line-height: 1.375rem; */
   color: #F4F6F8;
   text-align: center;
   margin: 0 auto;
@@ -2829,7 +2838,7 @@ p {
 }
 
 .hero-bridges-page__row {
-  padding-top: 1.25rem;
+  padding-top: 3.75rem;
   display: flex;
   justify-content: space-between;
 }
@@ -2874,7 +2883,7 @@ p {
 }
 
 .whatis-bridges-page {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
 }
 
 .whatis-bridges-page h2 {
@@ -2916,7 +2925,7 @@ p {
 }
 
 .whatis-bridges-page__row {
-  margin-top: 3.8125rem;
+  margin-top: 5rem;
   margin-bottom: 4.3125rem;
   display: flex;
   justify-content: space-between;
@@ -3078,14 +3087,21 @@ p {
   margin-top: 3.75rem;
 }
 
-.type-bridges-page h3 {
+.type-bridges-page h2 {
   color: #EEB909;
-  width: 58.75rem;
-  max-width: 100%;
+  text-align: left !important;
+  margin: 0 !important;
 }
 
 .type-bridges-page p:nth-child(1) {
   margin-top: 1.5rem;
+}
+
+.type-bridges-page__container > h2 {
+  text-align: center !important;
+  margin: 0 auto !important;
+  width: 58.75rem;
+  max-width: 100%;
 }
 
 .type-bridges-page__binance {
@@ -3259,7 +3275,7 @@ p {
 }
 
 .work-bridges-page__items {
-  margin-top: 2.5rem;
+  margin-top: 4.5rem;
 }
 
 .work-bridges-page__row {
@@ -3411,7 +3427,7 @@ p {
 }
 
 .wallet-whatis__item-big {
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   flex: 1 1 100%;
   display: flex;
   flex-direction: column;
@@ -3426,7 +3442,10 @@ p {
 }
 
 .wallet-whatis__item-big .wallet-whatis__text {
-  width: 53.125rem;
+  width: 53rem;
+  max-width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .wallet-whatis__icon {
@@ -3485,7 +3504,9 @@ p {
   margin-top: 3rem;
 }
 
-.type-wallet-whatis > h3 {
+.type-wallet-whatis > h2 {
+  justify-content: flex-start;
+  text-align: left;
   margin-top: 3rem;
   color: #00DBC8;
 }
@@ -3525,6 +3546,7 @@ p {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #B9B9B9;
+  margin-top: 1.5rem;
 }
 
 .type-wallet-whatis__items {
@@ -3786,6 +3808,10 @@ p {
 
 /* hero-crowdfunding-page */
 
+.hero-crowdfunding-page {
+  padding-top: 3.625rem;
+}
+
 .hero-crowdfunding-page__row h1 {
   width: 31.25rem;
   max-width: 100%;
@@ -3811,7 +3837,6 @@ p {
 
 .hero-crowdfunding-page p:nth-child(2) {
   margin-top: 6.75rem;
-  font-weight: 600;
 }
 
 .hero-crowdfunding-page__img {
@@ -4119,7 +4144,7 @@ p {
 }
 
 .work-crowdfunding-page p {
-  text-align: left;
+  text-align: center;
   margin-top: 3rem;
 }
 
@@ -4325,6 +4350,10 @@ p {
 
 /* hero-staking */
 
+.hero-staking {
+  margin-top: 1.875rem;
+}
+
 .hero-staking__container > p {
   text-align: left;
   margin-top: 3rem;
@@ -4336,6 +4365,7 @@ p {
 
 .hero-staking__body--left h1 {
   width: 31.25rem;
+  max-width: 100%;
   display: block;
 }
 
@@ -4728,7 +4758,7 @@ p {
 /* hero-future */
 
 .hero-future {
-  margin-top: 5rem;
+  margin-top: 3.75rem;
 }
 
 .hero-future__container > p {
@@ -5801,10 +5831,6 @@ p {
 }
 
 @media (max-width: 90rem) {
-  .hero-future {
-    margin-top: 0;
-  }
-
   .hero-future__body--left p {
     width: 31.25rem;
   }
@@ -6800,6 +6826,7 @@ p {
 
   .hero-staking__body--left p {
     width: 31.25rem;
+    max-width: 100%;
   }
 
   .hero-staking__img::before {
@@ -6850,8 +6877,8 @@ p {
   .fix-staking__img::before {
     width: 25.0625rem;
     height: 22.875rem;
-    top: -5.9375rem;
-    left: -1.5rem;
+    top: -3.9375rem;
+    left: -4.5rem;
   }
 
   .fix-staking__img {
@@ -6859,7 +6886,7 @@ p {
   }
 
   .fix-staking__img {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   .risk-staking {
@@ -7592,6 +7619,7 @@ p {
 
   .hero-crowdfunding-page p {
     margin-top: 2.25rem;
+    text-align: center;
   }
 
   .hero-crowdfunding-page p:nth-child(2) {
@@ -7721,6 +7749,7 @@ p {
 
   .scoring-crowdfunding-page__container > p {
     margin-top: 2.25rem;
+    text-align: center;
   }
 
   .scoring-crowdfunding-page__body--right {
@@ -7731,7 +7760,12 @@ p {
   }
 
   .scoring-crowdfunding-page__body--right h2 {
+    justify-content: center;
     width: 44.25rem;
+  }
+
+  .scoring-crowdfunding-page__body--right p {
+    text-align: center;
   }
 
   .scoring-crowdfunding-page__body--text-desktop {
@@ -7742,7 +7776,7 @@ p {
     display: block;
     margin-top: 4.125rem;
     order: 3;
-    text-align: left;
+    text-align: center;
   }
 
   .scoring-crowdfunding-page__img::before {
@@ -7786,6 +7820,7 @@ p {
 
   .risk-crowdfunding-page__container > p {
     margin-top: 2.25rem;
+    text-align: center;
   }
 
   .risk-crowdfunding-page__body {
@@ -7807,8 +7842,8 @@ p {
   .risk-crowdfunding-page__body--text-mobile {
     display: block;
     order: 3;
-    margin-top: 4.9375rem;
-    text-align: left;
+    margin-top: 6.9375rem;
+    text-align: center;
   }
 
   .risk-crowdfunding-page__img::before {
@@ -7825,7 +7860,7 @@ p {
   }
 
   .hero-staking__body--text-desktop {
-    display: none;
+    display: none !important;
   }
 
   .hero-staking__body--text-mobile {
@@ -7904,7 +7939,7 @@ p {
   .fix-staking__body--text-mobile {
     display: block;
     margin-top: 3.4375rem;
-    text-align: left;
+    text-align: center;
   }
 
   .fix-staking__img::before {
@@ -7915,7 +7950,7 @@ p {
   }
 
   .fix-staking__img {
-    margin-top: 5.3125rem;
+    margin-top: 4.3125rem;
     margin-right: 0;
   }
 
@@ -9355,6 +9390,10 @@ p {
     margin-top: 1.875rem;
   }
 
+  .program {
+    margin-top: 1rem;
+  }
+
   .program__container p {
     font-size: 0.625rem;
     line-height: 0.75rem;
@@ -9400,6 +9439,10 @@ p {
   .contacts p {
     width: 23.3125rem;
     display: block;
+  }
+
+  .hero-bridges-page__row {
+    padding-top: 1rem;
   }
 
   .hero-bridges-page__row h1 {
@@ -9791,7 +9834,6 @@ p {
   }
 
   .hero-crowdfunding-page p {
-    text-align: left;
     margin-top: 1.5rem;
   }
 
@@ -10033,6 +10075,15 @@ p {
     margin-top: 7.4375rem;
   }
 
+  .hero-staking {
+    margin-top: 1rem;
+  }
+
+  .hero-staking p {
+    display: block;
+    text-align: center !important;
+  }
+
   .hero-staking__container > p {
     margin-top: 1.5rem;
   }
@@ -10070,11 +10121,12 @@ p {
   }
 
   .fix-staking {
-    margin-top: 7.8125rem;
+    margin-top: 3.8125rem;
   }
 
   .fix-staking__container > p {
     margin-top: 1.5rem;
+    text-align: center;
   }
 
   .fix-staking__body--text-mobile {
@@ -10089,7 +10141,7 @@ p {
   }
 
   .fix-staking__img {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .risk-staking {
@@ -10097,8 +10149,16 @@ p {
     margin-bottom: 2.5rem;
   }
 
+  .risk-staking p {
+    text-align: center !important;
+  }
+
   .risk-staking__container > p {
     margin-top: 1.5rem;
+  }
+
+  .risk-staking__body--left p p {
+    text-align: center !important;
   }
 
   .risk-staking__img::before {
@@ -10479,6 +10539,10 @@ p {
     border-left: 4.563rem solid #0DE5FE;
     transform: translate(50%, -50%);
   }
+
+  .hero-crowdfunding-page {
+    padding-top: 1rem;
+  }
 }
 
 @media (max-width: 47.9375rem) and (max-width: 29.9375rem) {
@@ -10516,9 +10580,19 @@ p {
 }
 
 @media (max-width: 47rem) {
+  .contacts {
+    margin-top: 1rem;
+  }
+
   .contacts__form {
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 47.9rem) {
+  .hero-future {
+    margin-top: 1rem;
   }
 }
 
@@ -11250,8 +11324,8 @@ p {
   }
 
   p {
-    font-size: 0.75rem;
-    line-height: 0.875rem;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
   }
 
   .docs__row {
@@ -11338,6 +11412,10 @@ p {
     margin-top: 4.3125rem;
   }
 
+  .program {
+    margin-top: 0rem;
+  }
+
   .program__container p {
     font-size: 0.4375rem;
     line-height: 0.5rem;
@@ -11398,8 +11476,9 @@ p {
 
   .contacts p {
     width: 15.5625rem;
-    font-size: 0.625rem;
-    line-height: 0.75rem;
+    /* 
+font-size: 0.625rem;
+line-height: 0.75rem; */
   }
 
   .contacts__items {
@@ -11435,6 +11514,10 @@ p {
     width: 12.3125rem !important;
     font-size: 1.3125rem !important;
     line-height: 1.3125rem !important;
+  }
+
+  .hero-bridges-page__row {
+    padding-top: 0rem;
   }
 
   .hero-bridges-page__row h1 {
@@ -11763,7 +11846,7 @@ p {
     margin-top: 1rem;
   }
 
-  .type-wallet-whatis > h3 {
+  .type-wallet-whatis > h2 {
     margin-top: 0.875rem;
   }
 
@@ -12218,6 +12301,10 @@ p {
     height: 100%;
   }
 
+  .hero-staking {
+    margin-top: 0rem;
+  }
+
   .hero-staking__container > p {
     margin-top: 0.875rem;
   }
@@ -12426,6 +12513,10 @@ p {
     margin-top: 0.6875rem;
     font-size: 0.625rem;
     line-height: 0.75rem;
+  }
+
+  .hero-future {
+    margin-top: 0rem;
   }
 
   .hero-future__container > p {
@@ -12880,6 +12971,16 @@ p {
 
   .form__select-country-tel {
     margin-right: 0.625rem;
+  }
+}
+
+@media (max-width: 29rem) {
+  .contacts {
+    margin-top: 0;
+  }
+
+  .hero-crowdfunding-page {
+    padding-top: 0rem;
   }
 }
 

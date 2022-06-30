@@ -18,12 +18,18 @@
 .hero-bridges-page {
 	&__container {}
 	&__row {
-		padding-top: 1.25rem;
+		padding-top: 3.75rem;
 		display: flex;
 		justify-content: space-between;
 		@media (max-width: 63.9375rem){
 			flex-direction: column;
 			align-items: center;
+		}
+			@media (max-width: 47.9375rem) {
+				padding-top: 1rem;
+			}
+		@media (max-width: 29.9375rem) {
+			padding-top: 0rem;
 		}
 		h1 {
 			display: block;
@@ -121,7 +127,7 @@
 }
 
 .whatis-bridges-page {
-	margin-top: 2.5rem;
+	margin-top: 3.5rem;
 	@media (max-width: 89.9375rem){
 		margin-top: 3.75rem;
 	}
@@ -210,7 +216,7 @@
 		justify-content: center;
 	}
 	&__row {
-		margin-top: 3.8125rem;
+		margin-top: 5rem;
 		margin-bottom: 4.3125rem;
 		display: flex;
 		justify-content: space-between;
@@ -546,17 +552,25 @@
 
 .type-bridges-page {
 	margin-top: 3.75rem;
-	h3 {
+
+	h2 {
 		color: #EEB909;
-		width: 58.75rem;
-		max-width: 100%;
+		text-align: left !important;
+		margin: 0 !important;
 	}
 	p {
 		&:nth-child(1) {
 			margin-top: 1.5rem;
 		}
 	}
-	&__container {}
+	&__container {
+		>h2 {
+			text-align: center !important;
+			margin: 0 auto !important;
+			width: 58.75rem;
+			max-width: 100%;
+		}
+	}
 	&__binance {
 		margin-top: 3.75rem;
 		@media (max-width: 63.9375rem){
@@ -565,6 +579,7 @@
 		@media (max-width: 47.9375rem){
 			margin-top: 1.6875rem;
 		}
+		
 		p {
 			margin-top: 1.5rem;
 			@media (max-width: 63.9375rem) {
@@ -955,7 +970,7 @@
 	}
 
 	&__items {
-		margin-top: 2.5rem;
+		margin-top: 4.5rem;
 
 		@include ie(){
 			margin-top: 4.5rem;

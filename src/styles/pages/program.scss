@@ -1,4 +1,11 @@
 .program {
+	margin-top: 1.875rem;
+	@media (max-width: 47.9375rem){
+		margin-top: 1rem;
+	}
+		@media (max-width: 29.9375rem) {
+					margin-top: 0rem;
+		}
 	&__container {
 		p {
 			@media (max-width: 63.9375rem){

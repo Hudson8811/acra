@@ -290,7 +290,7 @@
 		}
 	}
 	&__item-big {
-		margin-top: 2.5rem;
+		margin-top: .5rem;
 		flex: 1 1 100%;
 		display: flex;
 		flex-direction: column;
@@ -309,7 +309,10 @@
 			margin-top: 1rem;
 		}
 		.wallet-whatis__text {
-			width: 53.125rem;
+			width: 53rem;
+			max-width: 100%;
+				font-size: 1.25rem;
+				line-height: 1.5rem;
 			@media (max-width: 63.9375rem){
 				width: 100%;
 			}
@@ -429,7 +432,9 @@
 	@media (max-width: 29.9375rem){
 		margin-top: 1rem;
 	}
-	>h3 {
+	>h2 {
+		justify-content: flex-start;
+		text-align: left;
 		margin-top: 3rem;
 		color: #00DBC8;
 		@media (max-width: 29.9375rem){
@@ -502,6 +507,7 @@
 			font-size: 1.125rem;
 			line-height: 1.375rem;
 			color: #B9B9B9;
+			margin-top: 1.5rem;
 			@media (max-width: 63.9375rem){
 				margin-top: 0.3125rem;
 			}

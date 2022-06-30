@@ -1,5 +1,12 @@
 /* hero-crowdfunding-page */
 .hero-crowdfunding-page {
+	padding-top: 3.625rem;
+	@media (max-width: 47.938rem){
+		padding-top: 1rem;
+	}
+		@media (max-width: 29rem) {
+			padding-top: 0rem;
+		}
 	&__row {
 		h1 {
 			width: 31.25rem;
@@ -36,9 +43,9 @@
 		margin-top: 3rem;
 		@media (max-width: 63.9375rem){
 			margin-top: 2.25rem;
+			text-align: center;
 		}
 		@media (max-width: 47.9375rem){
-			text-align: left;
 			margin-top: 1.5rem;
 		}
 		@media (max-width: 29.9375rem){
@@ -46,7 +53,6 @@
 		}
 		&:nth-child(2){
 			margin-top: 6.75rem;
-			font-weight: 600;
 			@media (max-width: 89.9375rem){
 				margin-top: 5.9375rem;
 			}
@@ -777,7 +783,7 @@
 		}
 	}
 	p {
-		text-align: left;
+		text-align: center;
 		margin-top: 3rem;
 		@media (max-width: 63.9375rem){
 			margin-top: 2.25rem;
@@ -807,6 +813,7 @@
 			margin-top: 3rem;
 			@media (max-width: 63.9375rem){
 				margin-top: 2.25rem;
+				text-align: center;
 			}
 			@media (max-width: 47.9375rem){
 				margin-top: 1.5rem;
@@ -840,6 +847,7 @@
 					margin-top: 3.75rem;
 				}
 				@media (max-width: 63.9375rem){
+					justify-content: center;
 					width: 44.25rem;
 				}
 				@media (max-width: 47.9375rem){
@@ -857,6 +865,9 @@
 				@media (max-width: 89.9375rem){
 					width: 29.0625rem;
 				}
+				@media (max-width: 63.9375rem) {
+					text-align: center;
+				}
 			}
 		}
 		&--text-desktop {
@@ -870,7 +881,7 @@
 				display: block;
 				margin-top: 4.125rem;
 				order: 3;
-				text-align: left;
+				text-align: center;
 			}
 			@media (max-width: 47.9375rem){
 				margin-top: 4.5rem;
@@ -1173,6 +1184,7 @@
 			margin-top: 3rem;
 			@media (max-width: 63.9375rem){
 				margin-top: 2.25rem;
+				text-align: center;
 			}
 			@media (max-width: 47.9375rem){
 				margin-top: 1.5rem;
@@ -1218,8 +1230,8 @@
 			@media (max-width: 63.9375rem){
 				display: block;
 				order: 3;
-				margin-top: 4.9375rem;
-				text-align: left;
+				margin-top: 6.9375rem;
+				text-align: center;
 			}
 			@media (max-width: 47.9375rem){
 				margin-top: 4.0625rem;
